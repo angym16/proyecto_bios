@@ -20,17 +20,39 @@
     <a href="#atencion">Atención al paciente</a>
     <a href="#servicios">Servicios</a>
     <a href="#resultados">Resultados</a>
-   
+    <a href="#cita" class="nav-cta">📅 Solicitar cita</a>
   </nav>
 </header>
 
 <!-- ══════════════════ HERO con espacio para FOTO/VIDEO ══════════════════ -->
 <section class="hero">
-  
+  <!-- <div class="hero-bg-ph"></div> -->
+  <div class="hero-overlay"></div> 
+
+  <!-- ESPACIO PARA VIDEO -->
+  <div style="position:absolute;top:50%;right:6%;transform:translateY(-50%);z-index:2;
+              width:38%;max-width:480px;aspect-ratio:16/10;
+              background:rgba(255,255,255,.07);backdrop-filter:blur(6px);
+              border:2px dashed rgba(255,255,255,.3);border-radius:16px;
+              display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+              box-shadow:0 20px 60px rgba(0,0,0,.3);">
+    <div style="width:66px;height:66px;border-radius:50%;background:rgba(109,202,252,.25);
+                border:2px solid var(--b4);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.25s;"
+         onmouseover="this.style.background='rgba(109,202,252,.45)'" onmouseout="this.style.background='rgba(109,202,252,.25)'">
+      <svg width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div> 
+    <div style="text-align:center;">
+      <p style="color:rgba(255,255,255,.8);font-size:13.5px;font-weight:600;">📹 Video institucional BIOS</p>
+      <p style="color:rgba(255,255,255,.45);font-size:11px;margin-top:4px;letter-spacing:1px;text-transform:uppercase;">Insertar video aquí</p>
+    </div>
+  </div> 
+
   <div class="hero-content">
     <div class="hero-eyebrow"><span></span>Prevención · Diagnóstico · Bienestar</div>
+    <h1>Agenda<br><span>tu cita</span></h1>
     <p>De forma fácil, ágil y segura.<br>Somos el centro médico preventivo del Cauca.</p>
     <div class="hero-btns">
+      <a href="#cita" class="btn btn-white">📅 Agendar cita</a>
       <a href="#pqrsf" class="btn btn-outline-w">💬 Resolver inquietud</a>
       <a href="#plan" class="btn btn-b4">⭐ Plan Premium</a>
     </div>
@@ -64,7 +86,17 @@
     <span class="qs-arrow">→</span>
   </a>
   <!-- Rotativa 3: Historia Clínica -->
-  
+  <a href="#historia" class="qs-item">
+    <div class="qs-img" style="background:linear-gradient(135deg,var(--b3),var(--b4));">
+      <div style="font-size:22px;">🖼️</div>
+      <div class="qs-img-label">📸 Imagen 3<br>Historia Clínica</div>
+    </div>
+    <div class="qs-text">
+      <h4>Solicita tu Historia Clínica</h4>
+      <p>Accede a tu historial médico de forma segura</p>
+    </div>
+    <span class="qs-arrow">→</span>
+  </a>
 </div>
 
 <!-- ══════════════════ STATS ══════════════════ -->
@@ -97,6 +129,7 @@
       </div>
       <h3>Consultas Médicas</h3>
       <p>Atención con médicos generales y especialistas para diagnóstico, seguimiento y control.</p>
+      <div class="svc-link">Agendar cita →</div>
     </div>
 
     <div class="svc-card">
@@ -158,7 +191,8 @@
     <div class="svc-card featured" id="plan">
       <div class="svc-icon-wrap">
         <svg class="ico" width="36" height="36" viewBox="0 0 36 36" fill="none">
-          <path d="M18 6 L20.5 13H28L22 17.5L24.5 24.5L18 20L11.5 24.5L14 17.5L8 13H15.5Z" stroke="rgba(255,255,255,.8)" stroke-width="1.8" stroke-linejoin="round" fill="rgba(255,255,255,.15)"/>
+          <path d="M18 6 L20.5 13H28L22 17.5L24.5 24.5L18 20L11.5 24.5L14 17.5L8 13H15.5Z" stroke="#4798d0" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M18 14 v6 M15 17 h6" stroke="#4798d0" stroke-width="1.8" stroke-linecap="round" />
           <circle cx="18" cy="18" r="14" stroke="rgba(255,255,255,.2)" stroke-width="1.2"/>
         </svg>
       </div>
@@ -460,19 +494,6 @@
         <p style="text-align:center;margin-top:12px;font-size:12px;color:var(--gray);">También escríbenos a <a href="/cdn-cgi/l/email-protection#7a0a0b08091c3a18131509130a0954191517" style="color:var(--b2);font-weight:700;text-decoration:none;"><span class="__cf_email__" data-cfemail="81f1f0f3f2e7c1e3e8eef2e8f1f2afe2eeec">[email&#160;protected]</span></a></p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ══════════════════ RECONOCIMIENTOS ══════════════════ -->
-<section class="sec sec-white" style="text-align:center;">
-  <p class="eyebrow" style="text-align:center;">Trayectoria y confianza</p>
-  <h2 class="sec-title" style="text-align:center;max-width:none;">Reconocimientos</h2>
-  <p class="sec-sub" style="margin:0 auto 0;text-align:center;">Nuestro compromiso con la calidad nos ha valido el reconocimiento de entidades nacionales.</p>
-  <div class="reco-row">
-    <div class="reco"><div class="reco-ico">🏅</div><h4>Habilitación en Salud</h4><p>Minsalud Colombia</p></div>
-    <div class="reco"><div class="reco-ico">⭐</div><h4>Acreditación en Calidad</h4><p>ICONTEC</p></div>
-    <div class="reco"><div class="reco-ico">🎖️</div><h4>Innovación en Oncología</h4><p>Sec. de Salud Cauca</p></div>
-    <div class="reco"><div class="reco-ico">🌟</div><h4>Mejor IPS Preventiva</h4><p>Reconocimiento regional</p></div>
   </div>
 </section>
 
