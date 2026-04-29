@@ -36,7 +36,7 @@ nav a:hover{color:var(--b1);background:var(--gray-soft);}
   z-index:0;
 }
 .hero-bg-ph::after{
-  content:'📸 Insertar foto de personal médico BIOS aquí';
+  content:' Insertar foto de personal médico BIOS aquí';
   position:absolute;top:50%;right:12%;transform:translateY(-50%);
   width:42%;height:80%;
   background:rgba(255,255,255,.07);
@@ -321,4 +321,75 @@ footer{background:#071830;color:rgba(255,255,255,.65);padding:60px 56px 28px;}
   .sec-header{flex-direction:column;align-items:flex-start;}
   .footer-grid{grid-template-columns:1fr 1fr;}
   .moviles-band{flex-direction:column;text-align:center;}
+}
+@media (max-width: 768px){
+
+  /* HEADER */
+  header{
+    padding: 0 16px;
+    height: 60px;
+  }
+
+  .logo-wrap img{
+    height: 40px;
+  }
+
+  /* HERO */
+  .hero{
+    height: auto;
+    min-height: 480px;
+  }
+
+  .hero-content{
+    padding: 40px 20px;
+    max-width: 100%;
+  }
+
+  .hero h1{
+    font-size: 28px;
+  }
+
+  .hero p{
+    font-size: 14px;
+  }
+
+  /* quitar imagen lateral en móvil */
+  .hero-bg-ph::after{
+    display: none;
+  }
+
+  /* BOTONES */
+  .hero-btns{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn{
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  /* BOLETIN */
+  .boletin-wrap{
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+
+  /* DERECHOS */
+  .derechos-grid{
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  .footer-grid{
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom{
+    flex-direction: column;
+    text-align: center;
+  }
 }
