@@ -205,20 +205,17 @@ li::marker {
 }
 
 /* ═════════ RESPONSIVE ═════════ */
-@media (max-width: 900px) {
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-
+@media (max-width: 960px) {
   header {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
   }
 
   nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
   }
 }
 /* FOOTER */
