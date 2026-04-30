@@ -1,0 +1,522 @@
+<<<<<<< Updated upstream
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIOS IPS Medical Center</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- ══════════════════ HEADER ══════════════════ -->
+<header>
+  <a href="#"><img src="img/logoBios.png" style="height:48px;width:auto;"></a>
+  <nav>
+    <a href="#quienes">¿Quiénes somos?</a>
+    <a href="#atencion">Atención al paciente</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#cita" class="nav-cta">Solicitar cita →</a>
+  </nav>
+</header>
+
+<!-- ══════════════════ HERO con espacio para FOTO/VIDEO ══════════════════ -->
+<section class="hero">
+  <!-- <div class="hero-bg-ph"></div> -->
+  <div class="hero-overlay"></div> 
+
+  <!-- ESPACIO PARA VIDEO -->
+  <div style="position:absolute;top:50%;right:6%;transform:translateY(-50%);z-index:2;
+              width:38%;max-width:480px;aspect-ratio:16/10;
+              background:rgba(255,255,255,.07);backdrop-filter:blur(6px);
+              border:2px dashed rgba(255,255,255,.3);border-radius:16px;
+              display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+              box-shadow:0 20px 60px rgba(0,0,0,.3);">
+    <div style="width:66px;height:66px;border-radius:50%;background:rgba(109,202,252,.25);
+                border:2px solid var(--b4);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.25s;"
+         onmouseover="this.style.background='rgba(109,202,252,.45)'" onmouseout="this.style.background='rgba(109,202,252,.25)'">
+      <svg width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div> 
+    <div style="text-align:center;">
+      <p style="color:rgba(255,255,255,.8);font-size:13.5px;font-weight:600;">📹 Video institucional BIOS</p>
+      <p style="color:rgba(255,255,255,.45);font-size:11px;margin-top:4px;letter-spacing:1px;text-transform:uppercase;">Insertar video aquí</p>
+    </div>
+  </div> 
+
+  <div class="hero-content">
+    <div class="hero-eyebrow"><span></span>Prevención · Diagnóstico · Bienestar</div>
+    <h1>Agenda<br><span>tu cita</span></h1>
+    <p>De forma fácil, ágil y segura.<br>Somos el centro médico preventivo del Cauca.</p>
+    <div class="hero-btns">
+      <a href="#cita" class="btn btn-white"> Agendar cita</a>
+      <a href="#pqrsf" class="btn btn-outline-w"> Resolver inquietud</a>
+      <a href="#plan" class="btn btn-b4">⭐ Plan Premium</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ IMÁGENES ROTATIVAS ══════════════════ -->
+<div class="quick-strip">
+  <!-- Rotativa 1: Plan Premium -->
+  <a href="#plan" class="qs-item">
+    <div class="qs-img" style="background:linear-gradient(135deg,var(--b1),var(--b2));">
+      <div style="font-size:22px;">🖼️</div>
+      <div class="qs-img-label">📸 Imagen 1<br>Plan Premium</div>
+    </div>
+    <div class="qs-text">
+      <h4>Plan Premium BIOS</h4>
+      <p>Prevención y beneficios exclusivos para tu familia</p>
+    </div>
+    <span class="qs-arrow">→</span>
+  </a>
+  <!-- Rotativa 2: Rutas de Cáncer -->
+  <a href="#cancer" class="qs-item">
+    <div class="qs-img" style="background:linear-gradient(135deg,var(--b2),var(--b3));">
+      <div style="font-size:22px;">🖼️</div>
+      <div class="qs-img-label">📸 Imagen 2<br>Rutas de Cáncer</div>
+    </div>
+    <div class="qs-text">
+      <h4>Rutas de Cáncer</h4>
+      <p>Detección temprana que salva vidas en el Cauca</p>
+    </div>
+    <span class="qs-arrow">→</span>
+  </a>
+  <!-- Rotativa 3: Historia Clínica -->
+  <a href="#historia" class="qs-item">
+    <div class="qs-img" style="background:linear-gradient(135deg,var(--b3),var(--b4));">
+      <div style="font-size:22px;">🖼️</div>
+      <div class="qs-img-label">📸 Imagen 3<br>Historia Clínica</div>
+    </div>
+    <div class="qs-text">
+      <h4>Solicita tu Historia Clínica</h4>
+      <p>Accede a tu historial médico de forma segura</p>
+    </div>
+    <span class="qs-arrow">→</span>
+  </a>
+</div>
+
+<!-- ══════════════════ STATS ══════════════════ -->
+<div class="stats">
+  <div class="stat"><div class="stat-s">Presencia</div><div class="stat-n">3</div><div class="stat-l">Sedes en el Cauca</div></div>
+  <div class="stat"><div class="stat-s">Servicios</div><div class="stat-n">+15</div><div class="stat-l">Especialidades disponibles</div></div>
+  <div class="stat"><div class="stat-s">Único en Cauca</div><div class="stat-n">1ª</div><div class="stat-l">Mamografía móvil</div></div>
+  <div class="stat"><div class="stat-s">Oncología</div><div class="stat-n">100%</div><div class="stat-l">Ruta oncológica completa</div></div>
+</div>
+
+<!-- ══════════════════ SERVICIOS (con íconos SVG estilo ref. imagen 2-3) ══════════════════ -->
+<section class="sec sec-white" id="servicios">
+  <div class="sec-header">
+    <div>
+      <p class="eyebrow">Lo que ofrecemos</p>
+      <h2 class="sec-title">Servicios, unidades y programas</h2>
+      <p class="sec-sub">Atención integral diagnóstica y preventiva con tecnología de vanguardia.</p>
+    </div>
+    <a href="#" class="btn btn-b1">Ver todos los servicios →</a>
+  </div>
+  <div class="svc-grid">
+
+    <div class="svc-card">
+      <div class="svc-icon-wrap">
+        <svg class="ico" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="12" r="7" stroke="#4798d0" stroke-width="2"/>
+          <path d="M18 19v4m0 0h-3m3 0h3" stroke="#4798d0" stroke-width="2" stroke-linecap="round"/>
+          <path d="M8 32c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#4798d0" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <h3>Consultas Médicas</h3>
+      <p>Atención con médicos generales y especialistas para diagnóstico, seguimiento y control.</p>
+      <div class="svc-link">Agendar cita →</div>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon-wrap">
+        <svg class="ico" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect x="8" y="8" width="20" height="24" rx="3" stroke="#4798d0" stroke-width="2"/>
+          <line x1="12" y1="16" x2="24" y2="16" stroke="#4798d0" stroke-width="2" stroke-linecap="round"/>
+          <line x1="12" y1="21" x2="24" y2="21" stroke="#4798d0" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="24" cy="26" r="5" fill="white" stroke="#4798d0" stroke-width="2"/>
+          <line x1="24" y1="23.5" x2="24" y2="28.5" stroke="#4798d0" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="21.5" y1="26" x2="26.5" y2="26" stroke="#4798d0" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3>Laboratorio Clínico</h3>
+      <p>Análisis completos con resultados confiables y entrega rápida para tu tranquilidad.</p>
+      <div class="svc-link">Solicitar →</div>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon-wrap">
+        <svg class="ico" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <ellipse cx="18" cy="20" rx="10" ry="7" stroke="#4798d0" stroke-width="2"/>
+          <ellipse cx="18" cy="20" rx="5" ry="3.5" stroke="#4798d0" stroke-width="1.5"/>
+          <path d="M18 13V8m-4 2 2 3m4-3 -2 3" stroke="#4798d0" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M8 20c0 0-2 5 10 5s10-5 10-5" stroke="#4798d0" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      
+      <h3>Imágenes Diagnósticas</h3>
+      <p>Ecografías, mamografías y estudios con equipos de alta resolución para diagnósticos precisos.</p>
+      <div class="svc-link">Solicitar →</div>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon-wrap">
+        <svg class="ico" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <path d="M10 28 C10 22 14 18 18 16 C22 18 26 22 26 28" stroke="#4798d0" stroke-width="2" stroke-linecap="round"/>
+          <path d="M14 16 C14 13 15.5 10 18 9 C20.5 10 22 13 22 16" stroke="#4798d0" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="18" cy="9" r="2.5" stroke="#4798d0" stroke-width="1.8"/>
+          <path d="M13 24 h10" stroke="#4798d0" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3>Paquete Ginecología</h3>
+      <p>Ecografía ginecológica, citología cervical y consulta médica especializada.</p>
+      <div class="svc-link">Ver paquete →</div>
+    </div>
+
+    <div class="svc-card">
+      <div class="svc-icon-wrap">
+        <svg class="ico" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <path d="M18 28 C18 28 7 22 7 14.5 C7 11 9.5 8.5 13 8.5 C15 8.5 17 9.5 18 11 C19 9.5 21 8.5 23 8.5 C26.5 8.5 29 11 29 14.5 C29 22 18 28 18 28Z" stroke="#4798d0" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M18 14 v6 M15 17 h6" stroke="#4798d0" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3>Paquete Mama</h3>
+      <p>Ecografía mamaria y consulta médica especializada. La detección temprana salva vidas.</p>
+      <div class="svc-link">Ver paquete →</div>
+    </div>
+
+    <div class="svc-card featured" id="plan">
+      <div class="svc-icon-wrap">
+        <svg class="ico" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <path d="M18 6 L20.5 13H28L22 17.5L24.5 24.5L18 20L11.5 24.5L14 17.5L8 13H15.5Z" stroke="#4798d0" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M18 14 v6 M15 17 h6" stroke="#4798d0" stroke-width="1.8" stroke-linecap="round" />
+          <circle cx="18" cy="18" r="14" stroke="#4798d0" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3>Plan Premium BIOS</h3>
+      <p>Prevención con chequeos periódicos, descuentos y atención prioritaria para ti y tu familia.</p>
+      <div class="svc-link">Conocer más →</div>
+
+<!-- ══════════════════ CÓMO CUIDAMOS (ref. imagen 6) ══════════════════ -->
+<div class="care-wrap" id="quienes">
+  <div class="care-left sec-gray">
+    <p class="eyebrow">Nuestro modelo</p>
+    <h2 class="sec-title">Cómo cuidamos<br>tu salud</h2>
+    <p class="sec-sub">Trabajamos bajo un modelo de atención <strong>preventivo y de mantenimiento</strong>, detectando a tiempo y acompañándote antes de que aparezca la enfermedad.</p>
+    <div class="pillars">
+      <div class="pillar"><div class="p-num">1</div><div><h4>Prevención activa</h4><p>Identificamos factores de riesgo antes de que se conviertan en enfermedades.</p></div></div>
+      <div class="pillar"><div class="p-num">2</div><div><h4>Diagnóstico oportuno</h4><p>Tecnología de punta para un diagnóstico preciso y rápido.</p></div></div>
+      <div class="pillar"><div class="p-num">3</div><div><h4>Acompañamiento continuo</h4><p>Seguimiento de tu estado de salud a lo largo del tiempo.</p></div></div>
+    </div>
+  </div>
+  <!-- ESPACIO PARA FOTO MÉDICO/PERSONAL -->
+  <div class="care-right">
+    <div class="care-img-ph">
+      <div class="care-img-ph-box">
+        <div style="font-size:40px;">👩‍⚕️</div>
+        <span style="font-size:12px;color:rgba(255,255,255,.6);text-align:center;line-height:1.5;"> Foto del personal<br>médico BIOS<br><small style="opacity:.7">Insertar imagen aquí</small></span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;width:100%;max-width:260px;">
+        <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:16px;text-align:center;">
+          <div style="font-family:'Raleway',sans-serif;font-size:36px;font-weight:800;color:var(--b4);">3</div>
+          <div style="font-size:11px;color:rgba(255,255,255,.65);margin-top:4px;">Sedes en Cauca</div>
+        </div>
+        <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:16px;text-align:center;">
+          <div style="font-family:'Raleway',sans-serif;font-size:36px;font-weight:800;color:var(--b4);">1ª</div>
+          <div style="font-size:11px;color:rgba(255,255,255,.65);margin-top:4px;">Mamografía móvil</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ BOLETÍN ══════════════════ -->
+<section class="sec sec-white" id="cancer">
+  <div class="boletin-wrap">
+    <div class="bol-card">
+      <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:.65;margin-bottom:8px;">Boletín Epidemiológico</p>
+      <h3>Detección de Rutas de Cáncer</h3>
+      <p>Información actualizada sobre rutas de detección, prevención y seguimiento oncológico en el Cauca.</p>
+      <a href="#" class="btn btn-white" style="width:100%;justify-content:center;color:var(--b1);">📥 Descargar boletín</a>
+      <div class="cancer-links">
+        <a href="html/mama.html" class="card-btn">💗 Cáncer de mama</a>
+        <a href="html/piel.html" class="card-btn">🟡 Cáncer de piel</a>
+        <a href="html/cervix.html" class="card-btn">🟢 Cáncer de cervix</a>
+        <a href="html/prostata.html" class="card-btn">🔵 Cáncer de próstata</a>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow">Prevención que salva vidas</p>
+      <h2 class="sec-title">Modelo de atención preventivo</h2>
+      <p class="sec-sub">Nuestro modelo está diseñado para mantener y mejorar tu salud antes de que aparezca la enfermedad.</p>
+      <div class="info-items">
+        <div class="info-item"><span style="font-size:22px;flex-shrink:0;">📊</span><div><strong>Seguimiento continuo</strong><span>Monitoreo de indicadores de salud a lo largo del tiempo.</span></div></div>
+        <div class="info-item"><span style="font-size:22px;flex-shrink:0;">🧬</span><div><strong>Detección temprana</strong><span>Identificamos riesgos antes de diagnósticos graves.</span></div></div>
+        <div class="info-item"><span style="font-size:22px;flex-shrink:0;">🤝</span><div><strong>Acompañamiento personalizado</strong><span>Un equipo médico comprometido con tu historia de salud.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ JORNADAS (fotos placeholder) ══════════════════ -->
+<section class="sec sec-gray">
+  <p class="eyebrow">Actividades del mes</p>
+  <h2 class="sec-title">Jornadas de Rutas de Cáncer y CAPS</h2>
+  <p class="sec-sub">Participa en nuestras jornadas extramurales. Acercamos la salud a tu municipio.</p>
+  <div class="jornadas-grid">
+
+    <div class="jc">
+      <div class="jc-img" style="background:linear-gradient(135deg,#2f5fa6,#4798d0);">
+        <div class="jc-img-frame">
+          <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><rect x="2" y="6" width="28" height="20" rx="3" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/><circle cx="10" cy="13" r="3" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/><path d="M2 24 L10 17 L18 22 L22 18 L30 24" stroke="rgba(255,255,255,.5)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>📸 Foto jornada</span><small>Insertar imagen aquí</small>
+        </div>
+      </div>
+      <div class="jc-body">
+        <p class="jc-date">Marzo 2025 · Popayán</p>
+        <h4>Jornada Detección Cáncer de Mama</h4>
+        <p>Mamografías y ecografías para mujeres mayores de 40 años. Sin costo en jornada.</p>
+      </div>
+    </div>
+
+    <div class="jc">
+      <div class="jc-img" style="background:linear-gradient(135deg,#4798d0,#5bb6e6);">
+        <div class="jc-img-frame">
+          <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><rect x="2" y="6" width="28" height="20" rx="3" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/><circle cx="10" cy="13" r="3" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/><path d="M2 24 L10 17 L18 22 L22 18 L30 24" stroke="rgba(255,255,255,.5)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>📸 Foto jornada</span><small>Insertar imagen aquí</small>
+        </div>
+      </div>
+      <div class="jc-body">
+        <p class="jc-date">Marzo 2025 · Santander de Q.</p>
+        <h4>CAPS – Control y Seguimiento Oncológico</h4>
+        <p>Consultas de seguimiento para pacientes en rutas de cáncer activas.</p>
+      </div>
+    </div>
+
+    <div class="jc">
+      <div class="jc-img" style="background:linear-gradient(135deg,#5bb6e6,#6dcafc);">
+        <div class="jc-img-frame">
+          <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><rect x="2" y="6" width="28" height="20" rx="3" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/><circle cx="10" cy="13" r="3" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/><path d="M2 24 L10 17 L18 22 L22 18 L30 24" stroke="rgba(255,255,255,.5)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>📸 Foto jornada</span><small>Insertar imagen aquí</small>
+        </div>
+      </div>
+      <div class="jc-body">
+        <p class="jc-date">Próximamente · Municipios del Cauca</p>
+        <h4>Unidad Móvil – Detección Preventiva</h4>
+        <p>Nuestra unidad lleva servicios diagnósticos y preventivos a los municipios.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════ SEDES (ref. imagen 4) ══════════════════ -->
+<section class="sec sec-white" id="sedes">
+  <div class="sec-header">
+    <div>
+      <p class="eyebrow">Estamos cerca de ti</p>
+      <h2 class="sec-title">Conozca nuestras sedes</h2>
+      <p class="sec-sub">Presencia en el Cauca con sedes fijas y unidades móviles.</p>
+    </div>
+  </div>
+  <div class="sedes-grid">
+
+    <div class="sede-card">
+      <div class="sede-photo" style="background:linear-gradient(135deg,#2f5fa6,#4798d0);">
+        <div class="sede-photo-frame">
+          <svg width="36" height="28" fill="none" viewBox="0 0 36 28"><rect x="1" y="4" width="34" height="22" rx="3" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/><circle cx="11" cy="11" r="3.5" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/><path d="M1 26 L11 18 L20 23 L26 18 L35 26" stroke="rgba(255,255,255,.5)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>📸 Foto sede</span><small>Insertar foto Popayán</small>
+        </div>
+      </div>
+      <div class="sede-body">
+        <h4>Sede Popayán</h4>
+        <p> Cra. 7 #4-29, Centro, Popayán<br> (602) 820-0000<br> Lun – Sáb: 7:00 am – 5:00 pm</p>
+        <a href="#" class="sede-btn">SERVICIOS</a>
+      </div>
+    </div>
+
+    <div class="sede-card">
+      <div class="sede-photo" style="background:linear-gradient(135deg,#4798d0,#5bb6e6);">
+        <div class="sede-photo-frame">
+          <svg width="36" height="28" fill="none" viewBox="0 0 36 28"><rect x="1" y="4" width="34" height="22" rx="3" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/><circle cx="11" cy="11" r="3.5" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/><path d="M1 26 L11 18 L20 23 L26 18 L35 26" stroke="rgba(255,255,255,.5)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>📸 Foto sede</span><small>Insertar foto Santander de Q.</small>
+        </div>
+      </div>
+      <div class="sede-body">
+        <h4>Sede Santander de Quilichao</h4>
+        <p> Cra. 10 #15-48, Santander de Q.<br> (602) 820-0001<br> Lun – Sáb: 7:00 am – 5:00 pm</p>
+        <a href="#" class="sede-btn">SERVICIOS</a>
+      </div>
+    </div>
+
+    <div class="sede-card">
+      <div class="sede-photo" style="background:linear-gradient(135deg,#5bb6e6,#6dcafc);">
+        <div class="sede-photo-frame">
+          <svg width="36" height="28" fill="none" viewBox="0 0 36 28"><rect x="1" y="4" width="34" height="22" rx="3" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/><circle cx="11" cy="11" r="3.5" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/><path d="M1 26 L11 18 L20 23 L26 18 L35 26" stroke="rgba(255,255,255,.5)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>📸 Foto sede</span><small>Insertar foto ESE Norte 3</small>
+        </div>
+      </div>
+      <div class="sede-body">
+        <h4>ESE Norte 3</h4>
+        <p> Norte del Cauca<br>(602) 820-0002<br> Lun – Sáb: 7:00 am – 5:00 pm</p>
+        <a href="#" class="sede-btn">SERVICIOS</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MAPA PLACEHOLDER -->
+  <div class="mapa-ph">
+    <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><path d="M24 4C16.268 4 10 10.268 10 18c0 11 14 26 14 26s14-15 14-26C38 10.268 31.732 4 24 4z" stroke="#4798d0" stroke-width="2.5"/><circle cx="24" cy="18" r="5" stroke="#4798d0" stroke-width="2.5"/></svg>
+    <p>Mapa interactivo del Cauca</p>
+    <small>Insertar mapa con ubicación de sedes y rutas de unidades móviles</small>
+  </div>
+
+  <!-- UNIDADES MÓVILES (ref. imagen 5) -->
+  <div class="moviles-band">
+    <div class="mv-vans">
+      <!-- Van grande mamografía -->
+      <div style="text-align:center;">
+        <svg width="175" height="96" viewBox="0 0 190 110" fill="none">
+          <ellipse cx="95" cy="105" rx="78" ry="5" fill="rgba(0,0,0,.28)"/>
+          <rect x="8" y="30" width="162" height="64" rx="10" fill="#4798d0"/>
+          <rect x="8" y="30" width="44" height="64" rx="10" fill="#2f5fa6"/>
+          <rect x="30" y="30" width="22" height="64" fill="#2f5fa6"/>
+          <rect x="12" y="36" width="34" height="28" rx="5" fill="#B8E8FF" opacity=".8"/>
+          <rect x="58" y="36" width="28" height="22" rx="4" fill="#B8E8FF" opacity=".6"/>
+          <rect x="92" y="36" width="28" height="22" rx="4" fill="#B8E8FF" opacity=".6"/>
+          <rect x="126" y="36" width="36" height="22" rx="4" fill="#B8E8FF" opacity=".4"/>
+          <text x="100" y="81" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="white" opacity=".95">BIOS IPS · MAMOGRAFÍA</text>
+          <line x1="155" y1="50" x2="155" y2="60" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="150" y1="55" x2="160" y2="55" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="36" cy="96" r="11" fill="#071830"/><circle cx="36" cy="96" r="5" fill="#333"/>
+          <circle cx="142" cy="96" r="11" fill="#071830"/><circle cx="142" cy="96" r="5" fill="#333"/>
+          <ellipse cx="14" cy="73" rx="5" ry="4" fill="#F5E070" opacity=".9"/>
+          <ellipse cx="168" cy="73" rx="4" ry="3.5" fill="#F05050" opacity=".8"/>
+        </svg>
+        <p style="font-size:10.5px;color:rgba(255,255,255,.6);margin-top:5px;">Unidad Móvil · Mamografía</p>
+      </div>
+      <!-- 2 vans pequeñas -->
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <svg width="116" height="60" viewBox="0 0 130 68" fill="none">
+          <ellipse cx="65" cy="65" rx="53" ry="4" fill="rgba(0,0,0,.22)"/>
+          <rect x="6" y="14" width="112" height="46" rx="8" fill="#5bb6e6"/>
+          <rect x="6" y="14" width="32" height="46" rx="8" fill="#4798d0"/>
+          <rect x="24" y="14" width="14" height="46" fill="#4798d0"/>
+          <rect x="10" y="18" width="26" height="20" rx="4" fill="white" opacity=".6"/>
+          <rect x="42" y="18" width="22" height="16" rx="3" fill="white" opacity=".5"/>
+          <rect x="70" y="18" width="22" height="16" rx="3" fill="white" opacity=".5"/>
+          <text x="68" y="50" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="bold" fill="white" opacity=".9">BIOS · SALUD MÓVIL</text>
+          <circle cx="24" cy="60" r="7" fill="#071830"/><circle cx="24" cy="60" r="3.5" fill="#333"/>
+          <circle cx="100" cy="60" r="7" fill="#071830"/><circle cx="100" cy="60" r="3.5" fill="#333"/>
+          <ellipse cx="10" cy="45" rx="3" ry="2.5" fill="#F5E070" opacity=".9"/>
+          <ellipse cx="118" cy="45" rx="2.5" ry="2" fill="#F05050" opacity=".8"/>
+        </svg>
+        <svg width="116" height="60" viewBox="0 0 130 68" fill="none">
+          <ellipse cx="65" cy="65" rx="53" ry="4" fill="rgba(0,0,0,.22)"/>
+          <rect x="6" y="14" width="112" height="46" rx="8" fill="#6dcafc"/>
+          <rect x="6" y="14" width="32" height="46" rx="8" fill="#5bb6e6"/>
+          <rect x="24" y="14" width="14" height="46" fill="#5bb6e6"/>
+          <rect x="10" y="18" width="26" height="20" rx="4" fill="white" opacity=".6"/>
+          <rect x="42" y="18" width="22" height="16" rx="3" fill="white" opacity=".5"/>
+          <rect x="70" y="18" width="22" height="16" rx="3" fill="white" opacity=".5"/>
+          <text x="68" y="50" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="bold" fill="white" opacity=".9">BIOS · SALUD MÓVIL</text>
+          <circle cx="24" cy="60" r="7" fill="#071830"/><circle cx="24" cy="60" r="3.5" fill="#333"/>
+          <circle cx="100" cy="60" r="7" fill="#071830"/><circle cx="100" cy="60" r="3.5" fill="#333"/>
+          <ellipse cx="10" cy="45" rx="3" ry="2.5" fill="#F5E070" opacity=".9"/>
+          <ellipse cx="118" cy="45" rx="2.5" ry="2" fill="#F05050" opacity=".8"/>
+        </svg>
+        <p style="font-size:10.5px;color:rgba(255,255,255,.6);text-align:center;">2 Vans especializadas</p>
+      </div>
+    </div>
+    <div class="mv-text">
+      <h3>Nuestras Unidades Móviles</h3>
+      <p>Contamos con nuestra <strong>Unidad Móvil de Mamografía</strong> —única en el Cauca— y dos vans especializadas que llevan servicios diagnósticos y preventivos a los municipios del departamento.</p>
+    </div>
+    <a href="#" class="btn btn-white" style="white-space:nowrap;margin-left:auto;color:var(--b1);position:relative;z-index:1;">Conoce las rutas →</a>
+  </div>
+</section>
+
+<!-- ══════════════════ BANNER PQRSF (ref. imagen 7) ══════════════════ -->
+<div id="cita"></div>
+<section class=f">
+  <p class="eyebrow">Tu voz importa</p>
+  <h2 class="sec-title">Deberes, Derechos y PQRSF</h2>
+
+  <!-- BANNER con foto -->
+  <div class="pqrsf-banner" style="margin-top:32px;">
+    <div class="pqrsf-img-ph"></div>
+    <div class="pqrsf-overlay"></div>
+    <div class="pqrsf-content">
+      <h2>Tu voz es importante<br>para nosotros</h2>
+      <p>Accede a nuestro formulario y comparte tu experiencia. Tu opinión nos ayuda a mejorar continuamente.</p>
+      <a href="#" class="btn btn-white" style="color:var(--b1);"> Contáctanos</a>
+    </div>
+  </div>
+
+  <!-- PANELES derechos & pasos -->
+  <div class="derechos-grid" style="margin-top:28px;">
+    <div class="panel">
+      <div class="panel-head"><h3> Derechos y Deberes del Paciente</h3><p>Como usuario de BIOS IPS tienes garantías y responsabilidades</p></div>
+      <div class="panel-body">
+        <p class="sec-label">Tus Derechos</p>
+        <ul class="check-list">
+          <li>Recibir atención oportuna, integral y de calidad</li>
+          <li>Ser informado sobre tu diagnóstico y tratamiento</li>
+          <li>Confidencialidad de tu información clínica</li>
+          <li>Presentar peticiones y reclamos sin represalia</li>
+          <li>Acceder a tu historia clínica en cualquier momento</li>
+        </ul>
+        <p class="sec-label">Tus Deberes</p>
+        <ul class="check-list">
+          <li>Suministrar información veraz sobre tu salud</li>
+          <li>Cumplir con las indicaciones del equipo médico</li>
+          <li>Respetar al personal de salud y a otros usuarios</li>
+          <li>Hacer uso adecuado y racional de los servicios</li>
+        </ul>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3> Cómo radicar tu PQRSF</h3><p>Tu opinión nos ayuda a mejorar continuamente</p></div>
+      <div class="panel-body">
+        <div class="step-list">
+          <div class="step"><div class="step-n">1</div><div><strong>Describe tu situación</strong><span>Petición, queja, reclamo, sugerencia o felicitación.</span></div></div>
+          <div class="step"><div class="step-n">2</div><div><strong>Elige el canal</strong><span>Presencial, teléfono, correo o formulario en línea.</span></div></div>
+          <div class="step"><div class="step-n">3</div><div><strong>Recibe respuesta oportuna</strong><span>Respondemos en los tiempos establecidos por la ley.</span></div></div>
+        </div>
+        <a href="#" class="btn btn-b1" style="margin-top:20px;width:100%;justify-content:center;"> Diligenciar PQRSF en línea</a>
+        <p style="text-align:center;margin-top:12px;font-size:12px;color:var(--gray);">También escríbenos a <a href="/cdn-cgi/l/email-protection#7a0a0b08091c3a18131509130a0954191517" style="color:var(--b2);font-weight:700;text-decoration:none;"><span class="__cf_email__" data-cfemail="81f1f0f3f2e7c1e3e8eef2e8f1f2afe2eeec">[email&#160;protected]</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo"><img src="img/logoBios.png" alt="BIOS IPS" style="filter:brightness(0) invert(1);height:46px;"></div>
+      <p class="footer-desc">Centro médico diagnóstico y preventivo con presencia en el Cauca. Comprometidos con tu salud desde la prevención.</p>
+      <div class="supersalud">🏛️ Vigilado SuperSalud</div>
+    </div>
+    <div class="footer-col"><h4>Institución</h4><ul><li><a href="#">¿Quiénes somos?</a></li><li><a href="#">Modelo de atención</a></li><li><a href="#">Nuestro equipo</a></li><li><a href="#">Plan Premium</a></li><li><a href="#">Reconocimientos</a></li></ul></div>
+    <div class="footer-col"><h4>Pacientes</h4><ul><li><a href="#">Resultados en línea</a></li><li><a href="#">Deberes y Derechos</a></li><li><a href="#">PQRSF</a></li></ul></div>
+    <div class="footer-col footer-contact"><h4>Contáctanos</h4><ul><li> Cra. 7 #4-29, Popayán</li><li> Cra. 10 #15-48, Santander de Q.</li><li> (602) 820-0000</li><li>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8be2e5ede4cbe9e2e4f8e2fbf8a5e8e4e6">[email&#160;protected]</a></li></ul></div>
+  </div>
+  <hr class="footer-divider">
+  <div class="footer-bottom">
+    <p>© 2025 BIOS IPS Medical Center S.A.S. — Todos los derechos reservados.</p>
+    <div class="footer-links"><a href="#">Transparencia</a><a href="#">Políticas</a><a href="#">Aviso de Privacidad</a><a href="#">Términos Legales</a><a href="#">Derechos de Uso</a></div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+>>>>>>> Stashed changes
