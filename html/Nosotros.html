@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros | BIOS IPS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .nosotros-section {max-width:1000px;margin:0 auto;padding:60px 24px;}
+    .nosotros-header {text-align:center;margin-bottom:60px;}
+    .nosotros-header h1 {margin-bottom:16px;color:#2c3e50;}
+    .nosotros-header p {max-width:700px;margin:0 auto;color:#666;font-size:18px;line-height:1.6;}
+    .vision-mision-container {display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:50px;}
+    .vision-card, .mision-card {background:#fff;border-radius:20px;padding:40px;text-align:center;box-shadow:0 10px 40px rgba(71,152,208,.1);border:2px solid #f0f8ff;transition:all 0.3s ease;}
+    .vision-card:hover, .mision-card:hover {transform:translateY(-8px);box-shadow:0 25px 70px rgba(71,152,208,.2);border-color:#4798d0;}
+    .vision-card:hover .card-icon svg, .mision-card:hover .card-icon svg {transform:scale(1.1);}
+    .card-icon svg {transition:transform 0.3s ease;z-index:1;position:relative;}
+    .vision-card h3, .mision-card h3 {margin-bottom:20px;color:#2c3e50;font-size:28px;font-weight:600;}
+    .vision-card p, .mision-card p {line-height:1.7;color:#555;font-size:16px;margin:0;max-width:400px;margin:0 auto;}
+    .vision-card {border-top:5px solid #4798d0;}
+    .mision-card {border-top:5px solid #5bb6e6;}
+    .card-features {margin-top:25px;text-align:left;max-width:400px;margin:25px auto 0;}
+    .card-features ul {list-style:none;padding:0;margin:0;}
+    .card-features li {padding:8px 0;display:flex;align-items:center;gap:12px;color:#666;}
+    .card-features li::before {content:'✓';color:#4798d0;font-weight:bold;font-size:18px;}
+    @media (max-width:768px) {
+      .vision-mision-container {grid-template-columns:1fr;gap:30px;}
+      .nosotros-section {padding:40px 24px;}
+      .vision-card, .mision-card {padding:30px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../img/logoBios.png" alt="BIOS IPS" style="height:48px;width:auto;"></a>
+    <nav>
+      <a href="../index.html#quienes">¿Quiénes somos?</a>
+      <a href="../index.html#atencion">Atención al paciente</a>
+      <a href="../index.html#servicios">Servicios</a>
+      <a href="../index.html#resultados">Resultados</a>
+      <a href="../index.html#cita" class="nav-cta">Solicitar cita →</a>
+    </nav>
+  </header>
+
+  <!-- Flecha de regreso a inicio -->
+  <div style="padding:16px 24px; background:#f5f5f5; border-bottom: 1px solid #e0e0e0;">
+    <div style="max-width:920px; margin:0 auto;">
+      <a href="../index.html" style="display:inline-flex; align-items:center; gap:6px; color:#4798d0; 
+      text-decoration:none; font-weight:500; font-size:14px; transition:all 0.3s ease;">
+        ← Volver al inicio</a>
+    </div>
+    </div>
+
+  <section class="nosotros-section">
+    <div class="nosotros-header">
+      <p class="eyebrow">Identidad Institucional 2025-2030</p>
+      <h1 class="sec-title">BIOS IPS</h1>
+      <p>Esta identidad nacio de quienes quieren a BIOS, de las personas que la construyen cada dia,
+        que cuidan y que sueñan con hacerla mejor.
+      </p>
+    </div>
+
+    <div class="vision-mision-container">
+      <div class="vision-card">
+        <div class="card-icon">
+          <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+          </svg>
+        </div>
+        
+        <h3>Nuestra Visión</h3>
+        <p>En 2030, seremos reconocidos en el suroccidente colombiano como la institucion referente
+            en prevencion, deteccion temprana y atencion integral de enfermedades cronicas y de alto costo,
+            alcanzando altos estanderes de calidad  que nos permitan obtener la acreditacion
+            en salud y expandirnos de manera sostenible hacia nuevos territorios, con el compromiso
+            de cuidar al individuo, la familia y la comunidad con impacto social y humano.</p>
+        </p>
+    </div>
+
+      <div class="mision-card">
+        <div class="card-icon">
+          <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        
+        <h3>Nuestra Misión </h3>
+        <p>Somos una Ips comprometida con la promocion de la salud, la prevencion de la enfermedad,
+        la detencion temprana y la gestion del riesgo en enfermedades cronicas y de alto costo, a traves
+        de servicios integrales dirigidos al individuo, la familia y la comunidad.
+        Brindamos una atencion segura, humanizada y con excelencia clínica, basada en el mejoramiento
+        continuo, con el proposito de proteger y mejorar la calidad de vida y poblacion.</p>
+        <div class="card-features">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo"><img src="../img/logoBios.png" alt="BIOS IPS" style="filter:brightness(0) invert(1);height:46px;"></div>
+      <p class="footer-desc">Centro médico diagnóstico y preventivo con presencia en el Cauca. Comprometidos con tu salud desde la prevención.</p>
+      <div class="supersalud">🏛️ Vigilado SuperSalud</div>
+    </div>
+    <div class="footer-col"><h4>Institución</h4><ul><li><a href="#">¿Quiénes somos?</a></li><li><a href="#">Modelo de atención</a></li><li><a href="#">Nuestro equipo</a></li><li><a href="#">Plan Premium</a></li><li><a href="#">Reconocimientos</a></li></ul></div>
+    <div class="footer-col"><h4>Pacientes</h4><ul><li><a href="#">Resultados en línea</a></li><li><a href="#">Deberes y Derechos</a></li><li><a href="#">PQRSF</a></li></ul></div>
+    <div class="footer-col footer-contact"><h4>Contáctanos</h4><ul><li> Cra. 7 #4-29, Popayán</li><li> Cra. 10 #15-48, Santander de Q.</li><li> (602) 820-0000</li><li>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8be2e5ede4cbe9e2e4f8e2fbf8a5e8e4e6">[email&#160;protected]</a></li></ul></div>
+  </div>
+  <hr class="footer-divider">
+  <div class="footer-bottom">
+    <p>© 2025 BIOS IPS Medical Center S.A.S. — Todos los derechos reservados.</p>
+    <div class="footer-links"><a href="#">Transparencia</a><a href="#">Políticas</a><a href="#">Aviso de Privacidad</a><a href="#">Términos Legales</a><a href="#">Derechos de Uso</a></div>
+
+  <script src="js/script.js"></script>
+</footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

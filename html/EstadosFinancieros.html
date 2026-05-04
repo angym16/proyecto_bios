@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estados Financieros - BIOS IPS</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <style>
+    body {background:#f8fbff;}
+    .page-shell {max-width:1080px;margin:0 auto;padding:72px 22px 70px;}
+    .page-header {display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;margin-bottom:28px;}
+    .page-title {max-width:680px;}
+    .page-title h1 {font-family:'Raleway',sans-serif;font-size:clamp(32px,4vw,48px);line-height:1.05;color:var(--b1);margin:10px 0 16px;}
+    .page-title p {font-size:15.6px;color:var(--gray);line-height:1.8;}
+    .btn-back {display:inline-flex;align-items:center;gap:10px;padding:14px 20px;border-radius:999px;border:1px solid rgba(47,95,166,.18);background:#fff;color:var(--b1);font-weight:700;text-decoration:none;transition:all .25s ease;box-shadow:0 12px 28px rgba(47,95,166,.06);}
+    .btn-back:hover {background:rgba(109,202,252,.14);transform:translateY(-1px);border-color:rgba(47,95,166,.26);}
+    .btn-back .back-icon {font-size:18px;}
+    .section-intro {background:#fff;padding:22px 28px;border-radius:22px;border:1px solid rgba(47,95,166,.08);box-shadow:0 16px 30px rgba(47,95,166,.05);margin-bottom:30px;}
+    .section-intro p {font-size:15px;color:var(--gray);line-height:1.85;}
+    .pdf-grid {display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:22px;}
+    .pdf-card {background:#fff;border-radius:22px;border:1px solid rgba(47,95,166,.08);padding:28px 26px 30px;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s;}
+    .pdf-card:hover {transform:translateY(-5px);box-shadow:0 22px 50px rgba(47,95,166,.12);}
+    .pdf-badge {position:absolute;top:20px;right:20px;background:linear-gradient(135deg,var(--b2),var(--b4));color:#fff;font-size:12px;font-weight:700;padding:8px 14px;border-radius:999px;letter-spacing:.6px;text-transform:uppercase;}
+    .pdf-icon {width:68px;height:68px;border-radius:18px;background:rgba(74,157,223,.12);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+    .pdf-icon svg {width:34px;height:34px;fill:var(--b1);}
+    .pdf-card h2 {font-size:24px;color:var(--b1);margin-bottom:10px;}
+    .pdf-card p {font-size:14px;color:var(--gray);line-height:1.7;margin-bottom:24px;}
+    .download-btn {display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:14px 18px;border-radius:16px;background:var(--b1);color:#fff;font-weight:700;text-decoration:none;transition:transform .2s,background .2s;}
+    .download-btn:hover {background:var(--b2);transform:translateY(-1px);}
+    .download-btn svg {width:16px;height:16px;fill:#fff;}
+    .download-list {margin-top:36px;background:#fff;border:1px solid rgba(47,95,166,.08);border-radius:22px;padding:26px;box-shadow:0 18px 40px rgba(47,95,166,.05);}
+    .download-list h3 {font-size:18px;color:var(--b1);margin-bottom:18px;}
+    .download-list ul {list-style:none;margin:0;padding:0;display:grid;gap:12px;}
+    .download-list li {font-size:14px;color:var(--gray);line-height:1.7;}
+    .download-list a {color:var(--b2);font-weight:700;text-decoration:none;transition:.2s;}
+    .download-list a:hover {color:var(--b1);}
+    .year-strip {display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 18px;}
+    .year-pill {display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:999px;background:rgba(47,95,166,.09);color:var(--b1);font-weight:700;font-size:13px;text-decoration:none;transition:background .2s;}
+    .year-pill:hover {background:rgba(47,95,166,.18);}
+    @media (max-width:960px) {.pdf-grid {grid-template-columns:1fr;gap:20px;}}
+    @media (max-width:700px) {.page-shell {padding:50px 18px 50px;} .page-header {grid-template-columns:1fr;grid-row-gap:16px;}.btn-back {width:100%;justify-content:center;}.pdf-grid {grid-template-columns:1fr;}}
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="../index.html"><img src="../img/logoBios.png" alt="BIOS IPS" style="height:48px;width:auto;"></a>
+    <nav>
+      <a href="../index.html#quienes">¿Quiénes somos?</a>
+      <a href="../index.html#atencion">Atención al paciente</a>
+      <a href="../index.html#servicios">Servicios</a>
+      <a href="../index.html#resultados">Resultados</a>
+      <a href="../index.html#cita" class="nav-cta">Solicitar cita →</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <div class="page-header">
+      <div class="page-title">
+        <p class="eyebrow">Transparencia financiera</p>
+        <h1>Estados financieros <br> 2022–2026</h1>
+        <p>Descarga los informes oficiales en PDF y visualiza rápidamente los documentos ordenados por año.</p>
+      </div>
+      <a href="../index.html" class="btn-back">
+        <span class="back-icon">←</span>
+        Regresar al inicio
+      </a>
+    </div>
+
+    <div class="section-intro">
+      <p>Selecciona el año que necesitas. Cada documento está disponible para descarga 
+        inmediata y revisión en PDF.</p>
+    </div>
+
+        <div class="download-list">
+      <h3>Descargas directas por año</h3>
+      <ul>
+        <li><strong>2022:</strong> <a href="../pdf/ESTADOS-FINANCIEROS-BIOS-IPS-ANO-2022-CIRCULAR-16-2016.pdf" target="_blank" rel="noopener noreferrer" download="EstadosFinancieros-2022.pdf">Descargar Informe 2022</a></li>
+        <li><strong>2023:</strong> <a href="../pdf/EEFF-BIOS-IPS-ANO-2023-1.pdf" target="_blank" rel="noopener noreferrer" download="EstadosFinancieros-2023.pdf">Descargar Informe 2023</a></li>
+        <li><strong>2024:</strong> <a href="../pdf/ESTADOS-FINANCIEROS-BIOS-IPS-ANO-2024-COMPLETOS-.pdf" target="_blank" rel="noopener noreferrer" download="EstadosFinancieros-2024.pdf">Descargar Informe 2024</a></li>
+        <li><strong>2025:</strong> <a href="../pdf/EEFF-ANO-2025-BIOS-IPS-COMPLETOS-CON-CERTIFICACION-DICTAMEN-1.pdf" target="_blank" rel="noopener noreferrer" download="EstadosFinancieros-2025.pdf">Descargar Informe 2025</a></li>
+        <li><strong>2026:</strong> <a href="../pdf/EstadosFinancieros-2026.pdf" target="_blank" rel="noopener noreferrer" download="EstadosFinancieros-2026.pdf">Descargar Informe 2026</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo"><img src="../img/logoBios.png" alt="BIOS IPS" style="filter:brightness(0) invert(1);height:46px;"></div>
+      <p class="footer-desc">Centro médico diagnóstico y preventivo con presencia en el Cauca. Comprometidos con tu salud desde la prevención.</p>
+      <div class="supersalud">🏛️ Vigilado SuperSalud</div>
+    </div>
+    <div class="footer-col"><h4>Institución</h4><ul><li><a href="#">¿Quiénes somos?</a></li><li><a href="#">Modelo de atención</a></li><li><a href="#">Nuestro equipo</a></li>
+      <li><a href="#">Plan Premium</a></li>
+      <li><a href="#">Reconocimientos</a></li></ul></div>
+    <div class="footer-col"><h4>Pacientes</h4><ul><li><a href="#">Resultados en línea</a></li><li><a href="#">Deberes y Derechos</a></li><li><a href="#">PQRSF</a></li></ul></div>
+    <div class="footer-col footer-contact"><h4>Contáctanos</h4><ul><li> Cra. 7 #4-29, Popayán</li><li> Cra. 10 #15-48, Santander de Q.</li><li> (602) 820-0000</li>
+      <li>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8be2e5ede4cbe9e2e4f8e2fbf8a5e8e4e6">[email&#160;protected]</a></li></ul></div>
+  </div>
+  <hr class="footer-divider">
+  <div class="footer-bottom">
+    <p>© 2025 BIOS IPS Medical Center S.A.S. — Todos los derechos reservados.</p>
+    <div class="footer-links"><a href="#">Transparencia</a><a href="#">Políticas</a><a href="#">Aviso de Privacidad</a><a href="#">Términos Legales</a><a href="#">Derechos de Uso</a></div>
+
+  <script src="js/script.js"></script>
+  
+</footer>
+
+</body>
+</html>
