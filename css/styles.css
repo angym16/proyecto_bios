@@ -804,11 +804,6 @@ svg.ico{display:block;}
   margin-top: 20px;
 }
 
-.info-item {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
 
 /* ICONOS INFO */
 .icon-info {
