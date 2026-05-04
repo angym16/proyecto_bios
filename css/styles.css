@@ -306,9 +306,11 @@ nav a:hover{
 .svc-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:1px;background:rgba(47,95,166,.08);
+  gap:1px;
+  background:rgba(47,95,166,.08);
   border:1px solid rgba(47,95,166,.08);
-  border-radius:16px;overflow:hidden;
+  border-radius:16px;
+  overflow:hidden;
 }
 .svc-card{
   background:#fff;
@@ -320,6 +322,8 @@ nav a:hover{
   transition:.3s;
   cursor:pointer;
   gap:0;
+  text-decoration:none;
+  color:inherit;
 }
 .svc-card:hover{
   background:var(--gray-soft);
@@ -338,6 +342,11 @@ nav a:hover{
   justify-content:center;
   margin-bottom:16px;
   transition:.3s;
+}
+.svc-icon-wrap img{
+  width:42px;
+  height:42px;
+  object-fit:contain;
 }
 .svc-card:hover .svc-icon-wrap{
   border-color:var(--b2);
@@ -382,6 +391,7 @@ nav a:hover{
 
 /* SVG ICONS médicos */
 svg.ico{display:block;}
+
 
 /* ─── CÓMO CUIDAMOS ─── */
 .care-wrap {
