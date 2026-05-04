@@ -179,9 +179,7 @@ nav a {
   background: #eaf3ff;
   border: 2px solid #5aa0d6;
 }
-li::marker {
-  color: #F5A623; /* el color que quieras */
-}
+
 
 /* ═════════ RESPONSIVE ═════════ */
 @media (max-width: 960px) {
@@ -196,4 +194,79 @@ li::marker {
     justify-content: center;
     gap: 10px;
   }
+}
+.rutas{
+  padding: 80px 60px;
+  background:#f5f7fb;
+  text-align:center;
+}
+
+.rutas h1{
+  font-size: 32px;
+  color: var(--b1);
+  margin-bottom: 10px;
+}
+
+.rutas p{
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color:#555;
+}
+
+.rutas-grid{
+  display:flex;
+  gap:30px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.ruta-card{
+  background:#fff;
+  border-radius:16px;
+  padding:20px;
+  width:300px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  text-align:left;
+}
+
+.ruta-card h3{
+  color:var(--b1);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ruta-card ul{
+  padding-left:18px;
+  margin-bottom:15px;
+}
+
+.ruta-card button{
+  background:var(--b1);
+  color:#fff;
+  border:none;
+  padding:10px 16px;
+  border-radius:20px;
+  cursor:pointer;
+}
+.ruta-card img{
+  position: relative;
+  width:100%;
+  border-radius:12px;
+  margin-bottom:20px;
+  display:block;
+  
+}
+.img-box{
+  width: 100%;
+  height: 180px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; 
+}
+
+.img-box img{
+  max-width: 90%;
+  max-height: 100%;
+  object-fit: contain; 
 }
