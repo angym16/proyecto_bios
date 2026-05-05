@@ -9,18 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/styles.css">
-<style>
-  .dropdown-menu {position:relative;display:inline-block;}
-  .dropdown-toggle {cursor:pointer;text-decoration:none;color:inherit;display:flex;align-items:center;gap:6px;transition:color 0.2s ease;}
-  .dropdown-toggle:hover {color:#4798d0;}
-  .dropdown-toggle::after {content:'▼';font-size:0.6rem;transition:transform 0.3s ease;}
-  .dropdown-menu.active .dropdown-toggle::after {transform:rotate(180deg);}
-  .dropdown-content {display:none;position:absolute;background:#fff;min-width:220px;box-shadow:0 12px 30px rgba(0,0,0,.15);border-radius:12px;z-index:1000;top:100%;left:0;margin-top:8px;border:1px solid #e6e6e6;}
-  .dropdown-menu.active .dropdown-content {display:block;}
-  .dropdown-content a {display:block;padding:12px 16px;text-decoration:none;color:#666;transition:all 0.2s ease;border-bottom:1px solid #f0f0f0;font-size:14px;}
-  .dropdown-content a:last-child {border-bottom:none;}
-  .dropdown-content a:hover {background:#f9f9f9;color:#4798d0;padding-left:20px;}
-</style>
 </head>
 
 <body>
@@ -724,7 +712,7 @@
   </section>
   
 <!-- ══════════════════ RECONOCIMIENTOS ══════════════════ -->
-<section class="sec sec-white" style="text-align:center;">
+<section class="sec sec-white" style="text-align:center;" id="reconocimientos">
   
   <p class="eyebrow">Trayectoria y confianza</p>
   <h2 class="sec-title">Reconocimientos</h2>
@@ -855,25 +843,8 @@
   </div>
 </footer>
 <script src="./js/slider.js"></script>
+<script src="./js/menu.js"></script>
 
-<script>
-  // Menú desplegable ¿Quiénes somos?
-  const dropdownToggle = document.querySelector('.dropdown-toggle');
-  const dropdownMenu = document.querySelector('.dropdown-menu');
-  
-  if (dropdownToggle) {
-    dropdownToggle.addEventListener('click', function() {
-      dropdownMenu.classList.toggle('active');
-    });
-    
-    // Cerrar el menú cuando haces clic fuera
-    document.addEventListener('click', function(event) {
-      if (!dropdownMenu.contains(event.target)) {
-        dropdownMenu.classList.remove('active');
-      }
-    });
-  }
-</script>
 
 </body>
 
