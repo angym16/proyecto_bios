@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BIOS IPS</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styless.css">
-<link rel="stylesheet" href="../css/styles.css">
-
+  <meta charset="UTF-8">
+  <title>Unidades móviles - BIOS</title>
+  <link rel="stylesheet" href="../css/styless.css"> 
+  <link rel="stylesheet" href="../css/styles.css"> 
 
 </head>
-
 <body>
-
 
 <!-- ══════════════════ HEADER ══════════════════ -->
  <header>
@@ -29,88 +23,56 @@
       </a>
     </nav>
   </header>
-<!-- ═════════ SLIDER EN CARD ═════════ -->
-<section class="hero-card">
-  <div class="container">
 
-    <div class="slider-card">
+<!-- SECCIÓN -->
+<section class="rutas">
+  <h1>Nuestras unidades móviles</h1>
+  <p>
+    Llevamos atención integral en salud a diferentes municipios del Cauca,
+    acercando la prevención y el diagnóstico a cada comunidad.
+  </p>
 
-      <div class="slider">
-        <img src="https://images.unsplash.com/photo-1580281657527-47f249e8f3a0" class="slide active">
-        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef" class="slide">
-        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5" class="slide">
-      </div>
+  <div class="rutas-grid">
 
-      <div class="slider-content">
-        <h1>🟢 Cáncer de Cervix</h1>
-        <p>Información completa para la prevención y detección temprana</p>
-      </div>
+    <!-- CARD 1 -->
+    <div class="ruta-card">
+        <div class="img-box">
+            <img src="../img/unidad movil.png" alt="">
+        </div>
+      <h3>Unidad móvil Mamografía</h3>
+      <ul>
+        <li>Imágenes diagnósticas</li>
+        <li>Toma de muestras</li>
+        <li>Prevención</li>
+      </ul>
+      <button onclick="ubicacionHoy('movil')">Ubícala hoy</button>
 
     </div>
 
-  </div>
-</section>
-
-<!-- ═════════ CONTENIDO ═════════ -->
-<section class="info-section">
-  <div class="container">
-
-    <!-- DEFINICIÓN -->
-    <div class="info-center">
-      <h2> Definición</h2>
-      <p>
-        El cáncer de cervix es un tipo de cáncer que ocurre en la glándula cervix, 
-        que produce parte del fluido seminal en las mujeres.
-      </p>
+    <!-- CARD 2 -->
+    <div class="ruta-card">
+        <div class="img-box">
+            <img src="../img/van 1.png" alt="">
+        </div>
+      <h3>Van Especializada</h3>
+      <ul>
+        <li>Laboratorio</li>
+        <li>Chequeos generales</li>
+      </ul>
+      <button onclick="ubicacionHoy('van1')">Ubícala hoy</button>
     </div>
 
-    <!-- CARDS -->
-    <div class="cards-section">
-
-      <h2 class="section-title">Información importante</h2>
-
-      <div class="cards-grid">
-
-
-        <!-- FACTORES -->
-        <div class="card">
-          <h3> Factores de riesgo</h3>
-          <ul>
-            <li>Edad Avanzada</li>
-            <li>Antecedentes familiares de Cáncer de mama y ovario</li>
-            <li>Inicio de menstruación a edad temprana</li>
-            <li>No haber tenido hijos</li>
-            <li>Obesidad y sedentarismo</li>
-            <li>Uso prolongado de anticonceptivos y terapia hormonal menopáusica</li>
-            <li>Menopausia despues de los 55 años</li>
-            <li>Primer embarazo después de los 30 años</li>
-            <li>Radiación (ultravioleta o ionizante)</li>
-            <li>Consumo de grasas saturadas, alcohol y tabaco</li>
-          </ul>
+    <!-- CARD 3 -->
+    <div class="ruta-card">
+        <div class="img-box">
+            <img src="../img/van 2.png" alt="">
         </div>
-
-        <!-- SIGNOS DE ALERTA -->
-        <div class="card">
-          <h3> Signos de Alerta</h3>
-          <ul>
-            <li>Cambios en lunares</li>
-            <li>Lesiones que no sanan</li>
-            <li>Manchas nuevas en la piel</li>
-          </ul>
-        </div>
-
-        <!-- AUTOEXAMEN-->
-        <div class="card highlight">
-          <h3> Autoexamen</h3>
-          <ul>
-            <li>Usar protector solar</li>
-            <li>Evitar el sol en horas pico</li>
-            <li>Chequeos médicos</li>
-          </ul>
-        </div>
-
-      </div>
-
+      <h3>Van Especializada</h3>
+      <ul>
+        <li>Educación en salud</li>
+        <li>Charlas comunitarias</li>
+      </ul>
+      <button onclick="ubicacionHoy('van2')">Ubícala hoy</button>
     </div>
 
   </div>
@@ -142,7 +104,7 @@
       <ul>
         <li><a href="#">¿Quiénes somos?</a></li>
         <li><a href="#">Modelo de atención</a></li>
-       <li><a href="../html/equipo.html">Nuestro equipo</a></li>
+        <li><a href="../html/equipo.html">Nuestro equipo</a></li>
         <li><a href="#">Plan Premium</a></li>
         <li><a href="#">Reconocimientos</a></li>
       </ul>
@@ -199,8 +161,6 @@
     </div>
   </div>
 </footer>
-
-<script src="../js/script.js"></script>
-
+<script src="../js/mapas.js"></script>
 </body>
 </html>
