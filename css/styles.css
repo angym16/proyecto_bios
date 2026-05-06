@@ -239,6 +239,7 @@ nav a:hover{
   background:var(--b1);
   color:#fff;
   box-shadow:0 4px 18px rgba(47,95,166,.35);
+  margin-top: 15px;
 }
 .btn-b1:hover{
   background:var(--b2);transform:translateY(-2px);
@@ -1320,12 +1321,18 @@ svg.ico{display:block;}
 }
 .pqrsf-img-ph::after{
   content:'📸 Insertar foto de paciente/atención aquí';
-  position:absolute;right:0;top:0;bottom:0;width:45%;
+  position:absolute;
+  right:0;
+  top:0;
+  bottom:0;
+  width:45%;
   background:rgba(255,255,255,.08);
   border-left:2px dashed rgba(255,255,255,.25);
-  display:flex;align-items:center;
+  display:flex;
+  align-items:center;
   justify-content:center;
-  font-size:12px;color:rgba(255,255,255,.5);
+  font-size:12px;
+  color:rgba(255,255,255,.5);
   text-align:center;
   padding:20px;
   font-family:'Open Sans',sans-serif;
