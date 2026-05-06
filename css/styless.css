@@ -304,7 +304,7 @@ nav a{
 }
 /* ═════════ SIGNOS DE ALERTA ═════════ */
 .alerta-section {
-  margin-top: 80px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -476,7 +476,7 @@ nav a{
 
 /* CONTENIDO */
 .servicios-content {
-  background: linear-gradient(135deg, #f06292, #ec407a);
+  background: linear-gradient(135deg, #e86ea5, #e45a98);
   color: white;
   padding: 40px;
   display: flex;
@@ -863,13 +863,13 @@ nav a{
   padding-left: 18px;
 }
 .card-img {
-  width: 120px;        /* controla el tamaño */
+  width: 120px;        
   height: auto;
   display: block;
-  margin: 0 auto 15px; /* centra y separa */
+  margin: 0 auto 15px; 
 }
 
-/* Opcional: estilo más pro */
+
 .resumen-card {
   padding: 30px 25px;
   border-radius: 20px;
@@ -884,7 +884,7 @@ nav a{
 
 .resumen-card.blue .card-img,
 .resumen-card.highlight .card-img {
-  filter: brightness(0) invert(1); /* vuelve iconos blancos si son oscuros */
+  filter: brightness(0) invert(1);  
 }
 
 /* TAMIZACION*/
