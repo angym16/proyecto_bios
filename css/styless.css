@@ -103,30 +103,25 @@ nav a{
 /* ═════════ CANCER DE MAMA  ═════════ */
 /* HERO*/
 .hero-cancer {
-  background: url("https://images.unsplash.com/photo-1581594693702-fbdc51b2763b") center/cover no-repeat;
-  height: 220px; /* antes era muy grande */
+   background: url("../img/cancerMama.jpeg") center/cover no-repeat;
+  height: 220px;
   border-radius: 0 0 30px 30px;
-  overflow: hidden;
-  margin-bottom: 40px;
-  position: relative;
 }
 
-/* capa oscura para que el texto se lea */
-.hero-overlay {
-  background: rgba(0, 0, 0, 0.45);
-  height: 100%;
+.hero-title {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
-.hero-cancer h1 {
-  color: white;
-  font-size: 2rem;
-  margin-bottom: 8px;
+.hero-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .hero-cancer p {
-  color: #e0e0e0;
+  color: rgb(46, 45, 45);
   font-size: 1rem;
 }
 /* CONTENEDOR */
@@ -482,12 +477,6 @@ nav a{
   margin-bottom: 5px;
 }
 
-/* SUBTEXTO */
-.servicios-sub {
-  opacity: 0.9;
-  margin-bottom: 20px;
-}
-
 /* LISTA */
 .servicios-list {
   list-style: none;
@@ -509,23 +498,7 @@ nav a{
   color: #ffd1e1;
 }
 
-/* BOTÓN */
-.btn-servicios {
-  background: white;
-  color: #e64980;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  width: fit-content;
-  transition: 0.3s;
-}
 
-.btn-servicios:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
 
 /* ═════════ RESPONSIVE ═════════ */
 @media (max-width: 900px) {
@@ -579,7 +552,237 @@ nav a{
   }
 }
 
+/* ═════════ CANCER DE CERVIX ═════════ */
 
+.hero-cervix-custom {
+  background: url("../img/cancerMama.jpeg") center/cover no-repeat;
+  height: 220px;
+  border-radius: 0 0 30px 30px;
+}
+
+
+.hero-cancer-cervix h1 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.hero-cancer-cervix p {
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+.cervix-section,
+.risk-section,
+.symptoms-section,
+.prevention-section,
+.services-cervix {
+  padding: 70px 0;
+}
+
+/* ═════ DEFINICIÓN ═════ */
+.cervix-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.cervix-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+.cervix-text h2 {
+  color: #17b3a3;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.cervix-text{
+   color:#555;
+  line-height:1.6;
+}
+
+/* ═════ FACTORES ═════ */
+.risk-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.risk-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.risk-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ═════ SÍNTOMAS ═════ */
+.symptoms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.symptom-item {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.symptom-icon {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius: 50%;
+  background: #17b3a3;
+  margin-bottom: 10px;
+}
+
+
+/* ═════ PREVENCIÓN ═════ */
+.prevention-section {
+  padding: 70px 0;
+}
+
+.prevention-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* CARD */
+.prev-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.prev-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ICONO */
+.prev-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #17b3a3;
+}
+
+/* TEXTO */
+.prev-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .prevention-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ═════ SERVICIOS ═════ */
+.services-card {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  background: white;
+}
+.services-section {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+/* IMAGEN */
+.services-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* TÍTULO */
+.services-info h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.services-info {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.services-info li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+/* BULLETS BONITOS */
+.services-info li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: #ffd1e1;
+}
+
+.services-card ul {
+  margin-top: 15px;
+}
+.services-content {
+  background: linear-gradient(135deg, #2ecebe, #17b3a3);
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* TÍTULO */
+.servicios-content h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.btn-primary {
+  background: white;
+  color: #17b3a3;
+  padding: 12px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+/* ═════ RESPONSIVE ═════ */
+@media (max-width: 900px) {
+
+  .cervix-grid,
+  .prevention-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .symptoms-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
 
 /* BOTÓN */
 .btn{
