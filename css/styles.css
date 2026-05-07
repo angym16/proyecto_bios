@@ -2031,6 +2031,7 @@ footer {
 }
       /* Estados Financieros */
     body {background:#f8fbff;}
+    
     .page-shell {max-width:1080px;margin:0 auto;padding:72px 22px 70px;}
     .page-header {display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;margin-bottom:28px;}
     .page-title {max-width:680px;}

@@ -103,9 +103,15 @@ nav a{
 /* ═════════ CANCER DE MAMA  ═════════ */
 /* HERO*/
 .hero-cancer {
-   background: url("../img/cancerMama.jpeg") center/cover no-repeat;
+  background: url("../img/cancerMama.jpeg") center/cover no-repeat;
   height: 220px;
   border-radius: 0 0 30px 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 330px;
+  padding: 40px 80px 40px 103px;
+  overflow: hidden;
 }
 
 .hero-title {
@@ -127,8 +133,8 @@ nav a{
 /* CONTENEDOR */
 .container{
   max-width: 1100px;
-  margin: auto;
   padding: 0 20px;
+  margin-right: 100px;
 }
 
 .info-split{
@@ -139,22 +145,109 @@ nav a{
 }
 
 /* IZQUIERDA */
-.info-text{
-  flex:1;
+.hero-banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    min-height: 330px;
+    padding: 40px 80px 40px 180px;
+
+    border-radius: 0 0 40px 40px;
+    overflow: hidden;
 }
 
+/* TEXTO */
+.info-text{
+    flex: 1;
+    max-width: 520px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+/* TITULO */
+.info-text h1{
+    font-size: 64px;
+    line-height: 1.05;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 12px;
+    
+}
+
+/* SUBTITULO */
+.info-text p{
+    font-size: 20px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* BOTÓN REGRESAR */
+.btn-regresar{
+    position: absolute;
+    top: 40px;
+    left: 60px;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(230, 73, 128, 0.18);
+
+    color: #e64980;
+    text-decoration: none;
+    font-size: 24px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+    transition: all .25s ease;
+
+    z-index: 10;
+}
+
+.btn-regresar:hover{
+    transform: translateX(-4px);
+
+    background: #fff;
+
+    box-shadow: 0 10px 24px rgba(230,73,128,0.18);
+}
+
+.arrow{
+    transition: transform .25s ease;
+}
+
+.btn-regresar:hover .arrow{
+    transform: translateX(-3px);
+}
+
+/* BLOQUES INFERIORES */
 .bloque{
-  margin-bottom:60px;
+  margin-bottom: 60px;
 }
 
 .bloque h2{
   color:#e64980;
-  margin-bottom:10px;
+  margin-bottom:14px;
+  font-size: 42px;
+  font-weight: 800;
 }
 
 .bloque p{
-  color:#555;
-  line-height:1.6;
+    color:#555;
+    line-height:1.8;
+
+    font-size: 21px;
 }
 
 /* DERECHA CARD */
@@ -567,52 +660,140 @@ nav a{
 
 /* ═════════ CANCER DE CERVIX ═════════ */
 
-.hero-cervix-custom {
+/* HERO */
+.hero-cervix-custom{
   background: url("../img/cancerMama.jpeg") center/cover no-repeat;
-  height: 220px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  min-height: 330px;
+
+  padding: 40px 80px 40px 100px;
+
   border-radius: 0 0 30px 30px;
+  overflow: hidden;
 }
 
-
-.hero-cancer-cervix h1 {
-  color: white;
-  font-size: 2rem;
-  margin-bottom: 8px;
+/* CONTENIDO HERO */
+.hero-cancer-cervix{
+  position: relative;
+  z-index: 2;
+  max-width: 520px;
 }
 
-.hero-cancer-cervix p {
-  color: #e0e0e0;
-  font-size: 1rem;
+/* TITULO */
+.hero-cancer-cervix h1{
+  font-size: 64px;
+  line-height: 1.05;
+  font-weight: 800;
+
+  color: #222;
+  margin-bottom: 12px;
 }
 
+/* SUBTITULO */
+.hero-cancer-cervix p{
+  font-size: 20px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* CONTENEDOR */
+.container{
+  max-width: 1100px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+/* SECCIONES */
 .cervix-section,
 .risk-section,
 .symptoms-section,
 .prevention-section,
-.services-cervix {
+.services-cervix{
   padding: 70px 0;
 }
 
-/* ═════ DEFINICIÓN ═════ */
-.cervix-grid {
+/* GRID DEFINICIÓN */
+.cervix-grid{
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 40px;
+  gap: 50px;
   align-items: center;
 }
 
-.cervix-img img {
+/* IMAGEN */
+.cervix-img img{
   width: 100%;
-  border-radius: 20px;
+  border-radius: 24px;
+
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
 }
-.cervix-text h2 {
-  color: #17b3a3;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
+
+/* TEXTO */
 .cervix-text{
-   color:#555;
-  line-height:1.6;
+  color: #555;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* TITULO SECCIÓN */
+.cervix-text h2{
+  color: #17b3a3;
+
+  font-size: 42px;
+  font-weight: 800;
+
+  margin-bottom: 18px;
+}
+
+/* BOTÓN REGRESAR */
+.btn-regresar{
+    position: absolute;
+    top: 40px;
+    left: 60px;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(81, 236, 213, 0.18);
+
+    color: #17b3a3;
+    text-decoration: none;
+    font-size: 24px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+    transition: all .25s ease;
+
+    z-index: 10;
+}
+
+.btn-regresar:hover{
+    transform: translateX(-4px);
+
+    background: #fff;
+
+    box-shadow: 0 10px 24px rgba(230,73,128,0.18);
+}
+
+.arrow{
+    transition: transform .25s ease;
+}
+
+.btn-regresar:hover .arrow{
+    transform: translateX(-3px);
 }
 
 /* ═════ FACTORES ═════ */
@@ -798,22 +979,91 @@ nav a{
 }
 
 /* ═════ CANCER DE PROSTATA ═════ */
-.hero-cervix-custom {
+/* HERO */
+.hero-prostata-custom{
   background: url("../img/cancerMama.jpeg") center/cover no-repeat;
-  height: 220px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  min-height: 330px;
+
+  padding: 40px 80px 40px 120px;
+
   border-radius: 0 0 30px 30px;
+  overflow: hidden;
 }
 
-
-.hero-cancer-cervix h1 {
-  color: white;
-  font-size: 2rem;
-  margin-bottom: 8px;
+/* CONTENIDO HERO */
+.hero-cancer-prostata{
+  position: relative;
+  z-index: 2;
+  max-width: 520px;
 }
 
-.hero-cancer-cervix p {
-  color: #e0e0e0;
-  font-size: 1rem;
+/* TITULO */
+.hero-cancer-prostata h1{
+  font-size: 64px;
+  line-height: 1.05;
+  font-weight: 800;
+
+  color: #222;
+  margin-bottom: 12px;
+}
+
+/* SUBTITULO */
+.hero-cancer-prostata p{
+  font-size: 20px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* BOTÓN REGRESAR */
+.btn-regresar{
+    position: absolute;
+    top: 40px;
+    left: 60px;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(230, 73, 128, 0.18);
+
+    color: #5aa0d6;
+    text-decoration: none;
+    font-size: 24px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+    transition: all .25s ease;
+
+    z-index: 10;
+}
+
+.btn-regresar:hover{
+    transform: translateX(-4px);
+
+    background: #fff;
+
+    box-shadow: 0 10px 24px rgba(230,73,128,0.18);
+}
+
+.arrow{
+    transition: transform .25s ease;
+}
+
+.btn-regresar:hover .arrow{
+    transform: translateX(-3px);
 }
 
 /* SABÍAS QUE Y PSA */
@@ -1237,6 +1487,52 @@ nav a{
   transform: scale(1.05);
 }
 
+/* BOTÓN REGRESAR */
+.btn-regresar{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(230, 73, 128, 0.18);
+
+    color: #5aa0d6;
+    text-decoration: none;
+    font-size: 24px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+    transition: all .25s ease;
+
+    z-index: 10;
+}
+
+.btn-regresar:hover{
+    transform: translateX(-4px);
+
+    background: #fff;
+
+    box-shadow: 0 10px 24px rgba(230,73,128,0.18);
+}
+
+.arrow{
+    transition: transform .25s ease;
+}
+
+.btn-regresar:hover .arrow{
+    transform: translateX(-3px);
+}
 
 /* EQUIPO */
 .team-wrap {
