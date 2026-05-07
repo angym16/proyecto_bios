@@ -1174,7 +1174,6 @@ svg.ico{display:block;}
 }
 
 
-
 /* MOVILES */
 
 .moviles-band{
@@ -2102,6 +2101,7 @@ footer {
       .valores-section {margin-top:60px;}
       .valores-section h2 {font-size:28px;}
     }
+    
       /* Historia Clinica */
     .historia-section {max-width:1000px;margin:0 auto;padding:60px 24px;text-align:center;}
     .historia-header {margin-bottom:60px;}
