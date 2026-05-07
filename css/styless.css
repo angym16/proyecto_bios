@@ -185,7 +185,7 @@ nav a{
 }
 
 /* BOTÓN REGRESAR */
-.btn-regresar{
+.btn-regresar-mama{
     position: absolute;
     top: 40px;
     left: 60px;
@@ -215,7 +215,7 @@ nav a{
     z-index: 10;
 }
 
-.btn-regresar:hover{
+.btn-regresar-mama:hover{
     transform: translateX(-4px);
 
     background: #fff;
@@ -227,7 +227,7 @@ nav a{
     transition: transform .25s ease;
 }
 
-.btn-regresar:hover .arrow{
+.btn-regresar-mama:hover .arrow{
     transform: translateX(-3px);
 }
 
@@ -750,7 +750,7 @@ nav a{
 }
 
 /* BOTÓN REGRESAR */
-.btn-regresar{
+.btn-regresar-cervix{
     position: absolute;
     top: 40px;
     left: 60px;
@@ -780,7 +780,7 @@ nav a{
     z-index: 10;
 }
 
-.btn-regresar:hover{
+.btn-regresar-cervix:hover{
     transform: translateX(-4px);
 
     background: #fff;
@@ -792,7 +792,7 @@ nav a{
     transition: transform .25s ease;
 }
 
-.btn-regresar:hover .arrow{
+.btn-regresar-cervix:hover .arrow{
     transform: translateX(-3px);
 }
 
@@ -1020,7 +1020,7 @@ nav a{
 }
 
 /* BOTÓN REGRESAR */
-.btn-regresar{
+.btn-regresar-prostata{
     position: absolute;
     top: 40px;
     left: 60px;
@@ -1050,7 +1050,7 @@ nav a{
     z-index: 10;
 }
 
-.btn-regresar:hover{
+.btn-regresar-prostata:hover{
     transform: translateX(-4px);
 
     background: #fff;
@@ -1062,7 +1062,7 @@ nav a{
     transition: transform .25s ease;
 }
 
-.btn-regresar:hover .arrow{
+.btn-regresar-prostata:hover .arrow{
     transform: translateX(-3px);
 }
 
@@ -1488,7 +1488,7 @@ nav a{
 }
 
 /* BOTÓN REGRESAR */
-.btn-regresar{
+.btn-regresar-rutas{
     position: absolute;
     top: 100px;
     left: 60px;
@@ -1518,7 +1518,7 @@ nav a{
     z-index: 10;
 }
 
-.btn-regresar:hover{
+.btn-regresar-rutas:hover{
     transform: translateX(-4px);
 
     background: #fff;
@@ -1530,7 +1530,7 @@ nav a{
     transition: transform .25s ease;
 }
 
-.btn-regresar:hover .arrow{
+.btn-regresar-rutas:hover .arrow{
     transform: translateX(-3px);
 }
 
