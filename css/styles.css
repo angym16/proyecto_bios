@@ -1156,7 +1156,7 @@ svg.ico{display:block;}
 
 /* TEXTO */
 .sede-info span{
-  font-size:15px;
+  font-size:13px;
   color:#555;
   line-height:1.7;
   text-align:left;
@@ -1252,7 +1252,6 @@ svg.ico{display:block;}
     grid-template-columns:1fr;
   }
 }
-
 
 
 /* MOVILES */
