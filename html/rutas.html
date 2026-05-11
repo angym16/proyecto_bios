@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Unidades móviles - BIOS</title>
   <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styless.css"> 
   <link rel="stylesheet" href="../css/styles.css"> 
 
@@ -26,62 +27,125 @@
   </header>
 
 <!-- SECCIÓN -->
-<section class="rutas">
+<section class="rutas rutas-moviles">
+
   <a href="../index.html" class="btn-regresar-rutas">
-      <span class="arrow">←</span>
-    </a>
+    <span class="arrow">←</span>
+  </a>
+
   <h1>Nuestras unidades móviles</h1>
-  <p>
-    Llevamos atención integral en salud a diferentes municipios del Cauca,
-    acercando la prevención y el diagnóstico a cada comunidad.
+
+  <p class="rutas-subtitle">
+    La distancia nunca ha sido una excusa para nosotros —
+    es un reto que decidimos resolver.
   </p>
 
+  <!-- GRID -->
   <div class="rutas-grid">
 
     <!-- CARD 1 -->
-    <div class="ruta-card">
-        <div class="img-box">
-            <img src="../img/unidad movil.png" alt="">
-        </div>
-      <h3>Unidad móvil Mamografía</h3>
-      <ul>
-        <li>Imágenes diagnósticas</li>
-        <li>Toma de muestras</li>
-        <li>Prevención</li>
-      </ul>
-      <button onclick="ubicacionHoy('movil')">Ubícala hoy</button>
+    <article class="ruta-card">
 
-    </div>
+      <div class="img-box pink">
+        <img src="../img/unidad movil.png" alt="">
+      </div>
+
+      <div class="ruta-content">
+
+        <span class="ruta-mini">
+          Detección temprana
+        </span>
+
+        <h3>Unidad móvil Mamografía</h3>
+
+        <p>
+          Equipada con tecnología de diagnóstico de 
+          alto nivel, que recorre los municipios del 
+          departamento del Cauca llevando detección 
+          temprana de cáncer de mama directamente a las 
+          comunidades
+        </p>
+
+      </div>
+
+    </article>
 
     <!-- CARD 2 -->
-    <div class="ruta-card">
-        <div class="img-box">
-            <img src="../img/van 1.png" alt="">
-        </div>
-      <h3>Van Especializada</h3>
-      <ul>
-        <li>Laboratorio</li>
-        <li>Chequeos generales</li>
-      </ul>
-      <button onclick="ubicacionHoy('van1')">Ubícala hoy</button>
-    </div>
+    <article class="ruta-card">
+
+      <div class="img-box blue">
+        <img src="../img/van 1.png" alt="">
+      </div>
+
+      <div class="ruta-content">
+
+        <span class="ruta-mini">
+          Atención especializada
+        </span>
+
+        <h3>Van Especializada</h3>
+
+        <p>
+          Ubicada en el centro-sur del departamento, 
+          acercando servicios de detección temprana a 
+          poblaciones que históricamente han tenido poco 
+          acceso a atención especializada
+        </p>
+
+      </div>
+
+    </article>
 
     <!-- CARD 3 -->
-    <div class="ruta-card">
-        <div class="img-box">
-            <img src="../img/van 2.png" alt="">
-        </div>
-      <h3>Van Especializada</h3>
-      <ul>
-        <li>Educación en salud</li>
-        <li>Charlas comunitarias</li>
-      </ul>
-      <button onclick="ubicacionHoy('van2')">Ubícala hoy</button>
-    </div>
+    <article class="ruta-card">
+
+      <div class="img-box blue">
+        <img src="../img/van 2.png" alt="">
+      </div>
+
+      <div class="ruta-content">
+
+        <span class="ruta-mini">
+          Cobertura regional
+        </span>
+
+        <h3>Van Especializada</h3>
+
+        <p>
+          Ubicada en el norte del departamento, 
+          garantizando que la prevención llegue 
+          con la misma calidad, independientemente 
+          de la geografía.
+        </p>
+
+      </div>
+
+    </article>
 
   </div>
+
+  <!-- IMPACTO -->
+  <div class="ruta-impacto">
+
+    <span class="mini-tag">
+      PREVENIR ES VIVIR
+    </span>
+
+    <h2>
+      La prevención debe llegar a todos
+    </h2>
+
+    <p>
+      BIOS tiene presencia activa en
+      <strong>35 municipios del Cauca</strong>,
+      acercando salud preventiva y diagnóstico oportuno
+      a más comunidades.
+    </p>
+
+  </div>
+
 </section>
-<<!-- ══════════════════ FOOTER ══════════════════ -->
+<!-- ══════════════════ FOOTER ══════════════════ -->
 <footer>
   <div class="footer-grid">
 
