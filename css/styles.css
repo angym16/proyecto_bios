@@ -707,11 +707,26 @@ svg.ico{display:block;}
   line-height: 1.3;
 }
 
+.modelo-texto{
+  margin: 30px 0 40px;
+}
+
+.modelo-texto p{
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--gray);
+  margin-bottom: 10px;
+}
+
+.modelo-cierre{
+  color: var(--b5);
+  font-weight: 700;
+}
 /* ─── PILARES ─── */
 .pillars {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
   margin-top: 28px;
 }
 
@@ -812,21 +827,32 @@ svg.ico{display:block;}
 }
 .info-item{
   display:flex;
-  gap:14px;align-items:center;
-  padding:15px 16px;
+  gap:16px;
+  align-items:flex-start;
+  padding:18px 20px;
   background:var(--gray-light);
-  border-radius:12px;
+  border-radius:16px;
   border:1px solid rgba(47,95,166,.07);
 }
+.info-item div{
+  display:flex;
+  flex-direction:column;
+  align-items: flex-start;
+  text-align: left;
+  justify-content:center;
+}
+
 .info-item strong{
-  font-size:14px;
+  font-size:15px;
   color:var(--b1);
   display:block;
+  font-weight: 700;
   margin-bottom:2px;
 }
 .info-item span{
   font-size:12.5px;
   color:var(--gray);
+  line-height: 1.5;
 }
 
 /* CONTENEDOR GENERAL */
@@ -918,9 +944,10 @@ svg.ico{display:block;}
 
 /* ICONOS INFO */
 .icon-info {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
+  margin-top: 4px;
   flex-shrink: 0;
 }
 

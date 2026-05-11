@@ -239,7 +239,7 @@ nav a{
 .bloque h2{
   color:#e64980;
   margin-bottom:14px;
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 800;
 }
 
@@ -247,7 +247,7 @@ nav a{
     color:#555;
     line-height:1.8;
 
-    font-size: 21px;
+    font-size: 19px;
 }
 
 /* DERECHA CARD */
@@ -261,7 +261,7 @@ nav a{
 }
 
 .factores-card h3{
-  margin-bottom:15px;
+  margin-bottom:13px;
   color:#e64980;
 }
 
@@ -272,7 +272,7 @@ nav a{
 
 .factores-card li{
   margin-bottom:10px;
-  padding-left:20px;
+  padding-left:18px;
   position:relative;
   color:#555;
 }
@@ -342,19 +342,24 @@ nav a{
   align-items: center;
   background: #fff0f6;
   border-radius: 25px;
-  padding: 40px;
+  padding: 55px 60px;
   border: 2px solid #f7c6d8;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
+  
 }
-
+.recuerda-content {
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
 
 /* TEXTO */
 .recuerda-content h2 {
   color: #e64980;
   font-size: 2rem;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 /* LISTA */
@@ -362,6 +367,7 @@ nav a{
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-left: 20px;
 }
 
 .recuerda-item {
@@ -1421,7 +1427,7 @@ nav a{
 
 /* HEADER DE COLOR */
 .img-box {
-  height: 160px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1453,20 +1459,17 @@ nav a{
 
 /* CONTENIDO */
 .ruta-card h3 {
+  
   color: var(--b5);
   font-size: 1.2rem;
   margin: 20px 20px 10px;
 }
 
-.ruta-card ul {
-  padding: 0 20px;
-  margin-bottom: 20px;
-}
-
-.ruta-card li {
-  font-size: 0.9rem;
+.ruta-texto {
+  padding: 0 20px 24px;
+  font-size: 0.95rem;
   color: var(--gray);
-  margin-bottom: 6px;
+  line-height: 1.7;
 }
 
 /* BOTÓN */
@@ -1487,6 +1490,59 @@ nav a{
   transform: scale(1.05);
 }
 
+/* SECCIÓN IMPACTO */
+
+.ruta-card-texto{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 18px 40px;
+  grid-column: span 2;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(90,160,214,0.11),
+      rgba(90,90,152,0.10)
+    );
+}
+
+.ruta-text-content{
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mini-tag{
+  display: inline-block;
+
+  padding: 6px 12px;
+  border-radius: 999px;
+
+  background: rgba(100,180,220,0.20);
+
+  color: var(--b5);
+
+  font-size: 0.65rem;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ruta-card-texto p{
+  color: var(--gray);
+
+  line-height: 1.7;
+
+  margin-bottom: 18px;
+}
+
+.ruta-card-texto strong{
+  color: var(--b5);
+}
 /* BOTÓN REGRESAR */
 .btn-regresar-rutas{
     position: absolute;
@@ -1545,6 +1601,7 @@ nav a{
 .team-hero{
   text-align: center;
   margin-bottom: 60px;
+  
 }
 
 .team-hero h1{
@@ -1610,10 +1667,16 @@ nav a{
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,.05);
   transition: .2s;
+  text-align: center;
 }
 
 .valor:hover{
   transform: translateY(-5px);
+}
+.valor-card img{
+  width: 70px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 /* DOCTORES */
