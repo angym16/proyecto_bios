@@ -668,7 +668,7 @@ nav a{
 
 /* HERO */
 .hero-cervix-custom{
-  background: url("../img/cancerMama.jpeg") center/cover no-repeat;
+  background: url("../img/cervix/cervix.jpeg") center/cover no-repeat;
 
   position: relative;
   display: flex;
@@ -676,6 +676,7 @@ nav a{
 
   min-height: 330px;
 
+  padding: 45px 80px 40px 100px;
 
   border-radius: 0 0 30px 30px;
   overflow: hidden;
@@ -748,10 +749,10 @@ nav a{
 .cervix-text h2{
   color: #17b3a3;
 
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 800;
 
-  margin-bottom: 18px;
+  margin-bottom: 13px;
 }
 
 /* BOTÓN REGRESAR */
@@ -834,12 +835,16 @@ nav a{
   text-align: center;
 }
 
+/* CÍRCULO */
 .symptom-icon {
-  width: 80px;
-  height: 80px;
-  margin: auto;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 15px;
+
   border-radius: 50%;
   background: #17b3a3;
+
+  display: flex;
   align-items: center;
   justify-content: center;
 
