@@ -3664,6 +3664,15 @@ body{
   }
 }
 
+/*PAQUETE MAMA*/
 
+.benefit-mini-icon{
+  width:34px;
+  height:34px;
 
+  object-fit:contain;
 
+  flex-shrink:0;
+
+  align-self:center;
+}
