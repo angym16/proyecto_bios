@@ -3676,3 +3676,15 @@ body{
 
   align-self:center;
 }
+
+/* IMAGENES DIAGNOSTICAS*/
+.img-mini-icon{
+  width:34px;
+  height:34px;
+
+  object-fit:contain;
+
+  flex-shrink:0;
+
+  align-self:center;
+}
