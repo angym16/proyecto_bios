@@ -2211,38 +2211,147 @@ footer {
     }
     
       /* Historia Clinica */
-    .historia-section {max-width:1000px;margin:0 auto;padding:60px 24px;text-align:center;}
-    .historia-header {margin-bottom:60px;}
-    .historia-header h1 {margin-bottom:16px;color:#2c3e50;font-size:48px;font-weight:600;}
-    .historia-header p {max-width:700px;margin:0 auto;color:#666;font-size:18px;line-height:1.6;}
-    .solicitud-card {background:#fff;border-radius:20px;padding:50px;max-width:600px;margin:0 auto;box-shadow:0 10px 40px rgba(71,152,208,.1);border:2px solid #f0f8ff;}
-    .solicitud-card h2 {color:#2c3e50;margin-bottom:20px;font-size:32px;font-weight:600;}
-    .solicitud-card p {color:#555;margin-bottom:30px;font-size:16px;line-height:1.6;}
-    .solicitud-btn {display:inline-block;padding:16px 32px;background:#4798d0;color:#fff;text-decoration:none;border-radius:50px;font-weight:600;font-size:18px;transition:all 0.3s ease;box-shadow:0 8px 25px rgba(71,152,208,.3);}
-    .solicitud-btn:hover {background:#5bb6e6;transform:translateY(-2px);box-shadow:0 12px 35px rgba(71,152,208,.4);}
-    .info-list {text-align:left;margin-top:30px;max-width:500px;margin-left:auto;margin-right:auto;}
-    .info-list h3 {color:#2c3e50;margin-bottom:15px;font-size:20px;}
-    .info-list ul {list-style:none;padding:0;margin:0;}
-    .info-list li {padding:8px 0;color:#666;display:flex;align-items:flex-start;gap:12px;}
-    .info-list li::before {content:'📋';font-size:18px;margin-top:2px;}
-    @media (max-width:768px) {
-      .historia-section {padding:40px 24px;}
-      .historia-header h1 {font-size:36px;}
-      .solicitud-card {padding:30px;}
-      .solicitud-card h2 {font-size:24px;}
-    }
+    /*.historia-section {max-width:1000px;margin:0 auto;padding:60px 24px;text-align:center;}*/
+    /*.historia-header {margin-bottom:60px;}*/
+    /*.historia-header h1 {margin-bottom:16px;color:#2c3e50;font-size:48px;font-weight:600;}*/
+    /*.historia-header p {max-width:700px;margin:0 auto;color:#666;font-size:18px;line-height:1.6;}*/
+    /*.solicitud-card {background:#fff;border-radius:20px;padding:50px;max-width:600px;margin:0 
+      auto;box-shadow:0 10px 40px rgba(71,152,208,.1);border:2px solid #f0f8ff;}*/
+    /*.solicitud-card h2 {color:#2c3e50;margin-bottom:20px;font-size:32px;font-weight:600;}*/
+    /*.solicitud-card p {color:#555;margin-bottom:30px;font-size:16px;line-height:1.6;}*/
+    /*.solicitud-btn {display:inline-block;padding:16px 32px;background:#4798d0;color:#fff;
+    text-decoration:none;border-radius:50px;font-weight:600;font-size:18px;transition:all 0.3s 
+    ease;box-shadow:0 8px 25px rgba(71,152,208,.3);}*/
+    /*.solicitud-btn:hover {background:#5bb6e6;transform:translateY(-2px);box-shadow:0 12px 35px 
+      rgba(71,152,208,.4);}*/
+    /*.info-list {text-align:left;margin-top:30px;max-width:500px;margin-left:auto;margin-right:auto;}*/
+    /*.info-list h3 {color:#2c3e50;margin-bottom:15px;font-size:20px;}*/
+    /*.info-list ul {list-style:none;padding:0;margin:0;}*/
+    /*.info-list li {padding:8px 0;color:#666;display:flex;align-items:flex-start;gap:12px;}*/
+    /*.info-list li::before {content:'📋';font-size:18px;margin-top:2px;}*/
+    /*@media (max-width:768px) {
+      .
+    }*/
 
-    /* HEADER */
+.historia-section.historia-section{
+  padding:70px 40px 35px;
+  background:#f8fbff;
+  position:relative;
+  margin-top:0;
+  border-radius:0;
+}
 
-  .mision-vision-section{
-  padding:100px 24px;
+/* CONTENEDOR */
+
+.historia-container{
+  max-width:1300px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 0.95fr;
+  gap:45px;
+  align-items:center;
+}
+
+.historia-section::after{
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:88%;
+  max-width:1200px;
+  height:1px;
   background:
   linear-gradient(
-    180deg,
-    #ffffff,
-    #f5f9fd
+    90deg,
+    transparent,
+    rgba(15,76,129,0.18),
+    transparent
   );
 }
+
+/* TEXTO */
+
+.historia-texto{
+  max-width:100%;
+  padding-right:0;
+}
+
+/* SUBTITULO */
+
+.historia-texto span{
+  display:inline-block;
+  color:#4798d0;
+  font-weight:700;
+  font-size:25px;
+  margin-bottom:20px;
+  text-transform:uppercase;
+  letter-spacing:3px;
+}
+
+/* PARRAFO */
+
+.historia-texto p{
+  color:#4b5563;
+  font-size:15px;
+  line-height:2.1;
+  text-align:justify;
+}
+
+/* IMAGEN */
+
+.historia-imagen{
+  display:flex;
+  justify-content:center;
+}
+
+.historia-imagen img{
+  width:100%;
+  max-width:430px;
+  height:460px;
+  object-fit:cover;
+  border-radius:26px;
+  box-shadow:
+  0 14px 35px rgba(0,0,0,0.08);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+  .historia-section{
+    padding:70px 24px;
+  }
+
+  .historia-container{
+    grid-template-columns:1fr;
+    gap:45px;
+  }
+
+  .historia-texto{
+    max-width:100%;
+    padding-right:0;
+  }
+
+  .historia-texto p{
+    font-size:16px;
+    line-height:1.9;
+  }
+
+  .historia-imagen img{
+    max-width:100%;
+    height:360px;
+  }
+
+}
+
+/* MISION VISION*/
+
+.mision-vision-section{
+  padding:35px 24px 70px;
+  background:#f8fbff;
+}
+
+/* HEADER */
 
 .mision-vision-header{
   text-align:center;
@@ -2254,7 +2363,7 @@ footer {
   color:#49a6df;
   text-transform:uppercase;
   letter-spacing:2px;
-  font-size:14px;
+  font-size:17px;
   font-weight:700;
 }
 
@@ -2355,11 +2464,6 @@ footer {
   font-weight:800;
   box-shadow:
   0 10px 20px rgba(15,76,129,0.18);
-}
-
-.mision-vision-section{
-  padding:70px 24px 40px; 
-   margin-bottom:0;
 }
 
 /* SUBTITLE */
@@ -2564,6 +2668,7 @@ footer {
   transform:translateX(-50%);
 }
 
+
 /* HEADER */
 
 .valores-header{
@@ -2612,12 +2717,12 @@ footer {
   gap:28px;
   max-width:1300px;
   margin:auto;
+   align-items:stretch;
 }
 
 /* CARD */
 
 .valor-card{
-
   position:relative;
   background:rgb(250, 253, 253);
   padding:38px;
@@ -2627,6 +2732,9 @@ footer {
   box-shadow:
   0 10px 30px rgba(15,76,129,0.08);
   border:1px solid rgba(15,76,129,0.05);
+  display:flex;
+  flex-direction:column;
+  height:100%;
 }
 
 /* LINEA SUPERIOR */
@@ -2667,7 +2775,6 @@ footer {
     #a7b9c9,
     #49a6df
   );
-
   color:rgb(236, 243, 247);
   display:flex;
   align-items:center;
@@ -2693,6 +2800,7 @@ footer {
   font-size:16px;
   line-height:1.8;
   color:#5e6c84;
+  flex-grow:1;
 }
 
 /* RESPONSIVE */
@@ -2709,6 +2817,4 @@ footer {
     font-size:24px;
   }
 }
-
-
 
