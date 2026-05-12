@@ -983,7 +983,11 @@ svg.ico{display:block;}
   overflow:hidden;
   border:1px solid rgba(47,95,166,.09);
   transition:.3s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
+  
 .jc:hover{
   transform:translateY(-5px);
   box-shadow:0 16px 40px rgba(47,95,166,.12);
@@ -2905,6 +2909,601 @@ body {
   color:#5e6c84;
 }
 
+
+
+/* ══════════════════ LABORATORIO ══════════════════ */
+
+.lab-section{
+  padding: 70px 24px;
+  background: #f8fbff;
+}
+
+.lab-container{
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.lab-hero{
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 70px;
+  margin-left: 5%;
+}
+
+.lab-title{
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: var(--b1);
+  margin: 14px 0 20px;
+  text-align: center;
+}
+
+.lab-sub{
+  color: var(--gray);
+  line-height: 1.9;
+  font-size: 0.9rem;
+
+  margin-bottom: 34px;
+
+  max-width: 620px;
+}
+
+.lab-buttons{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.lab-btn-primary,
+.lab-btn-secondary{
+  padding: 14px 22px;
+
+  border-radius: 16px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: .3s;
+}
+
+.lab-btn-primary{
+  background: var(--b1);
+  color: #fff;
+
+  box-shadow:
+    0 10px 30px rgba(37,99,235,.20);
+}
+
+.lab-btn-primary:hover{
+  transform: translateY(-3px);
+}
+
+.lab-btn-secondary{
+  border: 1px solid #d9e4f2;
+  color: var(--b1);
+  background: #fff;
+}
+
+.lab-btn-secondary:hover{
+  transform: translateY(-3px);
+}
+
+.lab-hero-img img{
+  width: 90%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow:
+    0 24px 60px rgba(0,0,0,.10);
+}
+
+/* GRID INFO */
+
+.lab-info-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 70px;
+}
+
+.lab-card{
+  background: #fff;
+  padding: 34px;
+  border-radius: 30px;
+  border: 1px solid #edf2f7;
+  box-shadow:
+    0 10px 35px rgba(15,23,42,.05);
+}
+
+.lab-card h2,
+.lab-card-title{
+  color: var(--b1);
+
+  margin-bottom: 18px;
+
+  font-size: 1.7rem;
+}
+
+.lab-card-text{
+  color: var(--gray);
+  line-height: 1.8;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.lab-list{
+  display: grid;
+  gap: 14px;
+
+  color: var(--gray);
+
+  line-height: 1.8;
+
+  padding-left: 18px;
+} 
+/* INFO ITEMS */
+
+.info-items{
+  display: grid;
+  gap: 18px;
+}
+
+.info-item{
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  background: #f8fbff;
+
+  border: 1px solid #e7eef7;
+}
+
+.info-item strong{
+  display: block;
+
+  color: var(--b1);
+
+  margin-bottom: 5px;
+}
+
+.info-item span{
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.info-icon{
+  width: 46px;
+  height: 46px;
+
+  object-fit: contain;
+
+  padding: 10px;
+
+  border-radius: 14px;
+
+  background: rgba(37,99,235,.08);
+
+  flex-shrink: 0;
+}
+
+/* TESTS */
+
+.lab-tests{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 24px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 80px;
+}
+
+.test-card{
+  background: #fff;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 14px 40px rgba(0,0,0,.06);
+
+  transition: .3s;
+}
+
+.test-card:hover{
+  transform: translateY(-6px);
+}
+
+.test-card img{
+  width: 100%;
+  height: 230px;
+
+  object-fit: cover;
+}
+
+.test-content{
+  padding: 24px;
+}
+
+.test-content h4{
+  color: var(--b1);
+
+  margin-bottom: 10px;
+
+  font-size: 1.25rem;
+}
+
+.test-content p{
+  color: var(--gray);
+  line-height: 1.8;
+}
+
+/* RECOMENDACIONES */
+
+.recommendations-section{
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.recommendations-head{
+  text-align: center;
+
+  margin-bottom: 46px;
+}
+
+.recommendations-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+  gap: 24px;
+}
+
+.reco-card{
+  background: #fff;
+
+  padding: 28px;
+
+  border-radius: 26px;
+
+  border: 1px solid #edf2f7;
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,.05);
+
+  transition: .3s;
+}
+
+.reco-card:hover{
+  transform: translateY(-5px);
+}
+
+.reco-card h4{
+  color: var(--b1);
+
+  margin-bottom: 18px;
+
+  font-size: 1.15rem;
+}
+
+.reco-card ul{
+  display: grid;
+  gap: 10px;
+
+  padding-left: 18px;
+
+  color: var(--gray);
+
+  line-height: 1.7;
+}
+.reco-title{
+  display:flex;
+  align-items:center;
+  gap:14px;
+
+  margin-bottom:22px;
+}
+
+.reco-title img{
+  width:42px;
+  height:42px;
+
+  object-fit:contain;
+
+  flex-shrink:0;
+}
+
+.reco-title h4{
+  color:var(--b1);
+
+  font-size:1.35rem;
+  font-weight:700;
+
+  margin:0;
+}
+
+/* CARD SERVICIOS */
+
+.lab-services-card{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  min-height:100%;
+}
+
+/* TOP */
+
+.lab-card-top{
+  display:flex;
+  align-items:flex-start;
+  gap:18px;
+
+  margin-bottom:30px;
+}
+
+.lab-icon-wrap{
+  width:72px;
+  height:72px;
+
+  border-radius:22px;
+
+  background:rgba(37,99,235,.08);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex-shrink:0;
+}
+
+.lab-icon-wrap img{
+  width:36px;
+  height:36px;
+  object-fit:contain;
+}
+
+.lab-mini-title{
+  color:var(--b1);
+
+  font-size:.7rem;
+  font-weight:700;
+
+  text-transform:uppercase;
+  letter-spacing:.08em;
+
+  margin-bottom:8px;
+}
+
+.lab-services-card h2{
+  font-size:1.6rem;
+  line-height:1.2;
+
+  color:var(--b1);
+}
+
+/* LISTA */
+
+.services-list{
+  display:grid;
+  gap:18px;
+
+  margin-bottom:34px;
+}
+
+.service-item{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+
+  padding:16px 18px;
+
+  border-radius:18px;
+
+  background:#f8fbff;
+
+  border:1px solid #e6eef7;
+
+  transition:.3s;
+}
+
+.service-item:hover{
+  transform:translateX(4px);
+
+  background:#fff;
+}
+
+.service-dot{
+  width:11px;
+  height:11px;
+  border-radius:50%;
+  background:var(--b1);
+  margin-top:9px;
+  flex-shrink:0;
+}
+
+.service-item p{
+  color:var(--gray);
+
+  line-height:1.7;
+}
+
+/* BOTTOM */
+
+.lab-card-bottom{
+  display:flex;
+  gap:18px;
+
+  margin-top:auto;
+}
+
+.mini-stat{
+  flex:1;
+
+  padding:18px;
+
+  border-radius:20px;
+
+  background:linear-gradient(
+    135deg,
+    rgba(37,99,235,.08),
+    rgba(71,152,208,.04)
+  );
+
+  border:1px solid rgba(37,99,235,.08);
+}
+
+.mini-stat strong{
+  display:block;
+
+  color:var(--b1);
+
+  font-size:1.5rem;
+
+  margin-bottom:6px;
+}
+
+.mini-stat span{
+  color:var(--gray);
+
+  font-size:.95rem;
+}
+/* CARD HORARIOS */
+
+.lab-hours-card{
+  display:flex;
+  flex-direction:column;
+
+  justify-content:space-between;
+
+  min-height:100%;
+}
+
+/* TOP */
+
+.hours-top{
+  display:flex;
+  align-items:flex-start;
+  gap:18px;
+
+  margin-bottom:24px;
+}
+
+.hours-icon-wrap{
+  width:72px;
+  height:72px;
+
+  border-radius:22px;
+
+  background:rgba(37,99,235,.08);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex-shrink:0;
+}
+
+.hours-icon-wrap img{
+  width:34px;
+  height:34px;
+
+  object-fit:contain;
+}
+
+.lab-hours-title{
+  font-size:1.5rem;
+
+  color:var(--b1);
+
+  line-height:1.2;
+}
+
+/* ITEMS */
+
+.info-items{
+  display:grid;
+  gap:18px;
+
+  margin-top:30px;
+}
+
+.info-item{
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+  padding:18px;
+  border-radius:20px;
+  background:#f8fbff;
+  border:1px solid #e6eef7;
+  transition:.3s;
+}
+
+.info-item:hover{
+  transform:translateX(5px);
+
+  background:#fff;
+}
+
+.info-icon-wrap{
+  width:72px;
+  height:72px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex-shrink:0;
+}
+
+.info-icon{
+  width:72px;
+  height:72px;
+
+  object-fit:contain;
+
+  display:block;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 980px){
+
+  .lab-hero{
+    grid-template-columns: 1fr;
+  }
+
+  .lab-title{
+    font-size: 2.5rem;
+  }
+
+  .lab-info-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .lab-tests{
+    grid-template-columns: 1fr;
+  }
+
+  .recommendations-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .lab-hero-img img{
+    height: 380px;
+  }
+
+}
 /* RESPONSIVE */
 
 @media(max-width:768px){
