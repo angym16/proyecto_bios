@@ -2818,3 +2818,482 @@ footer {
   }
 }
 
+#Historiaclinica{
+  position: relative;
+  width: 100%;
+  padding: 100px 24px;
+  overflow: hidden;
+  background:
+  linear-gradient(135deg,#f4f9ff 0%,#eef7ff 50%,#ffffff 100%);
+}
+
+.Historiaclinica-bg{
+  position: absolute;
+  top: -150px;
+  right: -120px;
+  width: 420px;
+  height: 420px;
+  background: rgba(43,124,186,0.08);
+  border-radius: 50%;
+  filter: blur(10px);
+}
+
+.Historiaclinica-container{
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   INFORMACION
+========================= */
+
+.Historiaclinica-tag{
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(43,124,186,0.12);
+  color: #1d5f95;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  margin-bottom: 24px;
+}
+
+.Historiaclinica-info h1{
+  font-size: 58px;
+  line-height: 1.05;
+  color: #0b1f33;
+  margin-bottom: 28px;
+  font-weight: 800;
+}
+
+.Historiaclinica-texto{
+  font-size: 17px;
+  line-height: 1.9;
+  color: #5c6b7c;
+  margin-bottom: 40px;
+  max-width: 650px;
+}
+
+/* =========================
+   BENEFICIOS
+========================= */
+
+.Historiaclinica-beneficios{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.Historiaclinica-beneficio{
+  display: flex;
+  gap: 18px;
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.9);
+  box-shadow: 0 10px 35px rgba(30,60,90,0.06);
+  transition: .3s ease;
+}
+
+.Historiaclinica-beneficio:hover{
+  transform: translateY(-4px);
+}
+
+.Historiaclinica-beneficio .icono{
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border-radius: 16px;
+  background: linear-gradient(135deg,#2b7cba,#4da8e8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Historiaclinica-beneficio h3{
+  font-size: 18px;
+  color: #0b1f33;
+  margin-bottom: 6px;
+}
+
+.Historiaclinica-beneficio p{
+  color: #6b7785;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* =========================
+   CARD FORMULARIO
+========================= */
+
+.Historiaclinica-card{
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(14px);
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 
+  0 25px 60px rgba(12,36,66,0.12);
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.Historiaclinica-card-top span{
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2b7cba;
+  margin-bottom: 12px;
+}
+
+.Historiaclinica-card-top h2{
+  font-size: 34px;
+  color: #0b1f33;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.Historiaclinica-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Historiaclinica-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.Historiaclinica-input-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.Historiaclinica-input-group label{
+  font-size: 14px;
+  font-weight: 600;
+  color: #243648;
+  margin-bottom: 8px;
+}
+
+.Historiaclinica-input-group input,
+.Historiaclinica-input-group select,
+.Historiaclinica-input-group textarea{
+  width: 100%;
+  border: 1px solid #d7e2ec;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 15px 16px;
+  font-size: 14px;
+  color: #243648;
+  outline: none;
+  transition: .3s ease;
+}
+
+.Historiaclinica-input-group input:focus,
+.Historiaclinica-input-group select:focus,
+.Historiaclinica-input-group textarea:focus{
+  border-color: #2b7cba;
+  box-shadow: 0 0 0 4px rgba(43,124,186,0.12);
+}
+
+.Historiaclinica-input-group textarea{
+  resize: none;
+}
+
+/* =========================
+   BOTON
+========================= */
+
+.Historiaclinica-btn{
+  border: none;
+  padding: 18px;
+  border-radius: 16px;
+  background: linear-gradient(135deg,#2b7cba,#4da8e8);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s ease;
+  margin-top: 10px;
+}
+
+.Historiaclinica-btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(43,124,186,0.25);
+}
+
+.Historiaclinica-nota{
+  margin-top: 24px;
+  text-align: center;
+  color: #8b97a5;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1100px){
+
+  .Historiaclinica-container{
+    grid-template-columns: 1fr;
+  }
+
+  .Historiaclinica-info h1{
+    font-size: 46px;
+  }
+
+}
+
+@media(max-width:768px){
+
+  #Historiaclinica{
+    padding: 80px 20px;
+  }
+
+  .Historiaclinica-info h1{
+    font-size: 38px;
+  }
+
+  .Historiaclinica-card{
+    padding: 30px 24px;
+  }
+
+  .Historiaclinica-grid{
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* =========================
+   CITA MEDICA
+========================= */
+
+.cita-section{
+  padding: 60px 24px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.cita-container{
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   TITULOS*/
+
+.sec-title{
+  margin-bottom: 16px;
+}
+
+.sec-sub{
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+/*BOTON REGRESAR*/
+
+.btn-regresar-rutas{
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--b1);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 24px;
+  transition: .3s ease;
+}
+
+.btn-regresar-rutas:hover{
+  transform: translateY(-3px);
+}
+
+.arrow{
+  font-size: 22px;
+}
+
+/*GRID GENERAL*/
+
+.care-wrap{
+  width: 100%;
+  display: grid;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.care-wrap-top{
+  margin-top: 32px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.care-wrap-bottom{
+  margin-top: 40px;
+  grid-template-columns: 1.2fr .8fr;
+}
+
+/*CARDS*/
+
+.care-card{
+  border-radius: 24px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.care-card h2,
+.care-card h3{
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.care-card ul{
+  list-style: disc inside;
+  line-height: 1.9;
+  color: var(--gray);
+  text-align: left;
+  padding-left: 20px;
+  margin: 0;
+  flex: 1;
+}
+
+.care-card-white{
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(0,0,0,.08);
+}
+
+.care-card-white h3{
+  color: var(--b1);
+}
+
+/*AGENDA INFO*/
+
+.agenda-info{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.agenda-title{
+  font-size: 32px;
+  text-align: left;
+}
+
+.agenda-text{
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.8;
+  max-width: 700px;
+  text-align: justify;
+}
+
+/*ITEMS*/
+
+.info-items{
+  margin-top: 24px;
+  display: grid;
+  gap: 16px;
+  flex: 1;
+}
+.info-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+.info-icon{
+  font-size: 22px;
+  flex-shrink: 0;
+  text-align: center;
+  width: 30px;
+}
+.info-item strong{
+  display: block;
+}
+.info-item span{
+  color: var(--gray);
+}
+
+/*BOTON WHATSAPP*/
+
+.cita-btn-whatsapp{
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+/*ALERTA*/
+
+.cita-alerta{
+  margin-top: 24px;
+  padding: 18px;
+  background: rgba(71,152,208,.07);
+  border-radius: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cita-alerta p{
+  margin: 0;
+  font-weight: 700;
+  color: var(--b2);
+  text-align: center;
+}
+
+.cita-alerta span{
+  margin-top: .5rem;
+  color: var(--gray);
+  text-align: center;
+  line-height: 1.7;
+}
+
+/*RESPONSIVE*/
+
+@media(max-width: 900px){
+  .care-wrap-top,
+  .care-wrap-bottom{
+    grid-template-columns: 1fr;
+  }
+  .agenda-title{
+    text-align: center;
+  }
+  .agenda-text{
+    text-align: center;
+  }
+}
+@media(max-width: 768px){
+  .cita-section{
+    padding: 50px 20px;
+  }
+  .sec-title{
+    font-size: 34px;
+  }
+  .care-card{
+    padding: 24px;
+  }
+
+}
