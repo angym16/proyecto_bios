@@ -2493,9 +2493,7 @@ body{
 
 }
     
-/* =========================
-   HISTORIA CLÍNICA
-========================= */
+/* =========== HISTORIA CLÍNICA ============== */
 
 .historia-section{
   position:relative;
@@ -2546,13 +2544,9 @@ body{
 .hero-icon{
   width:120px;
   height:120px;
-
   margin:0 auto 26px;
-
   border-radius:32px;
-
   background:#fff;
-
   display:flex;
   align-items:center;
   justify-content:center;
@@ -2567,7 +2561,7 @@ body{
 }
 
 .historia-header h1{
-  font-size:clamp(42px,5vw,68px);
+  font-size:clamp(42px,5vw,58px);
   line-height:1;
 
   color:var(--b1);
@@ -2636,11 +2630,9 @@ body{
 }
 
 .principal-card h2{
-  font-size:clamp(38px,4vw,58px);
+  font-size:clamp(28px,4vw,38px);
   line-height:1.02;
-
   color:var(--b1);
-
   margin-bottom:24px;
 
   font-family:'Raleway',sans-serif;
@@ -2648,9 +2640,8 @@ body{
 }
 
 .principal-card p{
-  font-size:18px;
+  font-size:16px;
   line-height:1.9;
-
   color:var(--gray);
 
   margin-bottom:36px;
@@ -2778,13 +2769,9 @@ body{
 
 .pdf-box{
   padding:28px;
-
   border-radius:28px;
-
   background:#f7fbff;
-
   border:1px solid rgba(47,95,166,.08);
-
   margin-bottom:22px;
 }
 
@@ -2820,8 +2807,7 @@ body{
 
 .pdf-box strong{
   display:block;
-
-  font-size:20px;
+  font-size:16px;
   color:var(--b1);
 
   margin-bottom:10px;
