@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" href="../img/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/styless.css">
   
 </head>
 <body>
@@ -33,42 +34,154 @@
   </nav>
 </header>
 
-  <!-- Flecha de regreso a inicio -->
-  <div style="padding:16px 24px; background:#f5f5f5; border-bottom: 1px solid #e0e0e0;">
-    <div style="max-width:920px; margin:0 auto;">
-      <a href="../index.html" style="display:inline-flex; align-items:center; gap:6px; color:#4798d0; 
-      text-decoration:none; font-weight:500; font-size:14px; transition:all 0.3s ease;">
-        ← Volver al inicio</a>
+
+<section class="historia-section">
+
+  <!-- DECORACIONES -->
+  <div class="bg-circle bg-circle-1"></div>
+  <div class="bg-circle bg-circle-2"></div>
+
+  <!-- HEADER -->
+  <div class="historia-header">
+
+    <!-- ILUSTRACIÓN -->
+    <div class="hero-icon">
+      <img src="../img/hc/carpeta-medica.png" alt="">
     </div>
+
+    <p class="eyebrow">Acceso a información médica</p>
+
+    <h1>Solicitar Historia Clínica</h1>
+
+    <p class="header-text">
+      Acceda de forma segura y confidencial a su historia clínica digital.
+      Complete el proceso y adjunte los documentos requeridos para agilizar
+      la solicitud.
+    </p>
+
   </div>
 
-  <section class="historia-section">
-    <div class="historia-header">
-      <p class="eyebrow">Acceso a información médica</p>
-      <h1>Solicitar Historia Clínica</h1>
-      <p>Acceda de forma segura y confidencial a su historia clínica digital. Complete el proceso de solicitud y nuestro 
-        equipo le enviará la información requerida.</p>
-    </div>
+  <!-- GRID -->
+  <div class="historia-grid">
 
-    <div class="solicitud-card">
-      <h2>Solicitud de Historia Clínica</h2>
-      <p>Haga clic en el botón a continuación para enviar su solicitud por correo electrónico. Incluya su nombre completo, número de identificación y fecha de nacimiento para procesar su solicitud de manera eficiente.</p>
-      <a href="mailto:contacto@biosips.com subject=Solicitud%20de%20Historia%20Cl%C3%ADnica&body=Estimado%20equipo%20de%20BIOS%20IPS%2C%0A%0AEstoy%20solicitando%20mi%20historia%20cl%C3%ADnica.%20A%20continuaci%C3%B3n%20proporciono%20la%20informaci%C3%B3n%20requerida%3A%0A%0ANombre%20completo%3A%20%0AN%C3%BAmero%20de%20identificaci%C3%B3n%3A%20%0AFecha%20de%20nacimiento%3A%20%0A%0AGracias%20por%20su%20atenci%C3%B3n." 
+    <!-- CARD PRINCIPAL -->
+    <div class="historia-card principal-card">
+
+      <span class="card-tag">
+        Solicitud digital
+      </span>
+
+      <h2>Solicita tu historia clínica</h2>
+
+      <p>
+        Haz clic en el siguiente botón y completa la información
+        necesaria en el correo electrónico.
+      </p>
+
+      <a href="mailto:contacto@biosips.com?subject=Solicitud%20de%20Historia%20Cl%C3%ADnica"
       class="solicitud-btn">
-        Solicitar por Correo Electrónico
+
+        <img src="../img/hc/correo.png" alt="">
+        Solicitar por correo electrónico
+
       </a>
 
-      <div class="info-list">
-        <h3>Información requerida:</h3>
-        <ul>
-          <li>Nombre completo</li>
-          <li>Tipo y Número de identificación (CC, TI, RC etc.)</li>
-          <li>Fecha de nacimiento</li>
-          <li>Número de contacto </li>
-        </ul>
+      <!-- NOTA -->
+      <div class="security-note">
+
+        <img src="../img/hc/proteccion.png" alt="">
+
+        <span>
+          Tu información será tratada de forma confidencial
+          según la normativa de protección de datos.
+        </span>
+
       </div>
+
     </div>
-  </section>
+
+    <!-- CARD DERECHA -->
+    <div class="historia-card docs-card">
+
+      <h3>Información requerida</h3>
+
+      <ul class="docs-list">
+
+        <li>
+          <img src="../img/hc/usuario.png" alt="">
+          <span>Nombre completo</span>
+        </li>
+
+        <li>
+          <img src="../img/hc/cedula.png" alt="">
+          <span>Tipo y número de identificación</span>
+        </li>
+
+        <li>
+          <img src="../img/hc/calendario.png" alt="">
+          <span>Fecha de nacimiento</span>
+        </li>
+
+        <li>
+          <img src="../img/hc/telefono.png" alt="">
+          <span>Número de contacto</span>
+        </li>
+
+      </ul>
+
+      <!-- PDF -->
+      <div class="pdf-box">
+
+        <div class="pdf-top">
+
+          <div class="pdf-icon">
+
+            <!-- ICONO PDF -->
+            <img src="../img/hc/documento.png" alt="">
+
+          </div>
+
+          <div>
+
+            <strong>Formato de autorización</strong>
+
+            <p>
+              Descarga el documento, diligéncialo y adjúntalo
+              en el correo electrónico.
+            </p>
+
+          </div>
+
+        </div>
+
+        <a href="../pdf/formato-historia-clinica.pdf"
+        target="_blank"
+        class="pdf-btn">
+
+          <img src="../img/hc/descargas.png" alt="">
+          Descargar PDF
+
+        </a>
+
+      </div>
+
+      <!-- TIEMPO -->
+      <div class="time-box">
+
+        <img src="../img/hc/tiempo.png" alt="">
+
+        <div>
+          <strong>Tiempo estimado</strong>
+          <p>La solicitud puede tardar entre 2 y 5 días hábiles.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 <!-- ══════════════════ FOOTER ══════════════════ -->
 <footer>
