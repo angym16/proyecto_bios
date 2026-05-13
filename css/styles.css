@@ -2210,7 +2210,6 @@ footer {
       .valores-section h2 {font-size:28px;}
     }
     
-      /* Historia Clinica */
     /*.historia-section {max-width:1000px;margin:0 auto;padding:60px 24px;text-align:center;}*/
     /*.historia-header {margin-bottom:60px;}*/
     /*.historia-header h1 {margin-bottom:16px;color:#2c3e50;font-size:48px;font-weight:600;}*/
@@ -2233,7 +2232,7 @@ footer {
       .
     }*/
 
-.historia-section.historia-section{
+.historia-section{
   padding:70px 40px 35px;
   background:#f8fbff;
   position:relative;
