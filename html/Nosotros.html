@@ -6,38 +6,43 @@
   <title>Nosotros | BIOS IPS</title>
   <link rel="icon" type="image/png" href="../img/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styless.css">
   <link rel="stylesheet" href="../css/styles.css">
   
 </head>
 <body>
-  <header>
-    <a href="../index.html"><img src="../img/logoBios.png" alt="BIOS IPS" style="height:48px;width:auto;"></a>
-    <nav>
-      <a href="../index.html#quienes">¿Quiénes somos?</a>
-      <a href="../index.html#atencion">Atención al paciente</a>
-      <a href="../index.html#servicios">Servicios</a>
-      <a href="https://resultados-bios-popayan.web.app" target="_blank">Resultados</a>
-      <a href="https://wa.me/573001234567" target="_blank" class="nav-cta"> <!--usar el número de Bios-->
-        <img src="../img/calendario_B.png" alt="">
-        Solicitar cita →
-      </a>
-    </nav>
-  </header>
+ <!-- ══════════════════ HEADER ══════════════════ -->
+<header>
+  <a href="#"><img src="../img/logoBios.png" style="height:48px;width:auto;"></a>
+  <nav>
+    <div class="dropdown-menu">
+      <span class="dropdown-toggle">¿Quiénes somos?</span>
+      <div class="dropdown-content">
+        <a href="../html/Nosotros.html">Sobre Nosotros</a>
+        <a href="../html/EstadosFinancieros.html#estados">Estados financieros</a>
+        <a href="../html/reconocimientos.html#reconocimientos">Nuestros reconocimientos</a>
+      </div>
+    </div>
 
-  <!-- Flecha de regreso a inicio -->
-  <div style="padding:16px 24px; background:#f5f5f5; border-bottom: 1px solid #e0e0e0;">
-    <div style="max-width:920px; margin:0 auto;">
-      <a href="../index.html" style="display:inline-flex; align-items:center; gap:6px; color:#4798d0; 
-      text-decoration:none; font-weight:500; font-size:14px; transition:all 0.3s ease;">
-        ← Volver al inicio</a>
-    </div>
-    </div>
-    
+    <a href="#atencion">Atención al paciente</a>
+    <a href="#servicios">Servicios</a>
+    <a href="https://resultados-bios-popayan.web.app" target="_blank">Resultados</a>
+    <a href="https://wa.me/573009124604" target="_blank" class="nav-cta"> <!--usar el número de Bios-->
+      <img src="../img/calendario_B.png" alt="">
+      Solicitar cita →
+    </a>
+  </nav>
+</header>
+
   <section class="nosotros-banner">
-  <div class="overlay"></div>
+  <div class="overlay">
+    <a href="../index.html" class="btn-regresar-rutas">
+      <span class="arrow">←</span>
+    </a>
+  </div>
   <div class="nosotros-content">
 
-    <p class="eyebrow">Identidad Institucional 2025 - 2030</p>
+    <p class="eyebrow-nosotros">Identidad Institucional 2025 - 2030</p>
     <h1 class="sec-title-nosotros">BIOS IPS</h1>
    <p class="descripcion">
       Esta identidad nace de las personas que construyen BIOS IPS cada día,
@@ -46,6 +51,7 @@
     </p>
 
     <div class="divider"></div>
+
     <span class="subtitulo">
       Nuestra esencia institucional
     </span>
@@ -75,10 +81,11 @@ Todo esto lo hacemos guiados por un lema que no es solo palabras:
 </section>
 
 <section class="mision-vision-section" id="mision-vision">
+ 
   <div class="mision-vision-header">
     <span>¿Quiénes somos?</span>
 
-<h2>Misión y Visión</h2>
+    <h2>Misión y Visión</h2>
     <p>
       Trabajamos cada día para brindar una atención integral,
       humanizada y con excelencia, contribuyendo al bienestar
@@ -136,7 +143,7 @@ Todo esto lo hacemos guiados por un lema que no es solo palabras:
 
 </section>
 
-    <section class="valores-section" id="valores">
+<section class="valores-section" id="valores">
   <div class="valores-header">
     <span>Nuestros Valores</span>
     <h2>Lo que nos define por dentro</h2>
@@ -198,7 +205,7 @@ Todo esto lo hacemos guiados por un lema que no es solo palabras:
   </div>
 </section>
 
-  <footer>
+<footer>
   <div class="footer-grid">
     <div>
       <div class="footer-logo"><img src="../img/logoBios.png" alt="BIOS IPS" style="filter:brightness(0) invert(1);height:46px;"></div>
@@ -258,10 +265,9 @@ Todo esto lo hacemos guiados por un lema que no es solo palabras:
   <div class="footer-bottom">
     <p>© 2025 BIOS IPS Medical Center S.A.S. — Todos los derechos reservados.</p>
     <div class="footer-links"><a href="#">Transparencia</a><a href="#">Políticas</a><a href="#">Aviso de Privacidad</a><a href="#">Términos Legales</a><a href="#">Derechos de Uso</a></div>
-
-  <script src="js/script.js"></script>
 </footer>
 
   <script src="../js/script.js"></script>
+  <script src="../js/menu.js"></script>
 </body>
 </html>

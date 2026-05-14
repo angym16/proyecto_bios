@@ -1029,7 +1029,7 @@ nav a{
 /* ═════ CANCER DE PROSTATA ═════ */
 /* HERO */
 .hero-prostata-custom{
-  background: url("../img/cancerMama.jpeg") center/cover no-repeat;
+  background: url("../img/prostata/imagen-institucional.png") center/cover no-repeat;
 
   position: relative;
   display: flex;
@@ -1051,19 +1051,18 @@ nav a{
 }
 
 /* TITULO */
-.hero-cancer-prostata h1{
-  font-size: 64px;
+.hero-cancer-prostata-title{
+  font-size: 32px;
   line-height: 1.05;
   font-weight: 800;
-
-  color: #222;
+  color: #fff;
   margin-bottom: 12px;
 }
 
 /* SUBTITULO */
-.hero-cancer-prostata p{
-  font-size: 20px;
-  color: #444;
+.hero-cancer-prostata-sub{
+  font-size: 15px;
+  color: #fff;
   line-height: 1.5;
 }
 
@@ -1072,29 +1071,20 @@ nav a{
     position: absolute;
     top: 40px;
     left: 60px;
-
     width: 52px;
     height: 52px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
-
-    background: rgba(255,255,255,0.72);
+    background: #fff;
     backdrop-filter: blur(8px);
-
-    border: 1px solid rgba(230, 73, 128, 0.18);
-
+    border: 1px solid rgba(64, 82, 215, 0.18);
     color: #5aa0d6;
     text-decoration: none;
     font-size: 24px;
-
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-
     transition: all .25s ease;
-
     z-index: 10;
 }
 
@@ -1103,7 +1093,7 @@ nav a{
 
     background: #fff;
 
-    box-shadow: 0 10px 24px rgba(230,73,128,0.18);
+    box-shadow: 0 10px 24px rgba(64, 82, 215, 0.18);
 }
 
 .arrow{

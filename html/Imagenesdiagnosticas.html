@@ -10,19 +10,28 @@
   <link rel="stylesheet" href="../css/styless.css">
 </head>
 <body>
-  <!-- ══════════════════ HEADER ══════════════════ -->
- <header>
-    <a href="../index.html"><img src="../img/logoBios.png" alt="BIOS IPS" style="height:48px;width:auto;"></a>
-    <nav>
-      <a href="../index.html#quienes">¿Quiénes somos?</a>
-      <a href="../index.html#atencion">Atención al paciente</a>
-      <a href="https://resultados-bios-popayan.web.app" target="_blank">Resultados</a>
-      <a href="https://wa.me/573001234567" target="_blank" class="nav-cta"> <!--usar el número de Bios-->
-        <img src="../img/calendario_B.png" alt="">
-        Solicitar cita →
-      </a>
-    </nav>
-  </header>
+<!-- ══════════════════ HEADER ══════════════════ -->
+<header>
+  <a href="#"><img src="../img/logoBios.png" style="height:48px;width:auto;"></a>
+  <nav>
+    <div class="dropdown-menu">
+      <span class="dropdown-toggle">¿Quiénes somos?</span>
+      <div class="dropdown-content">
+        <a href="../html/Nosotros.html">Sobre Nosotros</a>
+        <a href="../html/EstadosFinancieros.html#estados">Estados financieros</a>
+        <a href="../html/reconocimientos.html#reconocimientos">Nuestros reconocimientos</a>
+      </div>
+    </div>
+
+    <a href="#atencion">Atención al paciente</a>
+    <a href="#servicios">Servicios</a>
+    <a href="https://resultados-bios-popayan.web.app" target="_blank">Resultados</a>
+    <a href="https://wa.me/573009124604" target="_blank" class="nav-cta"> <!--usar el número de Bios-->
+      <img src="../img/calendario_B.png" alt="">
+      Solicitar cita →
+    </a>
+  </nav>
+</header>
 
 
   <section class="sec sec-white" style="padding:60px 24px;">
@@ -47,14 +56,65 @@
         </div>
 
         <div style="background:#fff;border-radius:24px;padding:28px;box-shadow:0 24px 60px rgba(0,0,0,.08);">
-          <h3 style="margin-bottom:16px;color:var(--b1);">¿Por qué elegirnos?</h3>
-          <div class="info-items" style="display:grid;gap:16px;">
-            <div class="info-item"><span style="font-size:22px;flex-shrink:0;">🔎</span><div><strong>Diagnóstico preciso</strong><span>Equipos de alta resolución para pruebas confiables.</span></div></div>
-            <div class="info-item"><span style="font-size:22px;flex-shrink:0;">⏱️</span><div><strong>Resultados rápidos</strong><span>Informes entregados en el tiempo adecuado para tu cuidado.</span></div></div>
-            <div class="info-item"><span style="font-size:22px;flex-shrink:0;">🤝</span><div><strong>Acompañamiento médico</strong><span>Asesoría para tus exámenes y seguimiento de resultados.</span></div></div>
-          </div>
-        </div>
+  <h3 style="margin-bottom:16px;color:var(--b1);">
+    ¿Por qué elegirnos?
+  </h3>
+
+  <div class="info-items" style="display:grid;gap:16px;">
+
+    <!-- ITEM -->
+    <div class="info-item">
+
+      <img src="../img/diagnostico-img.png"
+           alt=""
+           class="img-mini-icon">
+
+      <div>
+        <strong>Diagnóstico preciso</strong>
+
+        <span>
+          Equipos de alta resolución para pruebas confiables.
+        </span>
       </div>
+
+    </div>
+
+    <!-- ITEM -->
+    <div class="info-item">
+
+      <img src="../img/tiempo-rapido.png"
+           alt=""
+           class="img-mini-icon">
+
+      <div>
+        <strong>Resultados rápidos</strong>
+
+        <span>
+          Informes entregados en el tiempo adecuado para tu cuidado.
+        </span>
+      </div>
+
+    </div>
+
+    <!-- ITEM -->
+    <div class="info-item">
+
+      <img src="../img/grupo.png"
+           alt=""
+           class="img-mini-icon">
+
+      <div>
+        <strong>Acompañamiento médico</strong>
+
+        <span>
+          Asesoría para tus exámenes y seguimiento de resultados.
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+</div>
 
       <div style="margin-top:40px;padding:28px;background:rgba(71,152,208,.07);border-radius:24px;">
         <h3 style="margin-bottom:12px;">Preparación para tu estudio</h3>
@@ -149,5 +209,6 @@
   </div>
 </footer>
 <script src="../js/script.js"></script>
+<script src="../js/menu.js"></script>
 </body>
 </html>

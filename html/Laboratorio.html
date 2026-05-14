@@ -11,63 +11,560 @@
 </head>
 <body>
   <!-- ══════════════════ HEADER ══════════════════ -->
- <header>
-    <a href="../index.html"><img src="../img/logoBios.png" alt="BIOS IPS" style="height:48px;width:auto;"></a>
-    <nav>
-      <a href="../index.html#quienes">¿Quiénes somos?</a>
-      <a href="../index.html#atencion">Atención al paciente</a>
-      <a href="../index.html#servicios">Servicios</a>
-      <a href="https://resultados-bios-popayan.web.app" target="_blank">Resultados</a>
-      <a href="https://wa.me/573001234567" target="_blank" class="nav-cta"> <!--usar el número de Bios-->
-        <img src="../img/calendario_B.png" alt="">
-        Solicitar cita →
-      </a>
-    </nav>
-  </header>
+<header>
+  <a href="#"><img src="../img/logoBios.png" style="height:48px;width:auto;"></a>
+  <nav>
+    <div class="dropdown-menu">
+      <span class="dropdown-toggle">¿Quiénes somos?</span>
+      <div class="dropdown-content">
+        <a href="../html/Nosotros.html">Sobre Nosotros</a>
+        <a href="../html/EstadosFinancieros.html#estados">Estados financieros</a>
+        <a href="../html/reconocimientos.html#reconocimientos">Nuestros reconocimientos</a>
+      </div>
+    </div>
 
-
-  <section class="sec sec-white" style="padding:60px 24px;">
-
-    <a href="../index.html" class="btn-regresar-rutas">
-      <span class="arrow">←</span>
+    <a href="#atencion">Atención al paciente</a>
+    <a href="#servicios">Servicios</a>
+    <a href="https://resultados-bios-popayan.web.app" target="_blank">Resultados</a>
+    <a href="https://wa.me/573009124604" target="_blank" class="nav-cta"> <!--usar el número de Bios-->
+      <img src="../img/calendario_B.png" alt="">
+      Solicitar cita →
     </a>
+  </nav>
+</header>
 
-    <div style="max-width:920px;margin:0 auto;">
-      <p class="eyebrow">Laboratorio Clínico</p>
-      <h1 class="sec-title" style="margin-bottom:16px;">Servicios de laboratorio confiables y rápidos</h1>
-      <p class="sec-sub" style="max-width:760px;margin-bottom:32px;">Nuestro laboratorio clínico ofrece análisis médicos completos con resultados en tiempos oportunos, apoyando tu diagnóstico y seguimiento de salud con tecnología moderna y personal capacitado.</p>
 
-      <div class="care-wrap" style="margin-top:32px;gap:24px;display:grid;grid-template-columns:1fr 1fr;align-items:start;">
-        <div class="care-left sec-gray" style="padding:32px 28px;border-radius:24px;">
-          <h2 style="margin-bottom:18px;">Qué encontrarás en nuestro laboratorio</h2>
-          <ul style="list-style:disc inside;line-height:1.9;color:var(--gray);">
-            <li>Perfiles bioquímicos completos y pruebas de sangre.</li>
-            <li>Exámenes de orina, heces y marcadores tumorales.</li>
-            <li>Pruebas hormonales y estudios especializados.</li>
-            <li>Entregas de resultados rápidas y reportes claros.</li>
-          </ul>
+  <!-- ══════════════════ LABORATORIO CLÍNICO ══════════════════ -->
+
+<section class="lab-section">
+
+  <a href="../index.html" class="btn-regresar-rutas">
+    <span class="arrow">←</span>
+  </a>
+
+  <div class="lab-container">
+
+    <!-- HERO -->
+    <div class="lab-hero">
+
+      <div class="lab-hero-text">
+
+        <p class="eyebrow">Laboratorio Clínico</p>
+
+        <h1 class="lab-title">
+          Servicios de laboratorio confiables y rápidos
+        </h1>
+
+        <p class="lab-sub">
+          Nuestro laboratorio clínico ofrece análisis médicos completos
+          con resultados oportunos, apoyando tu diagnóstico y seguimiento
+          de salud con tecnología moderna y personal capacitado.
+        </p>
+
+        <div class="lab-buttons">
+
+          <a href="#recomendaciones"
+             class="lab-btn-primary">
+            Ver recomendaciones
+          </a>
+
         </div>
 
-        <div style="background:#fff;border-radius:24px;padding:28px;box-shadow:0 24px 60px rgba(0,0,0,.08);">
-          <h3 style="margin-bottom:16px;color:var(--b1);">Horario y atención</h3>
-          <p style="color:var(--gray);line-height:1.8;margin-bottom:24px;">Atendemos de lunes a sábado con jornadas de recepción de muestras en nuestras sedes de Popayán y Santander de Quilichao. Puedes solicitar tus resultados en formato digital o impreso.</p>
-          <div class="info-items" style="display:grid;gap:16px;">
-            <div class="info-item"><span style="font-size:22px;flex-shrink:0;">🧪</span><div><strong>Pruebas completas</strong><span>Exámenes clínicos, serologías y marcadores especializados.</span></div></div>
-            <div class="info-item"><span style="font-size:22px;flex-shrink:0;">⏱️</span><div><strong>Entrega rápida</strong><span>Resultados en 24-48 horas según el análisis.</span></div></div>
-            <div class="info-item"><span style="font-size:22px;flex-shrink:0;">📄</span><div><strong>Informe claro</strong><span>Reportes fáciles de leer, con recomendaciones médicas.</span></div></div>
-          </div>
+      </div>
+
+      <div class="lab-hero-img">
+        <img src="../img/laboratorio/laboratorio.jpeg" alt="">
+      </div>
+
+    </div>
+
+    <!-- INFO GRID -->
+    <div class="lab-info-grid">
+
+      <!-- CARD -->
+        <div class="lab-card lab-services-card">
+
+    <div class="lab-card-top">
+
+      <div class="lab-icon-wrap">
+        <img src="../img/laboratorio/servicios.png" alt="">
+      </div>
+
+      <div>
+        <p class="lab-mini-title">
+          Servicios incluidos
+        </p>
+
+        <h2>
+          ¿Qué encontrarás en nuestro laboratorio?
+        </h2>
+      </div>
+
+    </div>
+    <div class="services-list">
+
+      <div class="service-item">
+        <span class="service-dot"></span>
+
+        <p>
+          Perfiles bioquímicos completos y pruebas de sangre.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <span class="service-dot"></span>
+
+        <p>
+          Exámenes de orina, heces y marcadores tumorales.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <span class="service-dot"></span>
+
+        <p>
+          Pruebas hormonales y estudios especializados.
+        </p>
+      </div>
+
+      <div class="service-item">
+        <span class="service-dot"></span>
+
+        <p>
+          Entrega rápida de resultados y reportes claros.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="lab-card-bottom">
+
+      <div class="mini-stat">
+        <strong>+120</strong>
+        <span>Tipos de exámenes</span>
+      </div>
+
+      <div class="mini-stat">
+        <strong>24-48h</strong>
+        <span>Entrega promedio</span>
+      </div>
+
+    </div>
+
+  </div>
+
+      <!-- CARD -->
+     <div class="lab-card lab-hours-card">
+
+    <!-- TOP -->
+    <div class="hours-top">
+
+      <div class="hours-icon-wrap">
+        <img src="../img/laboratorio/calendario.png" alt="">
+      </div>
+
+      <div>
+
+        <p class="lab-mini-title">
+          Atención al paciente
+        </p>
+
+        <h3 class="lab-hours-title">
+          Horario y atención
+        </h3>
+
+      </div>
+
+    </div>
+
+    <!-- TEXTO -->
+    <p class="lab-card-text">
+      Atendemos de lunes a sábado con recepción de muestras
+      en nuestras sedes de Popayán y Santander de Quilichao.
+      Puedes solicitar tus resultados en formato digital o impreso.
+    </p>
+
+    <!-- ITEMS -->
+    <div class="info-items">
+
+      <!-- ITEM -->
+      <div class="info-item">
+
+        <div class="info-icon-wrap">
+          <img src="../img/laboratorio/tubo-de-ensayo.png"
+              alt=""
+              class="info-icon">
+        </div>
+
+        <div>
+          <strong>Pruebas completas</strong>
+
+          <span>
+            Exámenes clínicos, serologías y marcadores especializados.
+          </span>
+        </div>
+
+      </div>
+
+      <!-- ITEM -->
+      <div class="info-item">
+
+        <div class="info-icon-wrap">
+          <img src="../img/laboratorio/reloj.png"
+              alt=""
+              class="info-icon">
+        </div>
+
+        <div>
+          <strong>Entrega rápida</strong>
+
+          <span>
+            Resultados en 24-48 horas según el análisis.
+          </span>
+        </div>
+
+      </div>
+
+      <!-- ITEM -->
+      <div class="info-item">
+
+        <div class="info-icon-wrap">
+          <img src="../img/cuestionario.png"
+              alt=""
+              class="info-icon">
+        </div>
+
+        <div>
+          <strong>Informe claro</strong>
+
+          <span>
+            Reportes fáciles de leer y recomendaciones médicas.
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+
+    </div>
+
+    <!-- EXÁMENES -->
+    <section class="lab-tests">
+
+      <div class="test-card">
+        <img src="../img/laboratorio/toma-de-muestras.jpg" alt="">
+
+        <div class="test-content">
+          <h4>Exámenes de sangre</h4>
+
+          <p>
+            Glucosa, perfil lipídico, hormonas,
+            transaminasas y más.
+          </p>
         </div>
       </div>
 
-       <div style="margin-top:40px;padding:28px;background:rgba(71,152,208,.07);border-radius:24px;">
-        <h3 style="margin-bottom:12px;">Recomendaciones previas al examen</h3>
-        <p style="color:var(--gray);line-height:1.8;">Algunos análisis requieren ayuno de 8 a 10 horas, 
-            mientras que otros pueden realizarse en cualquier momento. 
-            Consulta con tu médico para conocer las instrucciones específicas antes de tu visita al laboratorio.</p>
+      <div class="test-card">
+        <img src="../img/laboratorio/examen-orina.jpg" alt="">
 
-    </div>
-    </div>
+        <div class="test-content">
+          <h4>Exámenes de orina</h4>
+
+          <p>
+            Urocultivo, parcial de orina,
+            proteinuria y creatinina.
+          </p>
+        </div>
+      </div>
+
+      <div class="test-card">
+        <img src="../img/laboratorio/marcadores-tumorales.jpg" alt="">
+
+        <div class="test-content">
+          <h4>Estudios especializados</h4>
+
+          <p>
+            Marcadores tumorales,
+            estudios hormonales y más.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RECOMENDACIONES -->
+    <section id="recomendaciones" class="recommendations-section">
+
+      <div class="recommendations-head">
+
+        <p class="eyebrow">
+          Recomendaciones
+        </p>
+
+        <h2 class="sec-title">
+          Preparación antes de tus exámenes
+        </h2>
+
+        <p class="sec-sub">
+          Sigue estas indicaciones para obtener resultados más precisos.
+        </p>
+
+      </div>
+
+      <div class="recommendations-grid">
+      
+
+      <!-- CARD -->
+      <div class="reco-card">
+
+        <div class="reco-title">
+          <img src="../img/laboratorio/coproscopico.png" alt="">
+          <h4>Coprológico, Coprocultivo Coproscópico</h4>
+        </div>
+
+        <ul>
+          <li>No tomar antibióticos ni antidiarreicos antes de la recolección.</li>
+          <li>Evitar contaminación con la orina.</li>
+          <li>No consumir alimentos rojos.</li>
+          <li>Esperar 3 días tras estudios con bario antes de recoger la muestra</li>
+        </ul>
+      </div>
+
+
+      <!-- CARD -->
+      <div class="reco-card">
+
+        <div class="reco-title">
+          <img src="../img/laboratorio/depuracion.png" alt="">
+          <h4>Depuración de Creatinina | Proteinuria en Orina de 24 Horas: </h4>
+        </div>
+
+        <ul>
+          <li>No ingerir diuréticos.</li>
+          <li>No consumir café ni exceso de líquidos.</li>
+          <li>Usar un recipiente limpio.</li>
+          <li>Recolección de orina durante 24 horas.</li>
+          <li>Mantener la muestra  refrigerada.</li>
+          <li>Llevarla al laboratorio en ayunas para la toma de sangre.</li>
+        </ul>
+      </div>
+
+      <!-- CARD -->
+      <div class="reco-card">
+
+        <div class="reco-title">
+          <img src="../img/laboratorio/transaminasa.png" alt="">
+          <h4>Transaminasa</h4>
+        </div>
+
+        <ul>
+          <li>No ingerir medicamentos como acetaminofén, ácido salicílico, ampicilina, entre otros.</li>
+          <li>No consumir alcohol 3 días antes.</li>
+          <li>Ayuno de 8-12 horas.</li>
+          <li>No tomar anticonceptivos orales.</li>
+        </ul>
+      </div>
+
+      <!-- CARD -->
+      <div class="reco-card">
+
+        <div class="reco-title">
+          <img src="../img/laboratorio/calcio.png" alt="">
+          <h4>Calcio</h4>
+        </div>
+
+        <ul>
+          <li>Evitar lácteos, chocolate, apio, espinaca y acelga.</li>
+          <li>Ayuno de 8-10 horas.</li>
+        </ul>
+      </div>
+      <!-- CARD -->
+      <div class="reco-card">
+
+        <div class="reco-title">
+          <img src="../img/laboratorio/electrolitos.png" alt="">
+          <h4>Electrolitos (Sodio, Cloro, Potasio)</h4>
+        </div>
+
+        <ul>
+          <li>Ayuno de 8-12 horas.</li>
+          <li>Suprimir el consumo excesivo de sal 7 días antes.</li>
+          <li>No fumar ni ingerir alcohol.</li>
+        </ul>
+      </div>
+
+      <!-- CARD -->
+      <div class="reco-card">
+
+        <div class="reco-title">
+          <img src="../img/laboratorio/proteinas.png" alt="">
+          <h4>Proteínas Totales, Albúmina y BUN</h4>
+        </div>
+
+        <ul>
+          <li>Ayuno de 8-10 horas.</li>
+          <li>
+            Evitar ejercicio intenso antes y durante la 
+            recolección de orina.
+          </li>
+        </ul>
+      </div>
+
+      <!-- CARD -->
+      <div class="reco-card">
+
+        <div class="reco-title">
+          <img src="../img/laboratorio/frotis-faringeo.png" alt="">
+          <h4>Frotis Faringeo</h4>
+        </div>
+
+        <ul>
+          <li>Tomar 3 muestras según indicación médica.</li>
+          <li>Ayuno de 8 horas.</li>
+          <li>Cepillarse sin crema dental, ni enjuague bucal.</li>
+        </ul>
+      </div>
+
+      <!-- CARD -->
+      <div class="reco-card">
+
+        <div class="reco-title">
+          <img src="../img/laboratorio/perfil-lipidico.png" alt="">
+          <h4>Perfil Lipídico</h4>
+        </div>
+
+        <ul>
+          <li>Ayuno de 12 horas.</li>
+          <li>Última comida ligera.</li>
+          <li>Evitar grasas 1-2 días antes.</li>
+        </ul>
+      </div>
+
+      <!-- CARD -->
+        <div class="reco-card">
+
+          <div class="reco-title">
+            <img src="../img/laboratorio/parcial.png" alt="">
+            <h4>Parcial de Orina</h4>
+          </div>
+
+          <ul>
+            <li>Primera orina de la mañana.</li>
+            <li>Aseo genital previo.</li>
+            <li>No tomar antibióticos antes de la prueba (si es posible)</li>
+            <li>Usar recipiente limpio.</li>
+          </ul>
+        </div>
+
+        <!-- CARD -->
+      <div class="reco-card">
+
+        <div class="reco-title">
+          <img src="../img/laboratorio/glucosa.png" alt="">
+          <h4>Glucosa</h4>
+        </div>
+
+        <ul>
+          <li>Ayuno de 8-12 horas.</li>
+          <li>No consumir café ni chicle.</li>
+          <li>No fumar ni ingerir alcohol.</li>
+        </ul>
+      </div>
+
+        <!-- CARD -->
+      <div class="reco-card">
+
+        <div class="reco-title">
+          <img src="../img/laboratorio/creatinina.png" alt="">
+          <h4>Creatinina</h4>
+        </div>
+
+        <ul>
+          <li>Evitar carnes rojas el día previo.</li>
+          <li>Evitar consumir alcohol el día previo.</li>
+          <li>No realizar ejercicio el día de la prueba.</li>
+        </ul>
+      </div>
+
+        <!-- CARD -->
+        <div class="reco-card">
+
+          <div class="reco-title">
+            <img src="../img/laboratorio/koh.png" alt="">
+            <h4>KOH Hongos</h4>
+          </div>
+
+          <ul>
+            <li>No usar cremas ni talcos.</li>
+            <li>Uñas despintadas 3 días antes.</li>
+            <li>Suspender antimicóticos.</li>
+          </ul>
+        </div>
+
+
+        <!-- CARD -->
+        <div class="reco-card">
+
+          <div class="reco-title">
+            <img src="../img/laboratorio/espermograma.png" alt="">
+            <h4>Espermograma</h4>
+          </div>
+
+          <ul>
+            <li>Abstinencia de 2-5 días.</li>
+            <li>No consumir alcohol.</li>
+            <li>No presentar fiebre.</li>
+            <li>
+              No ingerir farmacológicos como: imidazoles, 
+              gonadotropinas, testosterona, corticoides
+            </li>
+          </ul>
+        </div>
+
+        <!-- CARD -->
+      <div class="reco-card">
+
+        <div class="reco-title">
+          <img src="../img/laboratorio/acido-urico.png" alt="">
+          <h4>Ácido Úrico</h4>
+        </div>
+
+        <ul>
+          <li>Ayuno de 8-12 horas.</li>
+          <li>No ingerir alcohol antes de la prueba.</li>
+          <li>
+            No consumir embutidos, mariscos ni carnes 
+            rojas (vísceras, cerdo) durante 2 días antes.
+          </li>
+        </ul>
+      </div>
+
+          <!-- CARD -->
+        <div class="reco-card">
+
+          <div class="reco-title">
+            <img src="../img/laboratorio/basiloscopia.png" alt="">
+            <h4>Baciloscopia (Esputo)</h4>
+          </div>
+
+          <ul>
+            <li>Tomar 3 muestras, con un espacio de 30 minutos
+              cada una y se deben marcar respectivamente.
+            </li>
+            <li>En ayunas, enujagar la boca solo con agua, evitar
+              enjuagues bucales.
+            </li>
+            <li>No incluir saliva en la muestra.</li>
+            
+          </ul>
+        </div>
+
+
+      </div>
   </section>
+</section>
 
  <!-- ══════════════════ FOOTER ══════════════════ -->
 <footer>
@@ -94,11 +591,11 @@
     <div class="footer-col">
       <h4>Institución</h4>
       <ul>
-        <li><a href="../index.html#quienes">¿Quiénes somos?</a></li>
-        <li><a href="../index.html#atencion">Modelo de atención</a></li>
-        <li><a href="../html/equipo.html">Nuestro equipo</a></li>
+        <li><a href="#">¿Quiénes somos?</a></li>
+        <li><a href="#">Modelo de atención</a></li>
+        <li><a href="./html/equipo.html">Nuestro equipo</a></li>
         <li><a href="#">Plan Premium</a></li>
-        <li><a href="../index.html#reconocimientos">Reconocimientos</a></li>
+        <li><a href="#">Reconocimientos</a></li>
       </ul>
     </div>
 
@@ -106,8 +603,8 @@
     <div class="footer-col">
       <h4>Pacientes</h4>
       <ul>
-        <li><a href="https://wa.me/573001234567" target="_blank">Solicitar cita</a></li>
-        <li><a href="https://resultados-bios-popayan.web.app" target="_blank">Resultados en línea</a></li>
+        <li><a href="../index.html#Agcita">Solicitar cita</a></li>
+        <li><a href="#">Resultados en línea</a></li>
         <li><a href="../index.html#hclinica">Historia clínica</a></li>
         <li><a href="../index.html#deberes">Deberes y Derechos</a></li>
         <li><a href="../index.html#pqrsf">PQRSF</a></li>
@@ -115,7 +612,7 @@
     </div>
 
     <!-- CONTACTO -->
-    <div class="footer-col footer-contact">
+    <div class="footer-col footer-contact" id="contacto">
       <h4>Contáctanos</h4>
       <ul>
         <li>
@@ -128,11 +625,11 @@
         </li>
         <li>
           <img src="../img/telefono.png" alt="">
-          (602) 820-0000
+          300 912 4604
         </li>
         <li>
           <img src="../img/correo.png" alt="">
-          <a href="#">info@biosips.com</a>
+          <a href="mailto:siau@biosmedicalcenter.com">siau@biosmedicalcenter.com</a>
         </li>
       </ul>
     </div>
@@ -153,6 +650,7 @@
     </div>
   </div>
 </footer>
-<script src="../js/script.js"></script>
+
+<script src="../js/menu.js"></script>
 </body>
 </html>

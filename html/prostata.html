@@ -17,28 +17,36 @@
 
 <!-- ══════════════════ HEADER ══════════════════ -->
 <header>
-    <a href="../index.html"><img src="../img/logoBios.png" alt="BIOS IPS" style="height:48px;width:auto;"></a>
-    <nav>
-      <a href="../index.html#quienes">¿Quiénes somos?</a>
-      <a href="../index.html#atencion">Atención al paciente</a>
-      <a href="../index.html#servicios">Servicios</a>
-      <a href="https://resultados-bios-popayan.web.app" target="_blank">Resultados</a>
-      <a href="https://wa.me/573001234567" target="_blank" class="nav-cta"> <!--usar el número de Bios-->
-        <img src="../img/calendario_B.png" alt="">
-        Solicitar cita →
-      </a>
-    </nav>
-  </header>
+  <a href="#"><img src="../img/logoBios.png" style="height:48px;width:auto;"></a>
+  <nav>
+    <div class="dropdown-menu">
+      <span class="dropdown-toggle">¿Quiénes somos?</span>
+      <div class="dropdown-content">
+        <a href="../html/Nosotros.html">Sobre Nosotros</a>
+        <a href="../html/EstadosFinancieros.html#estados">Estados financieros</a>
+        <a href="../html/reconocimientos.html#reconocimientos">Nuestros reconocimientos</a>
+      </div>
+    </div>
+
+    <a href="#atencion">Atención al paciente</a>
+    <a href="#servicios">Servicios</a>
+    <a href="https://resultados-bios-popayan.web.app" target="_blank">Resultados</a>
+    <a href="https://wa.me/573009124604" target="_blank" class="nav-cta"> <!--usar el número de Bios-->
+      <img src="../img/calendario_B.png" alt="">
+      Solicitar cita →
+    </a>
+  </nav>
+</header>
 
 <!-- ═════════ HERO ═════════ -->
 <section class="hero-prostata-custom">
   <div>
     <div class="container">
-      <h1 class="hero-title">
+      <h1 class="hero-cancer-prostata-title">
         <img src="../img/lazo-cancer-prostata-icono.png" alt="icono" class="hero-icon">
         Cáncer de Próstata
       </h1>
-      <p>Prevención, detección temprana y cuidado integral</p>
+      <p class="hero-cancer-prostata-sub">Prevención, detección temprana y cuidado integral</p>
     </div>
     <a href="../index.html" class="btn-regresar-prostata">
       <span class="arrow">←</span>
@@ -54,7 +62,7 @@
 
       <!-- CARD 1 -->
       <div class="resumen-card light">
-        <img src="../img/prostata-icono1.png" class="card-img">
+        <img src="../img/prostata/prostata.png" class="card-img">
         <h3>¿Sabías qué?</h3>
         <p>
           La próstata es una órgano que pertenece al 
@@ -72,7 +80,7 @@
 
       <!-- CARD 2 -->
       <div class="resumen-card blue">
-        <img src="../img/prostata-icono2.png" class="card-img">
+        <img src="../img/prostata/psa.png" class="card-img">
         <h3>¿Qué es el PSA?</h3>
         <p>Es una sustancia producida por la próstata.</p>
         <br>
@@ -96,7 +104,7 @@
 
       <!-- CARD 3 -->
       <div class="resumen-card light">
-        <img src="../img/prostata-icono3.png" class="card-img">
+        <img src="../img/prostata/anciano-prostata.png" class="card-img">
         <h3>Detección temprana</h3>
         <br>
         <p><strong>Población:</strong> Hombres de 50 a 75 años</p>
@@ -145,7 +153,7 @@
 
     <!-- IMAGEN -->
     <div class="tamizacion-img">
-      <img src="../img/examen-prostata.jpg" alt="Examen de próstata">
+      <img src="../img/prostata/prueba-psa.png" alt="Examen de próstata">
     </div>
 
   </div>
@@ -159,22 +167,22 @@
     <div class="prevencion-grid">
 
       <div class="prev-card">
-        <img src="../img/no-fumar.png" alt="">
+        <img src="../img/prostata/no-fumar - copia.png" alt="">
         <p>No fumar</p>
       </div>
 
       <div class="prev-card">
-        <img src="../img/comida-saludable.png" alt="">
+        <img src="../img/prostata/alimentacion-saludable.png" alt="">
         <p>Alimentación saludable</p>
       </div>
 
       <div class="prev-card">
-        <img src="../img/actividad-fisica.png" alt="">
+        <img src="../img/prostata/ejercicio.png" alt="">
         <p>Actividad física</p>
       </div>
 
       <div class="prev-card">
-        <img src="../img/peso-saludable.png" alt="">
+        <img src="../img/prostata/peso-saludable.png" alt="">
         <p>Peso saludable</p>
       </div>
 
@@ -190,7 +198,7 @@
 
       <!-- IMAGEN -->
       <div class="prostata-services-img">
-        <img src="../img/prostata-servicios.jpg" alt="">
+        <img src="../img/prostata/prostata-imagen.jpeg" alt="">
       </div>
 
       <!-- CONTENIDO -->
@@ -301,6 +309,6 @@
 </footer>
 
 <script src="../js/script.js"></script>
-
+<script src="../js/menu.js"></script>
 </body>
 </html>
