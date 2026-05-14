@@ -4890,3 +4890,161 @@ body{
   }
 
 }
+ /* ======== CONVENIOS ======== */
+ 
+
+.eps-section{
+
+  padding:100px 24px;
+  margin-top:30px;
+  border-top-left-radius:60px;
+  border-top-right-radius:60px;
+  background:
+  linear-gradient(
+    to bottom,
+    #f8fbff,
+    #eef6fc
+  );
+}
+
+
+.eps-container{
+
+  max-width:1280px;
+  margin:auto;
+}
+
+
+/* TITULOS */
+
+.eps-subtitle{
+
+  max-width:760px;
+  margin:auto;
+  text-align:center;
+  color:#667085;
+  line-height:1.8;
+  font-size:1.05rem;
+  margin-bottom:70px;
+}
+
+
+/* GRID */
+
+.eps-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(260px,1fr));
+
+  gap:28px;
+}
+
+
+/* CARD */
+
+.eps-card{
+
+  background:#fff;
+  border-radius:30px;
+  padding:38px 30px;
+  text-align:center;
+  border:1px solid rgba(71,152,208,.08);
+  box-shadow:
+  0 14px 40px rgba(0,0,0,.05);
+  transition:.35s ease;
+}
+
+
+.eps-card:hover{
+
+  transform:translateY(-8px);
+  box-shadow:
+  0 20px 50px rgba(154, 189, 215, 0.14);
+  border: 1px solid var(--b3);
+}
+
+
+/* LOGO */
+
+.eps-logo{
+
+  width:82px;
+  height:82px;
+  object-fit:contain;
+  margin-bottom:24px;
+}
+
+
+/* TITULO CARD */
+
+.eps-card h3{
+  color:var(--b1);
+  font-size:1.3rem;
+  margin-bottom:20px;
+  font-family:Raleway, sans-serif;
+  font-style: italic;
+}
+
+
+/* LISTA */
+
+.eps-card ul{
+  list-style:none;
+  padding:0;
+  margin:0 0 24px;
+  display:grid;
+  gap:10px;
+}
+
+
+.eps-card li{
+
+  padding:10px 14px;
+  border-radius:14px;
+  background:#f2f3f4;
+  color:#4c4f54;
+  font-size:.96rem;
+}
+
+
+/* BADGE */
+
+.eps-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 22px;
+  margin-top: 8px;
+  border-radius: 40px;
+  background: rgba(44, 125, 160, 0.08);
+  color: var(--medical-blue);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border: 1px solid rgba(44, 125, 160, 0.15);
+  transition: all 0.2s ease;
+}
+
+.eps-card:hover .eps-badge {
+  background: rgba(44, 125, 160, 0.12);
+  border-color: rgba(44, 125, 160, 0.25);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .eps-section{
+
+    padding:80px 18px;
+  }
+
+  .eps-subtitle{
+
+    margin-bottom:50px;
+  }
+
+}
