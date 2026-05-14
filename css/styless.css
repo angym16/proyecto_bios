@@ -1090,9 +1090,7 @@ nav a{
 
 .btn-regresar-prostata:hover{
     transform: translateX(-4px);
-
     background: #fff;
-
     box-shadow: 0 10px 24px rgba(64, 82, 215, 0.18);
 }
 

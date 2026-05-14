@@ -3999,7 +3999,6 @@ body{
 
 .info-item:hover{
   transform:translateX(5px);
-
   background:#fff;
 }
 
@@ -4067,17 +4066,375 @@ body{
 
 /*PAQUETE MAMA*/
 
-.benefit-mini-icon{
-  width:34px;
-  height:34px;
+/* ══════════ PAQUETE MAMA ══════════ */
 
-  object-fit:contain;
+.pm-hero{
 
-  flex-shrink:0;
+  padding:90px 24px 80px;
 
-  align-self:center;
+  background:
+  radial-gradient(
+    circle at top right,
+    rgba(71,152,208,.12),
+    transparent 30%
+  ),
+
+  linear-gradient(
+    to bottom,
+    #ffffff,
+    #f7fbff
+  );
 }
 
+
+/* ═════════ CONTENEDOR ═════════ */
+
+.pm-container{
+
+  max-width:1200px;
+
+  margin:auto;
+
+  width:100%;
+}
+
+
+/* ═════════ TITULOS ═════════ */
+
+.pm-eyebrow{
+
+  text-align:center;
+  color:var(--b2);
+  font-weight:700;
+  letter-spacing:2px;
+  margin-bottom:14px;
+  text-transform:uppercase;
+}
+
+
+.pm-title{
+
+  font-size:clamp(2.2rem,5vw,3.6rem);
+  line-height:1.1;
+  font-weight:800;
+  color:var(--b1);
+  text-align:center;
+  margin-bottom:20px;
+}
+
+
+.pm-subtitle{
+
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  font-size:1rem;
+  line-height:1.9;
+  color:#667085;
+}
+
+
+/* ═════════ IMAGEN HERO ═════════ */
+
+.pm-hero-img{
+
+  width:100%;
+
+  max-width:950px;
+
+  height:420px;
+
+  object-fit:cover;
+
+  display:block;
+
+  margin:50px auto;
+
+  border-radius:32px;
+
+  box-shadow:
+  0 30px 70px rgba(0,0,0,.12);
+}
+
+
+/* ═════════ GRID ═════════ */
+
+.pm-grid{
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+  align-items:start;
+}
+
+
+/* ═════════ CARDS ═════════ */
+
+.pm-card{
+
+  background:#fff;
+  border-radius:30px;
+  padding:38px;
+  border:1px solid rgba(71,152,208,.08);
+  box-shadow:
+  0 14px 50px rgba(0,0,0,.06);
+}
+
+
+.pm-main-card{
+
+  background:
+  linear-gradient(
+    to bottom,
+    #ffffff,
+    #f9fbff
+  );
+}
+
+
+/* ═════════ TITULOS CARDS ═════════ */
+
+.pm-main-card h2,
+.pm-benefit-title{
+
+  color:var(--b1);
+  font-size:1.5rem;
+  margin-bottom:24px;
+  font-weight:700;
+}
+
+
+/* ═════════ LISTA ═════════ */
+
+.pm-main-card ul{
+
+  padding-left:22px;
+}
+
+
+.pm-main-card li{
+
+  margin-bottom:18px;
+  line-height:1.9;
+  color:#5b6472;
+  font-size:0.9rem;
+}
+
+
+/* ═════════ BENEFICIOS ═════════ */
+
+.pm-info-items{
+
+  display:grid;
+  gap:18px;
+}
+
+
+.pm-info-item{
+
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  padding:20px;
+  border-radius:22px;
+  background:#f8fbff;
+  border:1px solid rgba(71,152,208,.12);
+  transition:.3s ease;
+}
+
+
+.pm-info-item:hover{
+
+  transform:translateY(-4px);
+
+  box-shadow:
+  0 14px 35px rgba(71,152,208,.12);
+}
+
+
+.pm-info-item strong{
+
+  display:block;
+  margin-bottom:8px;
+  color:var(--b1);
+  font-size:0.9rem;
+}
+
+
+.pm-info-item span{
+
+  color:#667085;
+  line-height:1.7;
+  font-size:.90rem;
+}
+
+
+/* ═════════ ICONOS ═════════ */
+
+.pm-icon{
+
+  width:58px;
+  height:58px;
+  padding:12px;
+  border-radius:18px;
+  background:white;
+  object-fit:contain;
+  flex-shrink:0;
+  box-shadow:
+  0 10px 24px rgba(71,152,208,.12);
+}
+
+
+/* ═════════ PREPARACION ═════════ */
+
+.pm-prep-box{
+
+  margin-top:55px;
+  padding:40px;
+  border-radius:30px;
+  background:
+  linear-gradient(
+    135deg,
+    rgba(71,152,208,.08),
+    rgba(255,255,255,.95)
+  );
+
+  border:1px solid rgba(71,152,208,.10);
+  box-shadow:
+  0 14px 40px rgba(0,0,0,.06);
+}
+
+
+/* TITULO */
+
+.pm-prep-box h3{
+
+  font-size:1.8rem;
+  color:var(--b1);
+  margin-bottom:24px;
+  text-align:center;
+  font-weight:700;
+}
+
+
+/* LISTA */
+
+.pm-prep-list{
+
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:14px;
+}
+
+
+/* ITEMS */
+
+.pm-prep-list li{
+
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  padding:16px 18px;
+  border-radius:18px;
+  background:#ffffff;
+  border:1px solid rgba(71,152,208,.10);
+  color:#5b6472;
+  line-height:1.7;
+  font-size:0.9rem;
+  transition:.3s ease;
+}
+
+
+/* HOVER */
+
+.pm-prep-list li:hover{
+
+  transform:translateX(4px);
+  box-shadow:
+  0 10px 24px rgba(71,152,208,.10);
+}
+
+
+/* ICONO CHECK */
+
+.pm-prep-list li::before{
+
+  content:"✓";
+  min-width:30px;
+  height:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:var(--b1);
+  color:white;
+  font-size:.8rem;
+  font-weight:700;
+  flex-shrink:0;
+  margin-top:2px;
+  box-shadow:
+  0 8px 18px rgba(71,152,208,.18);
+}
+
+/* ═════════ RESPONSIVE ═════════ */
+
+@media(max-width:950px){
+
+  .pm-grid{
+
+    grid-template-columns:1fr;
+  }
+
+  .pm-card{
+
+    padding:28px;
+  }
+
+  .pm-hero-img{
+
+    height:300px;
+  }
+
+}
+
+
+@media(max-width:700px){
+
+  .pm-hero{
+
+    padding:70px 18px;
+  }
+
+  .pm-title{
+
+    font-size:2.4rem;
+  }
+
+  .pm-subtitle{
+
+    font-size:1rem;
+  }
+
+  .pm-hero-img{
+
+    height:240px;
+
+    border-radius:24px;
+  }
+
+  .pm-card{
+
+    padding:24px;
+  }
+
+  .pm-prep-box{
+
+    padding:28px 22px;
+  }
+
+}
 /* IMAGENES DIAGNOSTICAS*/
 .img-mini-icon{
   width:34px;
