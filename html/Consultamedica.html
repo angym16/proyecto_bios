@@ -6,6 +6,7 @@
   <title>Consulta Médica | BIOS IPS</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <header>
@@ -22,159 +23,122 @@
     </nav>
   </header>
 
-<section class="citas-section" id="SolicitudCitas">
+<section class="agenda-section">
 
-  <!-- HERO CON IMAGEN -->
-  <div class="citas-hero">
-  
-    <div class="citas-overlay"></div>
+  <!-- FONDO -->
+  <div class="agenda-overlay"></div>
 
-    <div class="citas-hero-content">
-    <span class="citas-etiqueta">BIOS Medical Center</span>
+  <div class="agenda-container">
 
-      <h1>Solicitud de citas médicas</h1>
+    <!-- INFORMACIÓN -->
+    <div class="agenda-content">
 
-      <p>
-        Agenda tus citas médicas de forma rápida, segura y sencilla.
-        Nuestro equipo está listo para brindarte atención con calidad humana.
+      <span class="agenda-tag">
+        Agendamiento de citas médicas
+      </span>
+
+      <h1>
+        Solicita tu cita médica<br>
+        de forma rápida y segura
+      </h1>
+
+      <p class="agenda-text">
+        En IPS BIOS queremos brindarte una experiencia cómoda, clara y eficiente. 
+        Nuestro equipo de atención asignará tu cita médica mediante WhatsApp, 
+        acompañándote durante todo el proceso y resolviendo cualquier inquietud.
       </p>
 
-      <a class="btn-cita"
-      href="https://wa.me/573001234567?text=Hola%2C%20deseo%20agendar%20una%20cita%20m%C3%A9dica."
-      target="_blank">
-        <i class="ti ti-brand-whatsapp"></i>
+      <!-- BOTÓN -->
+      <a href="https://wa.me/573001112233" target="_blank" class="btn-agenda">
+        <i class="fa-brands fa-whatsapp"></i>
         Solicitar cita por WhatsApp
       </a>
-    </div>
-  </div>
 
-  <section class="citas-section">
+      <div class="agenda-mini-info">
 
-  <div class="citas-info">
+        <div class="mini-box">
+          <i class="fa-regular fa-clock"></i>
+          <span>Atención rápida</span>
+        </div>
 
-    <!-- CARD 1 -->
-    <div class="info-card">
+        <div class="mini-box">
+          <i class="fa-solid fa-user-shield"></i>
+          <span>Proceso seguro</span>
+        </div>
 
-      <!-- IMAGEN -->
-      <div class="card-img">
-        <img src="calendario_A.png" alt="Horarios de atención IPS">
-      </div>
-
-      <div class="card-content">
-        <h3>Horarios de atención</h3>
-        <p class="info-texto">
-          Nuestros horarios están diseñados para brindarte atención médica rápida, organizada y accesible.</p>
-
-        <ul class="info-lista">
-
-          <li>
-            <i class="ti ti-clock-hour-8"></i>
-            Lunes a viernes: 7:00 am – 6:00 pm
-          </li>
-
-          <li>
-            <i class="ti ti-calendar-week"></i>
-            Sábados: 7:00 am – 1:00 pm
-          </li>
-
-          <li>
-            <i class="ti ti-brand-whatsapp"></i>
-            Atención y asignación de citas por WhatsApp
-          </li>
-
-          <li>
-            <i class="ti ti-alarm"></i>
-            Recomendamos llegar 20 minutos antes
-          </li>
-
-        </ul>
+        <div class="mini-box">
+          <i class="fa-solid fa-headset"></i>
+          <span>Acompañamiento IPS</span>
+        </div>
 
       </div>
+
     </div>
 
-    <!-- CARD 2 -->
-    <div class="info-card">
+    <!-- PANEL DERECHO -->
+    <div class="agenda-card">
 
-    <div class="card-img">
-   <img src="img/historial-medico.png" alt="Documentos requeridos">
-  </div>
-
-      <div class="card-content">
-
-        <h3>Documentos requeridos</h3>
-
-        <p class="info-texto">
-          Presenta estos documentos para agilizar tu proceso y evitar retrasos en tu atención médica.
+      <div class="card-header">
+        <h2>Recomendaciones importantes</h2>
+        <p>
+          Antes de asistir a tu cita médica, ten en cuenta las siguientes indicaciones:
         </p>
+      </div>
 
-        <ul class="info-lista">
+      <div class="recommendation">
 
-          <li>
-            <i class="ti ti-id"></i>
-            Documento de identidad original
-          </li>
+        <div class="icon-circle">
+          <i class="fa-regular fa-clock"></i>
+        </div>
 
-          <li>
-            <i class="ti ti-shield-check"></i>
-            Autorización vigente de EPS
-          </li>
-
-          <li>
-            <i class="ti ti-file-medical"></i>
-            Orden médica o remisión
-          </li>
-
-          <li>
-            <i class="ti ti-notes"></i>
-            Historia clínica o resultados anteriores
-          </li>
-
-        </ul>
+        <div>
+          <h3>Presentarse con anticipación</h3>
+          <p>
+            Llega 20 minutos antes de la hora programada para realizar el proceso de facturación.
+          </p>
+        </div>
 
       </div>
+
+      <div class="recommendation">
+
+        <div class="icon-circle">
+          <i class="fa-regular fa-id-card"></i>
+        </div>
+
+        <div>
+          <h3>Documento original</h3>
+          <p>
+            Presenta tu documento de identidad original al momento de la atención médica.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="recommendation">
+
+        <div class="icon-circle">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+
+        <div>
+          <h3>Asignación vía WhatsApp</h3>
+          <p>
+            Nuestro personal confirmará tu cita médica directamente por WhatsApp.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- MENSAJE FINAL -->
+      <div class="agenda-footer">
+        Estamos a tu disposición para atender tu solicitud y brindarte una atención humanizada y oportuna.
+      </div>
+
     </div>
 
-    <!-- CARD 3 -->
-    <div class="info-card">
-
-      <div class="card-img">
-        <img src="IMAGEN-ATENCION.png" alt="Atención humanizada">
-      </div>
-
-      <div class="card-content">
-
-        <h3>Atención humanizada</h3>
-
-        <p class="info-texto">
-          Nuestro equipo médico y asistencial trabaja para ofrecer una experiencia cálida y segura.
-        </p>
-
-        <ul class="info-lista">
-
-          <li>
-            <i class="ti ti-user-heart"></i>
-            Atención personalizada y cercana
-          </li>
-
-          <li>
-            <i class="ti ti-stethoscope"></i>
-            Profesionales comprometidos con tu bienestar
-          </li>
-
-          <li>
-            <i class="ti ti-accessible"></i>
-            Espacios cómodos y accesibles
-          </li>
-
-          <li>
-            <i class="ti ti-heart"></i>
-            Acompañamiento integral al paciente
-          </li>
-        </ul>
-
-      </div>
-    </div>
   </div>
+
 </section>
 
 <!-- ══════════════════ FOOTER ══════════════════ -->
