@@ -2848,7 +2848,7 @@ footer {
   padding:40px 0 120px;
 }
 
-/*HERO MÁS ELEGANTE Y COMPACTO*/
+/*HERO*/
 .citas-hero{
   position:relative;
   width:92%;
@@ -2883,7 +2883,7 @@ footer {
   inset:0;
   background:linear-gradient(
     135deg,
-    rgba(104, 146, 201, 0.82),
+    rgba(14, 77, 160, 0.82),
     rgba(110, 148, 199, 0.65)
   );
 }
