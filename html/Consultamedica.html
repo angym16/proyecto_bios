@@ -8,9 +8,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/styless.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+
 </head>
 <body>
-<!-- ══════════════════ HEADER ══════════════════ -->
+
+<!-- ══HEADER════ -->
 <header>
   <a href="#"><img src="../img/logoBios.png" style="height:48px;width:auto;"></a>
   <nav>
@@ -26,260 +29,189 @@
     <a href="#atencion">Atención al paciente</a>
     <a href="#servicios">Servicios</a>
     <a href="https://resultados-bios-popayan.web.app" target="_blank">Resultados</a>
-    <a href="https://wa.me/573009124604" target="_blank" class="nav-cta"> <!--usar el número de Bios-->
+    <a href="https://wa.me/573111111111" target="_blank" class="nav-cta"> 
       <img src="../img/calendario_B.png" alt="">
       Solicitar cita →
     </a>
   </nav>
 </header>
 
-<section class="hero">
-    <polyline points="200,220 240,220 260,170 280,260 300,200 320,220 680,220"
-    stroke="#2563EB" stroke-width="2.5" fill="none" opacity="0.35"/>
-    <circle cx="260" cy="170" r="5" fill="#60A5FA" opacity="0.5"/>
-    <circle cx="300" cy="200" r="5" fill="#60A5FA" opacity="0.5"/>
-    <circle cx="730" cy="200" r="55" stroke="#2563EB" stroke-width="2"   fill="none" opacity="0.25"/>
-    <circle cx="730" cy="200" r="30" stroke="#3B82F6" stroke-width="1.5" fill="none" opacity="0.2"/>
-    <rect x="50" y="100" width="60" height="24" rx="12" fill="#2563EB" opacity="0.2"/>
-    <rect x="50" y="100" width="30" height="24" rx="12" fill="#60A5FA" opacity="0.2"/>
-    <rect x="80" y="148" width="50" height="20" rx="10" fill="#1A4DB5" opacity="0.2"/>
-  
- 
-  <div class="hero-overlay"> </div>
- 
-  <div class="hero-content">
-    <div class="logo-marca">
-      <div class="logo-icono">
-        <i class="ti ti-heart-plus" aria-hidden="true"></i>
-      </div>
-      <div class="logo-texto">
-        <span class="logo-bios">BIOS Medical Center</span>
+<!-- HERO -->
+<section class="consultamedica-hero">
+
+  <!-- BOTON REGRESAR -->
+  <a href="../index.html"
+     class="btn-regresar-rutas">
+    <span class="arrow">←</span>
+  </a>
+
+  <!-- CONTENIDO -->
+  <div class="consultamedica-contenido">
+
+    <!-- IMAGEN IZQUIERDA -->
+    <div class="consultamedica-info">
+
+      <img src="../img/agendarcita.jpg"
+           alt="Atención médica BIOS"
+           class="pm-hero-img">
+
     </div>
+
+    <!-- TEXTOS DERECHA -->
+    <div class="consultamedica-textos">
+
+      <!-- TITULO -->
+      <h1 class="consultamedica-titulo">
+        Tu salud, nuestra <em>prioridad</em>
+      </h1>
+
+      <!-- DESCRIPCION -->
+      <p class="consultamedica-descripcion">
+        En BIOS Medical Center brindamos atención médica integral con calidad,
+        compromiso y calidez humana. Agenda tu cita médica de forma rápida
+        y segura por WhatsApp.
+      </p>
+
+      <!-- BOTON WHATSAPP -->
+      <a class="consultamedica-boton-wsp"
+        href="https://wa.me/573111111111?text=Hola%20BIOS%20Medical%20Center,%20deseo%20agendar%20una%20cita%20m%C3%A9dica."
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <i class="ti ti-brand-whatsapp"></i>
+        Agendar cita por WhatsApp
+
+      </a>
     </div>
- 
-  <h1 class="hero-titulo">Tu salud, nuestra <em>prioridad</em></h1>
- 
-    <p class="hero-desc">
-      En BIOS Medical Center te brindamos atención médica con calidez humana
-      y enfoque preventivo. Agenda tu cita fácilmente por WhatsApp.
-    </p>
- </div>
+  </div>
 </section>
- 
- 
-<!--CONTENIDO-->
-<main class="main">
-   <!-- ── Servicios-->
-  <h2 class="seccion-titulo">Nuestros servicios</h2>
-  <p class="seccion-sub">Ofrecemos atención medica integral para toda la familia.</p>
- 
-  <div class="servicios-grid">
-    <div class="servicio-card">
-      <div class="srv-icono"><i class="ti ti-user-heart" aria-hidden="true"></i></div>
-      <div>
-        <p class="srv-nombre">Medicina general</p>
-        <p class="srv-detalle">Consulta, diagnóstico y tratamiento de enfermedades comunes.</p>
-      </div>
-    </div>
-    <div class="servicio-card">
-      <div class="srv-icono"><i class="ti ti-tooth" aria-hidden="true"></i></div>
-      <div>
-        <p class="srv-nombre">Odontología general</p>
-        <p class="srv-detalle">Higiene oral, restauraciones y urgencias odontológicas.</p>
-      </div>
-    </div>
-    
-    <div class="servicio-card">
-      <div class="srv-icono"><i class="ti ti-first-aid-kit" aria-hidden="true"></i></div>
-      <div>
-        <p class="srv-nombre">Enfermería</p>
-        <p class="srv-detalle">Curaciones, inyectología, toma de signos y seguimiento.</p>
-      </div>
-    </div>
 
-    <div class="servicio-card">
-      <div class="srv-icono"><i class="ti ti-baby-carriage" aria-hidden="true"></i></div>
-      <div>
-        <p class="srv-nombre">Control prenatal</p>
-        <p class="srv-detalle">Seguimiento del embarazo con atención personalizada.</p>
-      </div>
-    </div>
+<!-- CONTENIDO -->
+<main class="consultamedica-main">
 
-    <div class="servicio-card">
-      <div class="srv-icono"><i class="ti ti-vaccine" aria-hidden="true"></i></div>
-      <div>
-        <p class="srv-nombre">Vacunación</p>
-        <p class="srv-detalle">Esquema PAI completo para niños, adultos y viajeros.</p>
-      </div>
-    </div>
+  <!-- SERVICIOS -->
+  <section class="consultamedica-servicios">
+    <h2 class="consultamedica-seccion-titulo">Nuestros servicios</h2>
+    <p class="consultamedica-seccion-subtitulo">
+      Atención médica integral para toda la familia.</p>
+    <div class="consultamedica-servicios-grid">
 
-    <div class="servicio-card">
-      <div class="srv-icono"><i class="ti ti-test-pipe" aria-hidden="true"></i></div>
-      <div>
-        <p class="srv-nombre">Toma de muestras</p>
-        <p class="srv-detalle">Laboratorio clínico con resultados rápidos y confiables.</p>
-      </div>
-    </div>
+      <!-- CARD -->
+      <div class="consultamedica-servicio-card">
 
-    <div class="servicio-card">
-      <div class="srv-icono"><i class="ti ti-chart-line" aria-hidden="true"></i></div>
-      <div>
-        <p class="srv-nombre">Crecimiento y desarrollo</p>
-        <p class="srv-detalle">Control nutricional y psicomotor para niños y niñas.</p>
-      </div>
-    </div>
-    
-    <div class="servicio-card">
-      <div class="srv-icono"><i class="ti ti-apple" aria-hidden="true"></i></div>
-      <div>
-        <p class="srv-nombre">Nutrición</p>
-        <p class="srv-detalle">Planes alimentarios personalizados para toda la familia.</p>
-      </div>
-    </div>
-  </div>
- 
- 
-  <!--Cómo agendar-->
-  <div class="pasos-wrap">
-    <p class="pasos-titulo">
-      <i class="ti ti-list-numbers" aria-hidden="true"></i>
-      ¿Cómo agendar tu cita?
-    </p>
+        <div class="consultamedica-servicio-icono">
+          <i class="ti ti-user-heart"></i>
+        </div>
 
-    <div class="pasos-lista">
-      <div class="paso">
-        <div class="paso-num">1</div>
-        <div class="paso-texto">
-          <strong>Haz clic en el botón</strong>
-          Abre el botón de WhatsApp que encuentras más abajo.
+        <div>
+          <p class="consultamedica-servicio-nombre">Medicina general</p>
+          <p class="consultamedica-servicio-detalle">
+            Consulta, diagnóstico y tratamiento de enfermedades comunes.
+          </p>
+        </div>
+      </div>
+      
+      <!-- CARD -->
+      <div class="consultamedica-servicio-card">
+
+        <div class="consultamedica-servicio-icono">
+        <i class="ti ti-dental"></i>
+        </div>
+
+        <div>
+          <p class="consultamedica-servicio-nombre">
+            Odontología</p>
+          <p class="consultamedica-servicio-detalle">
+            Atención odontológica preventiva y correctiva.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="consultamedica-servicio-card">
+        <div class="consultamedica-servicio-icono">
+          <i class="ti ti-vaccine"></i>
+        </div>
+
+        <div>
+          <p class="consultamedica-servicio-nombre">
+            Vacunación
+          </p>
+
+          <p class="consultamedica-servicio-detalle">
+            Aplicación de vacunas para niños y adultos.
+          </p>
         </div>
       </div>
 
-      <div class="paso">
-        <div class="paso-num">2</div>
-        <div class="paso-texto">
-          <strong>Cuéntanos qué necesitas</strong>
-          Indica el servicio y tu nombre completo.
+      <!-- CARD -->
+      <div class="consultamedica-servicio-card">
+        <div class="consultamedica-servicio-icono">
+          <i class="ti ti-heartbeat"></i>
+        </div>
+
+        <div>
+          <p class="consultamedica-servicio-nombre">
+            Enfermería
+          </p>
+
+          <p class="consultamedica-servicio-detalle">
+            Procedimientos básicos y seguimiento clínico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PASOS -->
+  <section class="consultamedica-pasos">
+
+    <h2 class="consultamedica-pasos-titulo">
+      ¿Cómo agendar tu cita?</h2>
+
+    <div class="consultamedica-pasos-lista">
+
+      <div class="consultamedica-paso">
+        <div class="consultamedica-paso-numero">1</div>
+
+        <div class="consultamedica-paso-texto">
+          <strong>Haz clic en el botón de WhatsApp</strong>
+          Inicia el proceso de agendamiento presionando el botón de WhatsApp disponible en la página.
         </div>
       </div>
 
-      <div class="paso">
-        <div class="paso-num">3</div>
-        <div class="paso-texto">
-          <strong>Elige fecha y hora</strong>
-          Nuestro equipo te confirma disponibilidad al instante.
+      <div class="consultamedica-paso">
+        <div class="consultamedica-paso-numero">2</div>
+
+        <div class="consultamedica-paso-texto">
+          <strong>Envía tus datos</strong>
+          Escríbenos tu nombre completo, número de documento y el servicio médico que necesitas.
         </div>
       </div>
 
-      <div class="paso">
-        <div class="paso-num">4</div>
-        <div class="paso-texto">
-          <strong>Preséntate a tu cita</strong>
-          Llega 20 minutos antes con tus documentos listos.
+      <div class="consultamedica-paso">
+        <div class="consultamedica-paso-numero">3</div>
+
+        <div class="consultamedica-paso-texto">
+          <strong>Confirma tu horario</strong>
+          Nuestro equipo verificará la disponibilidad y te enviará la fecha y hora de tu cita.
+        </div>
+      </div>
+
+      <div class="consultamedica-paso">
+        <div class="consultamedica-paso-numero">4</div>
+
+        <div class="consultamedica-paso-texto">
+          <strong>Asiste a tu cita</strong>
+        Te recomendamos llegar 20 minutos antes de la cita para realizar el proceso de facturación.
+        con docuemntos original y ordenes médicas (si aplica).
         </div>
       </div>
     </div>
-  </div>
- 
- 
-  <!--Requisitos-->
-  <h2 class="seccion-titulo">¿Qué necesitas traer?</h2>
-  <p class="seccion-sub">Prepara tus documentos con anticipación para una atención más rápida.</p>
- 
-  <div class="requisitos-grid">
-    <div class="req-card">
-      <p class="req-titulo"><i class="ti ti-id-badge" aria-hidden="true"></i> Régimen contributivo (EPS)</p>
-      <ul class="req-lista">
-        <li>Documento de identidad original</li>
-        <li>Carné vigente de la EPS</li>
-        <li>Orden médica (si aplica)</li>
-        <li>Historia clínica anterior (opcional)</li>
-      </ul>
-    </div>
-    <div class="req-card">
-      <p class="req-titulo"><i class="ti ti-id-badge" aria-hidden="true"></i> Régimen subsidiado (SISBEN)</p>
-      <ul class="req-lista">
-        <li>Documento de identidad original</li>
-        <li>Carné SISBEN vigente</li>
-        <li>Autorización de la EPS-S</li>
-        <li>Historia clínica anterior (opcional)</li>
-      </ul>
-    </div>
-    <div class="req-card">
-      <p class="req-titulo"><i class="ti ti-cash" aria-hidden="true"></i> Consulta particular</p>
-      <ul class="req-lista">
-        <li>Documento de identidad</li>
-        <li>Pago de la tarifa del servicio</li>
-        <li>No requiere orden ni autorización</li>
-      </ul>
-    </div>
-    <div class="req-card">
-      <p class="req-titulo"><i class="ti ti-baby" aria-hidden="true"></i> Menores de edad</p>
-      <ul class="req-lista">
-        <li>Registro civil o tarjeta de identidad</li>
-        <li>Documento del acudiente</li>
-        <li>Carné de vacunación</li>
-        <li>Autorización firmada por el padre/madre</li>
-      </ul>
-    </div>
-  </div>
- 
- 
-  <!--Horarios-->
-  <h2 class="seccion-titulo">Horarios de atención</h2>
-  <p class="seccion-sub">Estamos disponibles para atenderte en estos horarios.</p>
- 
-  <div class="horarios-banda">
-    <div class="hor-item">
-      <i class="ti ti-calendar-week" aria-hidden="true"></i>
-      <div class="hor-texto">
-        <span class="hor-dia">Lunes – Viernes</span>
-        <span class="hor-rango">7:00 am – 6:00 pm</span>
-      </div>
-    </div>
-    <div class="hor-sep" aria-hidden="true"></div>
-    <div class="hor-item">
-      <i class="ti ti-calendar" aria-hidden="true"></i>
-      <div class="hor-texto">
-        <span class="hor-dia">Sábados</span>
-        <span class="hor-rango">7:00 am – 1:00 pm</span>
-      </div>
-    </div>
-    <div class="hor-sep" aria-hidden="true"></div>
-    <div class="hor-item">
-      <i class="ti ti-message-circle" aria-hidden="true"></i>
-      <div class="hor-texto">
-        <span class="hor-dia">WhatsApp</span>
-        <span class="hor-rango">Lun – Sáb · 7 am – 5 pm</span>
-      </div>
-    </div>
-  </div>
- 
- 
-  <!-- ── CTA WhatsApp ───────────────────────── -->
-  <div class="cta-wrap">
-    <h2 class="cta-titulo">¿Listo para agendar?</h2>
-    <p class="cta-sub">Escríbenos por WhatsApp y con gusto te asignamos tu cita.</p>
- 
-    <!--
-      ⬇ IMPORTANTE: Reemplaza 573001234567 por el número real de BIOS Medical Center.
-        Formato: código de país + número, sin espacios ni símbolo +
-        Ejemplo Colombia: 573101234567
-    -->
-    <a class="wsp-boton"
-    href="https://wa.me/573001234567?text=Hola%2C%20deseo%20agendar%20una%20cita%20m%C3%A9dica%20en%20BIOS%20Medical%20Center.%20%C2%BFPueden%20orientarme%3F"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Agendar cita por WhatsApp con BIOS Medical Center">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-    </svg>
-    Agendar cita por WhatsApp
-    </a>
- 
-  <p class="cta-nota">Al hacer clic serás redirigido a WhatsApp. Nuestro equipo te responderá a la brevedad.</p>
-  </div>
- </main>
+  </section>
+</main>
  
 <!--FOOTER-->
 <footer>
