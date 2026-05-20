@@ -1,0 +1,207 @@
+.cms-separation {
+  width: 100vw;            
+  margin-left: calc(-50vw + 50%); 
+  padding: 90px 20px;       
+  background: linear-gradient(
+    180deg,
+    #eef4fb 0%,
+    #f5f7fb 50%,
+    #eef4fb 100%
+  );
+
+  position: relative;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+
+.cms-separation::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(90,160,214,.08);
+  border-radius: 50%;
+  top: -200px;
+  left: -200px;
+  filter: blur(60px);
+}
+
+.cms-separation::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(47,95,166,.06);
+  border-radius: 50%;
+  bottom: -180px;
+  right: -180px;
+  filter: blur(70px);
+}
+.cms-form-wrap {
+  max-width: 520px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffffdd;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(47,95,166,.08);
+  border: 1px solid rgba(47,95,166,.06);
+  position: relative;
+}
+
+/* título del panel */
+.cms-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--b1);
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* label */
+.cms-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #5f6775;
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+
+/* input file */
+.cms-input-file {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: 2px dashed #cfe4ff;
+  background: #fafdff;
+  color: #3f4b5a;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.cms-input-file:hover {
+  border-color: #5aa0d6;
+  background: #f2f8ff;
+}
+
+/* estado focus visual */
+.cms-input-file:focus {
+  outline: none;
+  border-color: #3f9cff;
+  box-shadow: 0 0 0 4px rgba(63,156,255,.12);
+}
+
+/* botón principal */
+.cms-btn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #5aa0d6, #4ea7ff);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  transition: .25s ease;
+  box-shadow: 0 10px 20px rgba(90,160,214,.25);
+}
+
+.cms-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(90,160,214,.35);
+}
+
+/* texto pequeño de ayuda */
+.cms-help {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #7a8699;
+  line-height: 1.4;
+}
+
+/* badge estado (opcional) */
+.cms-status {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #5aa0d6;
+  font-weight: 600;
+}
+
+
+/* GRID PRINCIPAL */
+.cms-admin-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:30px;
+  align-items:start;
+  margin:40px auto;
+  max-width:1100px;
+}
+
+/* PANEL ESTADÍSTICAS */
+.cms-stats-form{
+  background:#fff;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:0 12px 30px rgba(47,95,166,.08);
+  border:1px solid rgba(47,95,166,.06);
+}
+
+/* bloque de cada cáncer */
+.cms-stat-block{
+  margin-bottom:18px;
+  padding:14px;
+  border-radius:14px;
+  background:#f5f7fb;
+  border:1px solid rgba(90,160,214,.12);
+}
+
+/* título de cada bloque */
+.cms-stat-block h4{
+  margin-bottom:8px;
+  font-size:14px;
+  color:#2f3e55;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* inputs */
+.cms-stat-block input{
+  width:100%;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid #d7e6f7;
+  outline:none;
+  font-size:13px;
+  background:white;
+  transition:.2s ease;
+}
+
+.cms-stat-block input:focus{
+  border-color:#5aa0d6;
+  box-shadow:0 0 0 3px rgba(62, 125, 174, 0.15);
+}
+
+.cms-selectable {
+  transition: all .25s ease;
+  cursor: pointer;
+}
+
+.cms-form-wrap,
+.cms-stats-form {
+  border: 2px solid transparent;
+  transition: all .25s ease;
+}
+
+.cms-selectable:hover {
+  border-color: #075998;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(72, 126, 207, 0.18);
+}
+

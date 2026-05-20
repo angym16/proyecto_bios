@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/admin.css">
 </head>
 
 <body>
@@ -298,7 +299,7 @@
         Información actualizada sobre rutas de detección, prevención y seguimiento oncológico en el Cauca.
       </p>
 
-      <a href="../pdf/boletin/boletin_epidemiologico.pdf" class="btn btn-white" download>
+      <a href="../pdf/boletin/boletin.pdf" class="btn btn-white" download>
         <img src="../img/descargar-archivo.png" class="icon-btn" alt="">
         Descargar boletín
       </a>
@@ -313,7 +314,7 @@
 
     <h4 class="mama">Cáncer de mama</h4>
 
-    <span class="mini-stat">
+    <span class="mini-stat" data-cancer="mama">
       +200 mamografías
     </span>
 
@@ -327,7 +328,7 @@
 
     <h4 class="colon">Cáncer colorrectal</h4>
 
-    <span class="mini-stat">
+    <span class="mini-stat" data-cancer="colorrectal">
       +120 tamizajes
     </span>
 
@@ -341,7 +342,7 @@
 
     <h4 class="cervix">Cáncer de cervix</h4>
 
-    <span class="mini-stat">
+    <span class="mini-stat" data-cancer="cervix">
       +310 citologías
     </span>
 
@@ -355,7 +356,7 @@
 
     <h4 class="prostata">Cáncer de próstata</h4>
 
-    <span class="mini-stat">
+    <span class="mini-stat" data-cancer="prostata">
       +95 detecciones
     </span>
 
@@ -404,7 +405,72 @@
     </div>
 
   </div>
+
+      <div class="cms-separation">
+        <p class="eyebrow">Información</p>
+        <h4 class="sec-title">Actualizar Contenido</h4>
+        <p class="sec-sub">
+          Actualización mensual de Boletín epidemiológico y estadísticas de rutas de cáncer. Mantén la información al día para nuestros pacientes.
+        </p>
+        <div class="cms-admin-grid">
+
+          <!--  PDF -->
+          <div class="cms-form-wrap cms-selectable">
+            <div class="cms-title">Actualizar Boletín PDF</div>
+
+            <label class="cms-label">Subir nuevo PDF</label>
+            <input type="file" id="pdfFile" accept=".pdf" class="cms-input-file">
+
+            <button class="cms-btn" onclick="guardarPDF()">
+              Guardar PDF
+            </button>
+          </div>
+
+
+          <!--  ESTADÍSTICAS -->
+          <div class="cms-stats-form cms-selectable">
+
+            <div class="cms-title">Actualizar Estadísticas</div>
+
+            <!-- MAMA -->
+            <div class="cms-stat-block">
+              <img src="../img/lazo-cancer-mama-icono.png" class="icon-btn" alt="">
+              <h4> Cáncer de mama</h4>
+              <input type="text" id="stat-mama" placeholder="+200 mamografías">
+            </div>
+
+            <!-- COLORRECTAL -->
+            <div class="cms-stat-block">
+              <img src="../img/lazo-cancer-colonrrectal-icono.png" class="icon-btn" alt="">
+              <h4>Cáncer colorrectal</h4>
+              <input type="text" id="stat-colorrectal" placeholder="+120 tamizajes">
+            </div>
+
+            <!-- CERVIX -->
+            <div class="cms-stat-block">
+              <img src="../img/lazo-cancer-cervix-icono.png" class="icon-btn" alt="">
+              <h4>Cáncer de cervix</h4>
+              <input type="text" id="stat-cervix" placeholder="+310 citologías">
+            </div>
+
+            <!-- PROSTATA -->
+            <div class="cms-stat-block">
+              <img src="../img/lazo-cancer-prostata-icono.png" class="icon-btn" alt="">
+              <h4>Cáncer de próstata</h4>
+              <input type="text" id="stat-prostata" placeholder="+95 detecciones">
+            </div>
+
+            <button class="cms-btn" onclick="guardarStats()">
+              Guardar estadísticas
+            </button>
+
+          </div>
+
+        </div>
+    </div>
 </section>
+
+
 
 <!-- ══════════════════ JORNADAS (fotos placeholder) ══════════════════ -->
 <section class="sec sec-gray">
@@ -1091,6 +1157,7 @@
     </div>
   </div>
 </footer>
+<script src="../js/main2.js"></script>
 <script src="../js/admin.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/admin-mode.js"></script>
