@@ -1016,8 +1016,8 @@ svg.ico{display:block;}
 
 /* ICONOS BOTONES */
 .icon-btn {
-  width: 18px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 

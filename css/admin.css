@@ -99,7 +99,7 @@
   padding: 14px 18px;
   border: none;
   border-radius: 14px;
-  background: linear-gradient(135deg, #5aa0d6, #4ea7ff);
+  background: linear-gradient(135deg, #0d5389, #155ba1);
   color: #fff;
   font-weight: 700;
   font-size: 14px;
@@ -133,7 +133,6 @@
   color: #5aa0d6;
   font-weight: 600;
 }
-
 
 /* GRID PRINCIPAL */
 .cms-admin-grid{
