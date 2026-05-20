@@ -5427,5 +5427,20 @@ body{
     font-size:1.6rem;
   }
 
+}
 
+.service-icon{
+  width:70px;
+  height:70px;
+  border-radius:20px;
+  background:#e8f3ff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:20px;
+}
+
+.service-icon i{
+  font-size:34px;
+  color:#043174;
 }
