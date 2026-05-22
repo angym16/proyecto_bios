@@ -2299,9 +2299,7 @@ nav a{
   transform:translateX(-3px);
 }
 
-/* =========================
-   PAGE SERVICIOS
-========================= */
+/*PAGE SERVICIOS*/
 
 .services-page{
   position:relative;
@@ -2315,9 +2313,7 @@ nav a{
   );
 }
 
-/* =========================
-   BLURS
-========================= */
+/*BLURS*/
 
 .blur{
   position:absolute;
