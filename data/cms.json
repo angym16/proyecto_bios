@@ -1,0 +1,30 @@
+{
+  "boletin": {
+    "titulo": "Boletín Epidemiológico",
+    "descripcion": "Información actualizada sobre rutas de detección y prevención",
+    "pdf": "pdf/boletin/boletin.pdf"
+  },
+
+  "cancer": {
+    "mama": {
+      "titulo": "Cáncer de mama",
+      "stat": "+200 mamografías",
+      "link": "html/mama.html"
+    },
+    "colorrectal": {
+      "titulo": "Cáncer colorrectal",
+      "stat": "+120 tamizajes",
+      "link": "html/colorrectal.html"
+    },
+    "cervix": {
+      "titulo": "Cáncer de cervix",
+      "stat": "+310 citologías",
+      "link": "html/cervix.html"
+    },
+    "prostata": {
+      "titulo": "Cáncer de próstata",
+      "stat": "+95 detecciones",
+      "link": "html/prostata.html"
+    }
+  }
+}

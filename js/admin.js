@@ -50,11 +50,3 @@ function guardarCMS() {
   }
 }
 
-function guardarJSONFinal() {
-  fetch("../data/save.php", {
-    method: "POST",
-    body: JSON.stringify(cmsData)
-  });
-
-  alert("CMS actualizado");
-}
