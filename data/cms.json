@@ -1,9 +1,9 @@
 {
   "boletin": {
-    "titulo": "Boletín Epidemiológico",
-    "descripcion": "Información actualizada sobre rutas de detección y prevención",
-    "pdf": "pdf/boletin/boletin.pdf"
-  },
+  "titulo": "Boletín Epidemiológico",
+  "descripcion": "Información actualizada sobre rutas de detección y prevención",
+  "pdf": "/pdf/boletin/boletin.pdf"
+},
 
   "cancer": {
     "mama": {
