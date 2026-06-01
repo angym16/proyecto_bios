@@ -5099,332 +5099,278 @@ body{
 
 /*CONSULTA MEDICA*/
 
-/*HERO*/
+/* =========================
+   BASE PREMIUM (FONDO LIMPIO)
+========================= */
+
+body{
+  background: #f6f9fc;
+  color: #1f2937;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+.consultamedica-hero,
+.consultamedica-servicios,
+.consultamedica-pasos{
+  padding: 60px 6%;
+}
+
+/* =========================
+   HERO PREMIUM
+========================= */
+
 .consultamedica-hero{
-  position:relative;
-  width:100%;
-  min-height:420px;
-  overflow:hidden;
-  padding: 55px 20px;
-  background:
-  linear-gradient(
-  135deg,
-  #0d294d 0%,
-  #123c73 55%,
-  #2563eb 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f3f8ff 100%);
 }
 
-/*CONTENIDO HERO*/
 .consultamedica-contenido{
-  max-width:1150px;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:45px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
-/*IMAGEN*/
-.consultamedica-info{
-  flex:1;
-  display:flex;
-  justify-content:center;
-}
-
+/* imagen estilo premium */
 .pm-hero-img{
-  width:100%;
-  max-width:430px;
-  border-radius:28px;
-  object-fit:cover;
-  box-shadow:
-  0 20px 45px rgba(0,0,0,.25);
+  width: 100%;
+  max-width: 520px;
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.12);
 }
 
-/*TEXTOS*/
-.consultamedica-textos{
-  flex:1;
-  max-width:560px;
-}
-
-/* TITULO */
+/* títulos más elegantes */
 .consultamedica-titulo{
-  color:#ffffff;
-  font-size:3.8rem;
-  line-height:1.1;
-  font-weight:800;
-  margin-bottom:24px;
+  font-size: 2.6rem;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  color: #0f2f5f;
+  font-weight: 700;
 }
 
 .consultamedica-titulo em{
-  color:#bfdbfe;
-  font-style:normal;
+  color: #2563eb;
+  font-style: normal;
 }
 
-
-/* DESCRIPCION */
 .consultamedica-descripcion{
-  color:#dbeafe;
-  font-size:1.08rem;
-  line-height:1.9;
-  margin-bottom:35px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #5b677a;
+  margin-bottom: 22px;
 }
 
-/*BOTON WHATSAPP*/
-
+/* botón premium */
 .consultamedica-boton-wsp{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  padding:18px 34px;
-  border-radius:18px;
-  background:#22c55e;
-  color:#ffffff;
-  text-decoration:none;
-  font-size:1rem;
-  font-weight:700;
-  transition:.3s ease;
-  box-shadow:
-  0 12px 30px rgba(34,197,94,.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  background: #22c55e;
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .25s ease;
+  box-shadow: 0 10px 25px rgba(34,197,94,.25);
 }
 
-/* HOVER */
 .consultamedica-boton-wsp:hover{
-  background:#16a34a;
-  transform:translateY(-4px);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(34,197,94,.35);
 }
 
-/* ICONO */
-.consultamedica-boton-wsp i{
-  font-size:1.4rem;
-}
+/* =========================
+   BOTÓN REGRESAR PREMIUM
+========================= */
 
-
-/*BOTON REGRESAR*/
 .btn-regresar-rutas{
-  position:absolute;
-  top:30px;
-  left:30px;
-  width:48px;
-  height:48px;
-  border-radius:50%;
-  background:rgba(255,255,255,.12);
-  color:#ffffff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-decoration:none;
-  font-size:1.4rem;
-  transition:.3s ease;
-  backdrop-filter:blur(8px);
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f2f5f;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,.06);
 }
 
+/* =========================
+   SERVICIOS PREMIUM
+========================= */
 
-/* HOVER */
-.btn-regresar-rutas:hover{
-  background:#ffffff;
-  color:#2563eb;
-}
-
-/*MAIN*/
-.consultamedica-main{
-  width:100%;
-  max-width:1200px;
-  margin:auto;
-  padding:60px 20px;
-}
-
-/*TITULOS SECCIONES*/
-.consultamedica-seccion-titulo{
-  text-align:center;
-  font-size:2.5rem;
-  font-weight:800;
-  color:#122553;
-  margin-bottom:10px;
-}
-.consultamedica-seccion-subtitulo{
-  text-align:center;
-  max-width:680px;
-  margin:0 auto 35px;
-  color:#4183df;
-  font-size:1.05rem;
-  line-height:1.8;
-}
-
-/*SERVICIOS*/
 .consultamedica-servicios{
-  margin-bottom:55px;
+  background: #f6f9fc;
 }
+
+.consultamedica-seccion-titulo{
+  text-align: center;
+  font-size: 2rem;
+  color: #0f2f5f;
+  margin-bottom: 6px;
+}
+
+.consultamedica-seccion-subtitulo{
+  text-align: center;
+  color: #6b7a90;
+  margin-bottom: 35px;
+}
+
 .consultamedica-servicios-grid{
-  display:grid;
-  grid-template-columns:
-  repeat(auto-fit,minmax(260px,1fr));
-  gap:24px;
-  align-items:stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 18px;
 }
 
-/* CARD */
+/* CARD PREMIUM */
 .consultamedica-servicio-card{
-  background:#f5f8fa;
-  border-radius:28px;
-  border:1px solid #3463a0;
-  padding:28px 24px;
-  min-height:230px;
-  display:flex;
-  align-items:flex-start;
-  gap:18px;
-  transition:.3s ease;
-  box-shadow:
-  0 12px 30px rgba(161, 177, 216, 0.05);
+  background: #ffffff;
+  border: 1px solid rgba(15, 47, 95, 0.08);
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: .25s ease;
+  box-shadow: 0 8px 20px rgba(15,23,42,.04);
 }
 
-
-/* HOVER */
 .consultamedica-servicio-card:hover{
-  transform:translateY(-6px);
-  box-shadow:
-  0 18px 40px rgba(37,99,235,.12);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(15,23,42,.10);
 }
 
-
-/* ICONO */
+/* icono premium */
 .consultamedica-servicio-icono{
-  min-width:68px;
-  height:68px;
-  border-radius:20px;
-  background:#fefeff;
-  color:#0d2e74;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:1.7rem;
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  border-radius: 14px;
+  background: #f1f6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* TITULO CARD */
+.consultamedica-servicio-icono img{
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+/* textos */
 .consultamedica-servicio-nombre{
-  font-size:1.1rem;
-  font-weight:700;
-  margin-bottom:6px;
-  color:#213d7c;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f2f5f;
 }
 
-/* TEXTO CARD */
 .consultamedica-servicio-detalle{
-  color:#102849;
-  font-size:.96rem;
-  line-height:1.7;
+  font-size: .92rem;
+  color: #5b677a;
+  line-height: 1.5;
 }
 
-/*PASOS*/
+/* =========================
+   PASOS PREMIUM (CLEAN CARDS)
+========================= */
+
 .consultamedica-pasos{
-  background:
-  linear-gradient(
-  135deg,
-  #0b1f3a 0%,
-  #123c73 100%);
-  border-radius:35px;
-  padding:45px 28px;
-  margin-bottom:10px;
+  background: #f6f9fc;
 }
 
-/* TITULO */
 .consultamedica-pasos-titulo{
-  text-align:center;
-  color:#ffffff;
-  font-size:2rem;
-  font-weight:700;
-  margin-bottom:30px;
+  text-align: center;
+  font-size: 2rem;
+  color: #0f2f5f;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
-/* GRID */
 .consultamedica-pasos-lista{
-  display:grid;
-  grid-template-columns:
-  repeat(auto-fit,minmax(220px,1fr));
-  gap:18px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
 }
 
-/* CARD PASO */
+/* CARD PASO PREMIUM */
 .consultamedica-paso{
-  background:rgba(255,255,255,.05);
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:24px;
-  padding:22px;
-  text-align:center;
+  background: #ffffff;
+  border: 1px solid rgba(15,47,95,0.06);
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(15,23,42,.04);
+  transition: .25s ease;
 }
 
+.consultamedica-paso:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(15,23,42,.10);
+}
 
-/* NUMERO */
+/* número premium */
 .consultamedica-paso-numero{
-  width:60px;
-  height:60px;
-  margin:auto auto 18px;
-  border-radius:50%;
-  background:#0b45c2;
-  color:#ffffff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:1.2rem;
-  font-weight:800;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 0 auto 12px;
 }
 
-
-/* TEXTO */
+/* texto */
 .consultamedica-paso-texto{
-  color:#dce7f5;
-  font-size:.96rem;
-  line-height:1.7;
+  font-size: .92rem;
+  line-height: 1.6;
+  color: #5b677a;
 }
 
 .consultamedica-paso-texto strong{
-  display:block;
-  margin-bottom:8px;
-  color:#ffffff;
+  display: block;
+  color: #0f2f5f;
+  margin-bottom: 6px;
 }
 
-/*RESPONSIVE*/
-@media(max-width:768px){
+/* =========================
+   RESPONSIVE PREMIUM
+========================= */
+
+@media (max-width: 900px){
 
   .consultamedica-contenido{
-    flex-direction:column;
-    text-align:center;
-    gap:45px;
+    flex-direction: column;
+    text-align: center;
   }
-  .consultamedica-textos{
-    max-width:100%;
-  }
-  .consultamedica-titulo{
-    font-size:2.7rem;
-  }
-  .consultamedica-boton-wsp{
-    margin:auto;
+
+  .consultamedica-pasos-lista{
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
-@media(max-width:768px){
 
-  .consultamedica-hero{
-    padding:55px 18px;
-  }
-  .consultamedica-titulo{
-    font-size:2.2rem;
-  }
-  .consultamedica-descripcion{
-    font-size:1rem;
-    line-height:1.7;
-  }
-  .pm-hero-img{
-    max-width:100%;
-  }
-  .consultamedica-seccion-titulo{
-    font-size:2rem;
-  }
-  .consultamedica-pasos{
-    padding:35px 18px;
-  }
-  .consultamedica-pasos-titulo{
-    font-size:1.6rem;
+@media (max-width: 576px){
+
+  .consultamedica-pasos-lista{
+    grid-template-columns: 1fr;
   }
 
 }
