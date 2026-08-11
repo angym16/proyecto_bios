@@ -1381,64 +1381,6 @@ svg.ico{display:block;}
     grid-template-columns: 1fr;
   }
 }
-/* MAPA */
-.mapa-container{
-  margin-top: 32px;
-}
-
-.mapa-title{
-  font-family:'Raleway',
-  sans-serif;
-  font-size:clamp(20px,2.1vw,30px);
-  font-weight:800;
-  color:var(--b1);line-height:1.2;
-  margin-bottom:45px;
-  text-align: center;
-}
-
-/* GRID DE MAPAS */
-.mapa-grid{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap:20px;
-}
-
-/* CARD */
-.mapa-card{
-  background:#fff;
-  border-radius:14px;
-  padding:12px;
-  box-shadow:0 6px 20px rgba(0,0,0,.08);
-  border:1px solid rgba(0,0,0,.05);
-}
-
-/* TÍTULO */
-.mapa-card h4{
-  font-size:13px;
-  margin-bottom:8px;
-  color:var(--b2);
-}
-
-/* MAPA */
-.mapa-card iframe{
-  width:100%;
-  height:200px;
-  border:none;
-  border-radius:10px;
-}
-.mapa-card:hover{
-  transform: translateY(-4px);
-  box-shadow:0 10px 28px rgba(0,0,0,.12);
-  transition:.3s;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px){
-  .mapa-grid{
-    grid-template-columns:1fr;
-  }
-}
-
 
 /* MOVILES */
 
