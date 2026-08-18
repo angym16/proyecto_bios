@@ -2362,8 +2362,9 @@ nav a{
 
 .construction-content h1{
   font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
   margin-bottom: 20px;
-  color: #1f3553;
+  color: #2f5fa6;;
 }
 
 .construction-alert-icon{
