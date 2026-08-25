@@ -355,6 +355,344 @@ nav a{
 }
 
 
+
+/* RESPONSIVE GLOBAL */
+@media (max-width: 960px) {
+  header {
+    height: auto;
+    min-height: 60px;
+    padding: 10px 20px;
+  }
+
+  nav {
+    gap: 2px;
+  }
+
+  .hero,
+  .hero-cancer,
+  .hero-banner,
+  .hero-cervix-custom,
+  .hero-prostata-custom {
+    min-height: 420px;
+    height: auto;
+    padding: 70px 24px 50px;
+  }
+
+  .hero-content,
+  .hero-cancer-cervix,
+  .hero-cancer-prostata,
+  .info-text {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .hero-slider {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    width: min(100%, 620px);
+    max-width: 100%;
+    margin: 25px auto 0;
+  }
+
+  .hero h1,
+  .hero-cancer-cervix h1,
+  .info-text h1 {
+    font-size: clamp(34px, 7vw, 52px);
+  }
+
+  .quick-strip,
+  .stats,
+  .svc-grid,
+  .jornadas-grid,
+  .sedes-grid,
+  .derechos-grid,
+  .reco-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .care-wrap,
+  .boletin-wrap,
+  .gine-hero,
+  .gine-info-grid,
+  .lab-hero,
+  .team-intro,
+  .tamizacion-prostata-grid,
+  .servicios-card,
+  .services-card,
+  .prostata-services-card,
+  .recuerda-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .care-right,
+  .lab-hero-img,
+  .servicios-img,
+  .services-img,
+  .prostata-services-img {
+    min-height: 260px;
+  }
+
+  .care-left,
+  .gine-hero,
+  .lab-hero,
+  .team-intro,
+  .recuerda-grid {
+    padding: 40px 24px;
+  }
+
+  .lab-hero,
+  .lab-info-grid,
+  .lab-tests,
+  .recommendations-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .cervix-grid,
+  .risk-grid,
+  .resumen-grid,
+  .symptoms-grid,
+  .prevention-cards,
+  .prevencion-grid,
+  .valores-grid,
+  .team-grid,
+  .consultamedica-pasos-lista {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .team-stats {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .esp-grid {
+    flex-wrap: wrap;
+  }
+
+  .card-doc {
+    min-width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .sec,
+  .consultamedica-hero,
+  .consultamedica-servicios,
+  .consultamedica-pasos,
+  .sedes-servicios,
+  .lab-section,
+  .gine-section,
+  .rutas-moviles,
+  .team-wrap,
+  .historia-section,
+  .pm-hero,
+  .eps-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .quick-strip,
+  .stats,
+  .svc-grid,
+  .jornadas-grid,
+  .sedes-grid,
+  .derechos-grid,
+  .reco-row,
+  .cervix-grid,
+  .risk-grid,
+  .resumen-grid,
+  .symptoms-grid,
+  .prevention-cards,
+  .prevencion-grid,
+  .valores-grid,
+  .team-grid,
+  .consultamedica-pasos-lista,
+  .services-grid,
+  .rutas-moviles .rutas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qs-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .qs-item {
+    min-width: 0;
+  }
+
+  .care-stats,
+  .lab-buttons,
+  .hero-btns,
+  .cta-actions {
+    width: 100%;
+  }
+
+  .care-stats {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .care-card {
+    width: min(140px, calc(50% - 10px));
+    padding: 24px 12px;
+  }
+
+  .care-right {
+    min-height: 360px;
+  }
+
+  .boletin-wrap,
+  .pqrsf-banner {
+    display: block;
+  }
+
+  .pqrsf-left,
+  .pqrsf-content {
+    padding: 34px 24px;
+  }
+
+  .pqrsf-right {
+    min-height: 210px;
+  }
+
+  .info-split {
+    display: block;
+    padding: 40px 18px;
+  }
+
+  .factores-card,
+  .poblacion-card,
+  .compromiso-bloque {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .construction-banner,
+  .historia-card,
+  .pm-card,
+  .lab-card,
+  .diag-services,
+  .diag-benefits {
+    padding: 28px 20px;
+  }
+
+  .pm-hero-img,
+  .lab-hero-img img,
+  .historia-imagen img {
+    height: auto;
+    max-height: 360px;
+  }
+
+  .team-hero h1,
+  .sedes-title h2,
+  .construction-content h1,
+  .consultamedica-titulo {
+    font-size: clamp(30px, 9vw, 44px);
+  }
+
+  .team-stats {
+    gap: 24px;
+  }
+
+  .team-track,
+  .carousel-track {
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .card-doc {
+    min-width: min(82vw, 300px);
+  }
+
+  .prev,
+  .next,
+  .carousel-btn.prev,
+  .carousel-btn.next {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero,
+  .hero-cancer,
+  .hero-banner,
+  .hero-cervix-custom,
+  .hero-prostata-custom {
+    min-height: 360px;
+    padding: 60px 18px 36px;
+  }
+
+  .hero p,
+  .hero-cancer-cervix p,
+  .hero-cancer-prostata-sub,
+  .info-text p {
+    font-size: 15px;
+  }
+
+  .hero-slider {
+    border-radius: 10px;
+  }
+
+  .routes,
+  .cancer-links {
+    grid-template-columns: 1fr;
+  }
+
+  .care-card {
+    width: 100%;
+  }
+
+  .sede-content,
+  .gine-cta,
+  .team-cta,
+  .moviles-band {
+    padding: 26px 20px;
+  }
+
+  .sede-content h3,
+  .gine-cta h2,
+  .rutas-moviles .ruta-impacto h2 {
+    font-size: 28px;
+  }
+
+  .sede-card {
+    height: 390px;
+  }
+
+  .btn,
+  .btn-sede,
+  .hero-btn,
+  .cta-btn,
+  .lab-btn-primary,
+  .lab-btn-secondary {
+    width: 100%;
+  }
+
+  .mv-vans {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mv-main img {
+    width: 130px;
+  }
+
+  .mv-small img {
+    width: 78px;
+  }
+
+  .rutas-moviles .ruta-impacto {
+    padding: 34px 20px;
+  }
+}
 /* TEXTO */
 .recuerda-content h2 {
   color: #e64980;
@@ -2825,6 +3163,302 @@ nav a{
     padding:38px 28px;
   }
 
+}
+
+/* PRIORIDAD RESPONSIVE FINAL */
+@media (max-width: 960px) {
+  .hero-cancer,
+  .hero-banner,
+  .hero-cervix-custom,
+  .hero-prostata-custom {
+    height: auto;
+    min-height: 420px;
+    padding: 70px 24px 50px;
+  }
+
+  .info-split,
+  .cervix-grid,
+  .tamizacion-prostata-grid,
+  .recuerda-grid,
+  .services-card,
+  .prostata-services-card,
+  .team-intro,
+  .team-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-grid,
+  .resumen-grid,
+  .symptoms-grid,
+  .prevention-cards,
+  .prevencion-grid,
+  .valores-grid,
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .factores-card,
+  .poblacion-card,
+  .compromiso-bloque {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 16px;
+  }
+
+  .container,
+  .info-split,
+  .rutas-moviles,
+  .team-wrap {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .risk-grid,
+  .resumen-grid,
+  .symptoms-grid,
+  .prevention-cards,
+  .prevencion-grid,
+  .valores-grid,
+  .team-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-cancer p,
+  .hero-cancer-cervix p,
+  .hero-cancer-prostata-sub,
+  .info-text p,
+  .cervix-text {
+    font-size: 15px;
+  }
+
+  .info-text h1,
+  .hero-cancer-cervix h1 {
+    font-size: clamp(34px, 9vw, 52px);
+  }
+
+  .recuerda-grid,
+  .team-cta,
+  .servicios-content,
+  .services-content,
+  .prostata-services-content {
+    padding: 28px 20px;
+  }
+
+  .team-track,
+  .carousel-track {
+    overflow-x: auto;
+  }
+
+  .card-doc {
+    min-width: min(82vw, 300px);
+  }
+
+  .carousel-btn,
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-cancer,
+  .hero-banner,
+  .hero-cervix-custom,
+  .hero-prostata-custom {
+    min-height: 360px;
+    padding: 60px 18px 36px;
+  }
+
+  .factores-card,
+  .poblacion-card,
+  .recuerda-grid,
+  .team-text {
+    padding: 24px 18px;
+  }
+
+  .btn-regresar-mama,
+  .btn-regresar-cervix,
+  .btn-regresar-prostata,
+  .btn-regresar-rutas {
+    top: 18px;
+    left: 18px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .esp-card,
+  .btn-primary,
+  .btn-sede {
+    width: 100%;
+  }
+}
+
+/* AJUSTE FINAL DE TITULOS EN MOVIL */
+@media (max-width: 768px) {
+  .hero-cancer h1,
+  .hero-cancer-cervix h1,
+  .hero-cancer-prostata-title,
+  .info-text h1,
+  .team-hero h1,
+  .services-top h1,
+  .rutas-moviles h1,
+  .construction-content h1 {
+    max-width: 100%;
+    font-size: clamp(30px, 8vw, 40px);
+    line-height: 1.1;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .bloque h2,
+  .tamizacion-texto h2,
+  .prevencion-prostata h2,
+  .prostata-services-content h2,
+  .servicios-content h2,
+  .services-info h2,
+  .recuerda-content h2,
+  .alerta-title,
+  .autoexamen-header h2,
+  .stats-right h2,
+  .team-section h2,
+  .valores h2,
+  .team-closing h2,
+  .rutas-moviles .ruta-impacto h2 {
+    font-size: clamp(22px, 6vw, 30px);
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+
+  .risk-card h3,
+  .resumen-card h3,
+  .factores-card h3,
+  .sede-content h3,
+  .service-card h3 {
+    font-size: clamp(20px, 5vw, 26px);
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-cancer h1,
+  .hero-cancer-cervix h1,
+  .hero-cancer-prostata-title,
+  .info-text h1,
+  .team-hero h1,
+  .services-top h1,
+  .rutas-moviles h1,
+  .construction-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-cancer p,
+  .hero-cancer-cervix p,
+  .hero-cancer-prostata-sub,
+  .info-text p,
+  .team-hero p,
+  .rutas-moviles .rutas-subtitle {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+}
+
+/* ESCALA TIPOGRAFICA MOVIL */
+@media (max-width: 768px) {
+  h1,
+  .hero-cancer h1,
+  .hero-cancer-cervix h1,
+  .hero-cancer-prostata-title,
+  .info-text h1,
+  .team-hero h1,
+  .services-top h1,
+  .rutas-moviles h1,
+  .construction-content h1 {
+    font-size: 32px !important;
+    line-height: 1.12;
+    letter-spacing: 0;
+  }
+
+  h2,
+  .bloque h2,
+  .tamizacion-texto h2,
+  .prevencion-prostata h2,
+  .prostata-services-content h2,
+  .servicios-content h2,
+  .services-info h2,
+  .recuerda-content h2,
+  .alerta-title,
+  .autoexamen-header h2,
+  .stats-right h2,
+  .team-section h2,
+  .valores h2,
+  .team-closing h2,
+  .rutas-moviles .ruta-impacto h2 {
+    font-size: 26px !important;
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+
+  h3,
+  .risk-card h3,
+  .resumen-card h3,
+  .factores-card h3,
+  .sede-content h3,
+  .service-card h3 {
+    font-size: 21px !important;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  .hero-cancer h1,
+  .hero-cancer-cervix h1,
+  .hero-cancer-prostata-title,
+  .info-text h1,
+  .team-hero h1,
+  .services-top h1,
+  .rutas-moviles h1,
+  .construction-content h1 {
+    font-size: 28px !important;
+  }
+
+  h2,
+  .bloque h2,
+  .tamizacion-texto h2,
+  .prevencion-prostata h2,
+  .prostata-services-content h2,
+  .servicios-content h2,
+  .services-info h2,
+  .recuerda-content h2,
+  .alerta-title,
+  .autoexamen-header h2,
+  .stats-right h2,
+  .team-section h2,
+  .valores h2,
+  .team-closing h2,
+  .rutas-moviles .ruta-impacto h2 {
+    font-size: 23px !important;
+  }
+
+  h3,
+  .risk-card h3,
+  .resumen-card h3,
+  .factores-card h3,
+  .sede-content h3,
+  .service-card h3 {
+    font-size: 19px !important;
+  }
 }
 
 
