@@ -11,12 +11,13 @@
   .moviles-band{flex-direction:column;text-align:center;}
 }
 .container {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: auto;
   padding: 0 20px;
 }
 
 /* RESET BÁSICO */
+
 * {
   box-sizing: border-box;
 }
@@ -29,6 +30,7 @@ body {
 }
 
 /* ═════════ HEADER ═════════ */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -56,8 +58,9 @@ nav a {
 }
 
 /* ═════════ CONTENEDOR ═════════ */
+
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 20px;
 }
@@ -75,6 +78,7 @@ body{
 }
 
 /* HEADER */
+
 header{
   display: flex;
   justify-content: space-between;
@@ -102,6 +106,7 @@ nav a{
  
 /* ═════════ CANCER DE MAMA  ═════════ */
 /* HERO*/
+
 .hero-cancer {
   background: url("../img/cancerMama.jpeg") center/cover no-repeat;
   height: 220px;
@@ -132,7 +137,7 @@ nav a{
 }
 /* CONTENEDOR */
 .container{
-  max-width: 1100px;
+  max-width: 1200px;
   padding: 0 20px;
   margin-right: 100px;
 }
@@ -158,6 +163,7 @@ nav a{
 }
 
 /* TEXTO */
+
 .info-text{
     flex: 1;
     max-width: 520px;
@@ -168,16 +174,17 @@ nav a{
 }
 
 /* TITULO */
+
 .info-text h1{
     font-size: 64px;
     line-height: 1.05;
     font-weight: 800;
     color: #222;
     margin-bottom: 12px;
-    
 }
 
 /* SUBTITULO */
+
 .info-text p{
     font-size: 20px;
     color: #444;
@@ -185,44 +192,32 @@ nav a{
 }
 
 /* BOTÓN REGRESAR */
+
 .btn-regresar-mama{
     position: absolute;
     top: 40px;
     left: 60px;
-
     width: 52px;
     height: 52px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
-
     background: rgba(255,255,255,0.72);
     backdrop-filter: blur(8px);
-
     border: 1px solid rgba(230, 73, 128, 0.18);
-
     color: #e64980;
     text-decoration: none;
     font-size: 24px;
-
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-
     transition: all .25s ease;
-
     z-index: 10;
 }
-
 .btn-regresar-mama:hover{
     transform: translateX(-4px);
-
     background: #fff;
-
     box-shadow: 0 10px 24px rgba(230,73,128,0.18);
 }
-
 .arrow{
     transition: transform .25s ease;
 }
@@ -232,6 +227,7 @@ nav a{
 }
 
 /* BLOQUES INFERIORES */
+
 .bloque{
   margin-bottom: 60px;
 }
@@ -251,6 +247,7 @@ nav a{
 }
 
 /* DERECHA CARD */
+
 .factores-card{
   width:320px;
   background:white;
@@ -278,6 +275,7 @@ nav a{
 }
 
 /* punticos bonitos */
+
 .factores-card li::before{
   content:"";
   width:8px;
@@ -292,24 +290,23 @@ nav a{
   margin-top:50px;
   padding:20px 25px;
   border-radius:25px;
-  
   color:black;
-
   max-width:420px;
 
   /* borde elegante */
+
   border:2px solid rgba(255,255,255,0.4);
 
   /* efecto glass */
+
   backdrop-filter: blur(10px);
-
   box-shadow:0 10px 25px rgba(245, 122, 163, 0.25);
-
   position:relative;
   overflow:hidden;
 }
 
 /* decorativo suave */
+
 .poblacion-card::before{
   content:"";
   position:absolute;
@@ -331,7 +328,9 @@ nav a{
   margin:0;
   font-weight:700;
 }
+
 /* ═════════ RECUERDA SECTION ═════════ */
+
 .recuerda-section {
   margin-top: 80px;
 }
@@ -355,9 +354,9 @@ nav a{
 }
 
 
-
 /* RESPONSIVE GLOBAL */
-@media (max-width: 960px) {
+
+@media (max-width: 1200px) {
   header {
     height: auto;
     min-height: 60px;
@@ -480,7 +479,6 @@ nav a{
   body {
     overflow-x: hidden;
   }
-
   .sec,
   .consultamedica-hero,
   .consultamedica-servicios,
@@ -693,7 +691,9 @@ nav a{
     padding: 34px 20px;
   }
 }
+
 /* TEXTO */
+
 .recuerda-content h2 {
   color: #e64980;
   font-size: 2rem;
