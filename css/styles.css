@@ -6876,3 +6876,485 @@ body{
     font-size: 19px !important;
   }
 }
+/* =========================================================
+   RESPONSIVE EXTRA PARA PANTALLAS PEQUEÑAS
+   BIOS IPS
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   TABLETS PEQUEÑAS / CELULARES GRANDES
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    /* Evita desbordamientos */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    img,
+    video,
+    iframe {
+        max-width: 100%;
+    }
+
+
+    /* CONTENEDORES */
+
+    .sec,
+    .consultamedica-hero,
+    .consultamedica-servicios,
+    .consultamedica-pasos,
+    .sedes-servicios,
+    .lab-section,
+    .gine-section,
+    .rutas-moviles,
+    .team-wrap,
+    .historia-section,
+    .pm-hero,
+    .eps-section {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    /* =====================================================
+       TARJETAS DE SERVICIOS
+       ===================================================== */
+
+    .services-grid,
+    .svc-grid {
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 18px;
+    }
+
+
+    .service-card,
+    .services-card,
+    .svc-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin-left: 0;
+        margin-right: 0;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+    }
+
+
+    /* Si la tarjeta utiliza flex */
+    .service-card,
+    .svc-card {
+        flex-wrap: nowrap;
+    }
+
+
+    /* Imágenes dentro de las tarjetas */
+
+    .service-card img,
+    .services-card img,
+    .svc-card img {
+        max-width: 100%;
+    }
+
+
+    /* Contenido */
+
+    .service-card > *,
+    .services-card > *,
+    .svc-card > * {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+
+    /* Textos */
+
+    .service-card h2,
+    .service-card h3,
+    .service-card p,
+    .services-card h2,
+    .services-card h3,
+    .services-card p,
+    .svc-card h2,
+    .svc-card h3,
+    .svc-card p {
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+
+    /* =====================================================
+       TARJETAS CON IMAGEN + CONTENIDO
+       ===================================================== */
+
+    .card-top {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .card-top img {
+        max-width: 100%;
+    }
+
+
+    /* =====================================================
+       ESPACIADOS
+       ===================================================== */
+
+    .construction-banner,
+    .historia-card,
+    .pm-card,
+    .lab-card,
+    .diag-services,
+    .diag-benefits {
+        width: 100%;
+        max-width: 100%;
+        padding: 24px 18px;
+    }
+
+
+    /* =====================================================
+       BOTONES
+       ===================================================== */
+
+    .btn,
+    .btn-sede,
+    .hero-btn,
+    .cta-btn,
+    .lab-btn-primary,
+    .lab-btn-secondary {
+        max-width: 100%;
+    }
+
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+
+    .hero,
+    .hero-cancer,
+    .hero-banner,
+    .hero-cervix-custom,
+    .hero-prostata-custom {
+        width: 100%;
+        max-width: 100%;
+        min-height: 350px;
+    }
+
+
+    /* =====================================================
+       IMÁGENES GRANDES
+       ===================================================== */
+
+    .pm-hero-img,
+    .lab-hero-img,
+    .servicios-img,
+    .services-img,
+    .prostata-services-img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES PEQUEÑOS
+   480px
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* CONTENEDORES */
+
+    .sec,
+    .consultamedica-hero,
+    .consultamedica-servicios,
+    .consultamedica-pasos,
+    .sedes-servicios,
+    .lab-section,
+    .gine-section,
+    .rutas-moviles,
+    .team-wrap,
+    .historia-section,
+    .pm-hero,
+    .eps-section {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+
+    /* =====================================================
+       TARJETAS
+       ===================================================== */
+
+    .services-grid,
+    .svc-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+    }
+
+
+    .service-card,
+    .services-card,
+    .svc-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+
+
+    /* =====================================================
+       TARJETAS PLAN PREMIUM / RUTAS
+       ===================================================== */
+
+    .service-card {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+
+    .service-card .card-top {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+
+    .service-card .card-top img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+
+    /* =====================================================
+       TEXTO DE LAS TARJETAS
+       ===================================================== */
+
+    .service-card h3,
+    .svc-card h3,
+    .card-top h3 {
+        font-size: 19px !important;
+        line-height: 1.25;
+        overflow-wrap: break-word;
+    }
+
+
+    .service-card p,
+    .svc-card p {
+        font-size: 14px;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+    }
+
+
+    /* =====================================================
+       IMÁGENES
+       ===================================================== */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+
+    .hero,
+    .hero-cancer,
+    .hero-banner,
+    .hero-cervix-custom,
+    .hero-prostata-custom {
+        min-height: 340px;
+        padding: 55px 16px 35px;
+    }
+
+
+    /* =====================================================
+       SEDES
+       ===================================================== */
+
+    .sede-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .sede-content {
+        padding: 24px 18px;
+    }
+
+
+    /* =====================================================
+       BOTONES
+       ===================================================== */
+
+    .btn,
+    .btn-sede,
+    .hero-btn,
+    .cta-btn,
+    .lab-btn-primary,
+    .lab-btn-secondary {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES MUY PEQUEÑOS
+   380px
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .sec,
+    .consultamedica-hero,
+    .consultamedica-servicios,
+    .consultamedica-pasos,
+    .sedes-servicios,
+    .lab-section,
+    .gine-section,
+    .rutas-moviles,
+    .team-wrap,
+    .historia-section,
+    .pm-hero,
+    .eps-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    /* TARJETAS */
+
+    .service-card,
+    .services-card,
+    .svc-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+
+        border-radius: 14px;
+    }
+
+
+    /* CONTENIDO */
+
+    .service-card .card-top,
+    .service-card .card-body,
+    .service-card .card-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+
+    /* TÍTULOS */
+
+    .service-card h3,
+    .svc-card h3 {
+        font-size: 18px !important;
+        line-height: 1.25;
+    }
+
+
+    /* TEXTOS */
+
+    .service-card p,
+    .svc-card p {
+        font-size: 13.5px;
+        line-height: 1.6;
+    }
+
+
+    /* HERO */
+
+    .hero,
+    .hero-cancer,
+    .hero-banner,
+    .hero-cervix-custom,
+    .hero-prostata-custom {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES EXTRA PEQUEÑOS
+   320px
+   ========================================================= */
+
+@media (max-width: 320px) {
+
+    .sec,
+    .consultamedica-hero,
+    .consultamedica-servicios,
+    .consultamedica-pasos,
+    .sedes-servicios,
+    .lab-section,
+    .gine-section,
+    .rutas-moviles,
+    .team-wrap,
+    .historia-section,
+    .pm-hero,
+    .eps-section {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+
+    .service-card,
+    .services-card,
+    .svc-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    .service-card .card-content,
+    .service-card .card-body,
+    .svc-card .card-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .service-card h3,
+    .svc-card h3 {
+        font-size: 17px !important;
+    }
+
+
+    .service-card p,
+    .svc-card p {
+        font-size: 13px;
+    }
+
+}
