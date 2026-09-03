@@ -5200,7 +5200,7 @@ body{
 }
 
 .consultamedica-titulo em{
-  color: #2563eb;
+  color: #2f5fa6;
   font-style: normal;
 }
 
@@ -5252,9 +5252,7 @@ body{
   box-shadow: 0 10px 25px rgba(0,0,0,.06);
 }
 
-/* =========================
-   SERVICIOS PREMIUM
-========================= */
+
 
 .consultamedica-servicios{
   background: #f6f9fc;
@@ -5281,7 +5279,7 @@ body{
   gap: 18px;
 }
 
-/* CARD PREMIUM */
+
 .consultamedica-servicio-card{
   background: #ffffff;
   border: 1px solid rgba(15, 47, 95, 0.08);
@@ -5317,7 +5315,7 @@ body{
   object-fit: contain;
 }
 
-/* textos */
+
 .consultamedica-servicio-nombre{
   font-size: 1.05rem;
   font-weight: 700;
@@ -5330,9 +5328,6 @@ body{
   line-height: 1.5;
 }
 
-/* =========================
-   PASOS PREMIUM (CLEAN CARDS)
-========================= */
 
 .consultamedica-pasos{
   background: #f6f9fc;
@@ -5354,7 +5349,7 @@ body{
   gap: 18px;
 }
 
-/* CARD PASO PREMIUM */
+
 .consultamedica-paso{
   background: #ffffff;
   border: 1px solid rgba(15,47,95,0.06);
@@ -5375,7 +5370,7 @@ body{
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: #2563eb;
+  background: #2f5fa6;
   color: #fff;
   display: flex;
   align-items: center;
